@@ -276,7 +276,7 @@ html {
 }
 
 body {
-  background-color: var(--background);
+  background-color: #fffbf0;
 }
 
 a {
@@ -302,7 +302,8 @@ ul {
   height: 90px;
   top: 0;
   left: 0;
-  background: var(--nav-bg);
+  /* background: var(--nav-bg); */
+  background: #fffafa;
   backdrop-filter: blur(12px);
   display: flex;
   justify-content: space-between;
@@ -357,7 +358,7 @@ ul {
 
 .nav-items:hover {
   color: var(--nav-text-active);
-  border-bottom: 5px solid var(--nav-underline);
+  border-bottom: 3px solid var(--nav-underline);
 }
 
 /* ============= Hero ============= */
@@ -437,15 +438,15 @@ ul {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.55rem 1rem;
+  padding: 6px 24px;
   margin-bottom: 1rem;
   /* background: var(--label1); */
   background: var(--label);
   color: black;
   border-radius: 999px;
   font-family: var(--font-accent);
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 100;
 }
 
 .label-dot {
@@ -469,28 +470,41 @@ ul {
 .hero-description {
   font-size: 1.1rem;
   line-height: 1.8;
+  padding: 0 64px 0 0;
   margin-bottom: 2rem;
   color: #555;
   font-family: var(--fonts-parf);
 }
 
 /* ================ tombol hero ===================== */
-.btn-primary {
-  display: inline-block;
-  /* background: #833bff; */
-  background: #ffb51b;
-  color: rgb(53, 53, 53);
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 14px 28px;
   font-size: 16px;
   border-radius: 10px;
   line-height: 24px;
-  transition: 0.3s;
   font-family: var(--fonts-parf);
   font-weight: 600;
+  transition: 0.3s;
 }
 
+.btn-primary {
+  background: #f5a800;
+  border: 3px solid transparent;
+}
+
+.btn-second {
+  border: 3px solid #f5a800;
+  background: transparent;
+  margin-left: 20px;
+}
+
+
 .btn-primary:hover {
-  background: #e26f00;
+  /* background: #f5a800; */
+  background: #ffd040;
 }
 
 /* .btn {
