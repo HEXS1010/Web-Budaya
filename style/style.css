@@ -43,6 +43,19 @@
   --coklat-900: #5c3432;
   --coklat-950: #422222; /* warna awal */
 
+  /* merah */
+  --merah-50: #fff5ec;
+  --merah-100: #ffe7d3;
+  --merah-200: #ffcca6;
+  --merah-300: #ffa86e;
+  --merah-400: #ff7933;
+  --merah-500: #ff550c;
+  --merah-600: #f43b02;
+  --merah-700: #d92b04;
+  --merah-800: #a0210c;
+  --merah-900: #811e0d;
+  --merah-950: #460b04;
+
   /* emas */
   --emas-50: #fdf9ed;
   --emas-100: #f9edcc;
@@ -57,7 +70,7 @@
   --emas-950: #3f1809;
 
   /* netral */
-  --netral-50: #fcfbfb; /* warna asli */
+  /* --netral-50: #fcfbfb;
   --netral-100: #f5f3f2;
   --netral-200: #e8e5e3;
   --netral-300: #d4cfcc;
@@ -67,7 +80,19 @@
   --netral-700: #57514d;
   --netral-800: #403c39;
   --netral-900: #2c2927;
-  --netral-950: #1a1817;
+  --netral-950: #1a1817; */
+
+  --netral-50: #fafafa;
+  --netral-100: #f5f5f5;
+  --netral-200: #e6e6e6;
+  --netral-300: #d3d3d3;
+  --netral-400: #a3a3a3;
+  --netral-500: #727272;
+  --netral-600: #535353;
+  --netral-700: #404040;
+  --netral-800: #272727;
+  --netral-900: #1a1a1a;
+  --netral-950: #0d0d0d; /* warna asli */
 
   --text-size-xs: 11px; /* Caption, footnote */
   --text-size-sm: 13px; /* Label kecil, footer link */
@@ -162,7 +187,8 @@ html {
 }
 
 body {
-  background-color: var(--ungu-50);
+  /* background: linear-gradient(45deg, #fdf9ed 0%, var(--ungu-100) 100%); */
+  background: var(--netral-100);
 }
 
 a {
@@ -296,12 +322,12 @@ ul {
 
 /* ============ pengaduan =============== */
 .nav-btn {
-  color: var(--netral-900);
-  background: var(--emas-500);
-  padding: 10px 22px;
+  color: var(--netral-200);
+  background: var(--ungu-950);
+  padding: 10px 24px;
   border-radius: 50px;
   font-family: var(--fonts-paragraf);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 15px;
   /* letter-spacing: 0.04em; */
   transition: 0.3s;
@@ -323,15 +349,6 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background: var(--emas-800); */
-  /* background: linear-gradient(
-    to top,
-    var(--ungu-50),
-    var(--ungu-200),
-    var(--ungu-500),
-    var(--ungu-900)
-  ); */
-  /* border-radius: 0 0 20% 20%; */
 }
 
 .hero .container {
@@ -423,10 +440,10 @@ ul {
   font-size: 3rem;
   margin-bottom: 1rem;
   line-height: 1.2;
-  font-family: var(--font-pop);
+  font-family: var(--fonts-heeading);
   /* font-family: var(--font-accent); */
-  font-weight: 400;
-  color: var(--netral-200);
+  font-weight: 800;
+  color: var(--netral-900);
 }
 
 .hero-description {
@@ -435,7 +452,7 @@ ul {
   padding: 0 64px 0 0;
   margin-bottom: 2rem;
   color: var(--ungu-300);
-  font-family: var(--fonts-parf);
+  font-family: var(--fonts-paragraf);
 }
 
 /* ================ tombol hero ===================== */
