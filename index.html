@@ -40,28 +40,71 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- icon -->
+    <!-- icon awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
     <!-- ============ Navbar ============= -->
     <nav class="navbar">
       <span class="scroll-line"></span>
       <a href="">
-        <img src="https://placehold.co/50x50" alt="Logo Kaliungu" />
+        <img src="img/logo-banjar-kaliungu.webp" alt="Logo Kaliungu" />
       </a>
 
       <ul class="nav-link">
-        <li class="nav-items">Beranda</li>
-        <li class="nav-items">Sejarah</li>
-        <li class="nav-items">Awig-awig</li>
-        <li class="nav-items">Pelayanan</li>
-        <li class="nav-items">Prajuru</li>
-        <li class="nav-items">Galeri</li>
-        <li class="nav-btn">Pengaduan</li>
+        <li class="nav-items">
+          <a href="">Beranda</a>
+        </li>
+        <li class="nav-items dropdown">
+          <a href=""
+            >Profil
+            <i class="fa-solid fa-angle-down icon-roll"></i
+          ></a>
+
+          <ul class="dropdown-menu">
+            <li><a href="#">Visi & Misi</a></li>
+            <li><a href="#">Sejarah</a></li>
+            <li><a href="#">Struktur Organisasi</a></li>
+            <li><a href="#">Pengurus</a></li>
+            <li><a href="#">Awig-awig</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-items dropdown">
+          <a href=""
+            >Program & Kegiatan
+            <i class="fa-solid fa-angle-down"></i
+          ></a>
+
+          <ul class="dropdown-menu">
+            <li><a href="">Program Kerja</a></li>
+            <li><a href="">Agenda</a></li>
+          </ul>
+        </li>
+        <li class="nav-items dropdown">
+          <a href=""
+            >Informasi
+            <i class="fa-solid fa-angle-down"></i
+          ></a>
+
+          <ul class="dropdown-menu">
+            <li><a href="">Berita & Pengumuman</a></li>
+            <li><a href="">Galery</a></li>
+            <li></li>
+          </ul>
+        </li>
+        <li class="nav-items"><a href="">warga Banjar</a></li>
+        <li class="nav-btn">Kontak</li>
       </ul>
     </nav>
 
     <!-- =============== Hero ============ -->
-    <section class="hero" aria-labelledby="hero-title">
+    <!-- <section class="hero" aria-labelledby="hero-title">
       <div class="container">
         <article class="hero-content">
           <p class="hero-label">
@@ -117,10 +160,10 @@
           </div>
         </figure>
       </div>
-    </section>
+    </section> -->
 
     <!-- =================== sejarah ====================== -->
-    <section class="history" id="sejarah" aria-labelledby="history-title">
+    <!-- <section class="history" id="sejarah" aria-labelledby="history-title">
       <div class="container">
         <header class="history-header">
           <p class="hero-label">
@@ -169,7 +212,7 @@
           </article>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <script src="js/main.js"></script>
   </body>

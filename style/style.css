@@ -1,187 +1,73 @@
 :root {
-  /* --background: #f8f3ec; */
-  --background: #f3f0ff;
-  /* --background: #f9f7ff; 50 */
-  --label1: #ebe4ff;
-  --label: #ffcc46; /* 200 */
-  --bottom: #7914ff; /*500 */
-  --hover: #7914ff; /* 600 */
-  --text-dark: #310077; /* 950 */
-  --bg-nav: #f4f4f4;
-  --text-nav: #4a3060;
-
   /* font */
   --fonts-heeading: "Cormorant Garamond", serif;
   --fonts-paraf: "Plus Jakarta Sans", sans-serif;
-  --fonts-parf: "Inter", sans-serif;
-  --font-accent: "Cinzel", serif;
+  --fonts-paragraf: "Inter", sans-serif;
+  --fonts-aksara: "Cinzel", serif;
 
-  /* ============================================================
-     1. BASE PALETTE — RAMP UNGU (Primary)
-     Diambil dari warna utama logo banjar
-     Nama: Ungu Kaliungu
-  ============================================================ */
-  --ungu-50: #f5eeff; /* Ungu Salju      — bg halaman, section terluar */
-  --ungu-100: #e8d5ff; /* Ungu Kabut      — bg card muted, hover ringan */
-  --ungu-200: #d0aaff; /* Ungu Lavender   — border divider, tint ringan */
-  --ungu-300: #b57ef5; /* Ungu Anggrek    — border focus, aksen ringan */
-  --ungu-400: #9050e0; /* Ungu Iris       — elemen interaktif medium */
-  --ungu-500: #6228b8; /* Ungu Puri       — link, icon aktif */
-  --ungu-600: #4d1a96; /* Ungu Kerajaan   — hover tombol utama */
-  --ungu-700: #3d1472; /* Ungu Mahkota    — tombol utama, navbar btn */
-  --ungu-800: #2a0d50; /* Ungu Petang     — heading gelap */
-  --ungu-900: #1a0533; /* Ungu Malam      — teks heading terdalam */
+  /* color fix */
+  --ungu-50: #faf5ff;
+  --ungu-100: #f4e8ff;
+  --ungu-200: #ead4ff;
+  --ungu-300: #dbb3ff;
+  --ungu-400: #c582fe;
+  --ungu-500: #af52fa;
+  --ungu-600: #9b30ed;
+  --ungu-700: #861fd1; /* warna awal*/
+  --ungu-800: #711faa;
+  --ungu-900: #5d1a89;
+  --ungu-950: #3f0566;
 
-  /* ============================================================
-     2. BASE PALETTE — RAMP EMAS (Label / CTA)
-     Diambil dari warna emas ornamen logo
-     Nama: Emas Pura
-  ============================================================ */
-  --emas-50: #fffbf0; /* Emas Susu       — bg label sangat muda */
-  --emas-100: #fff0c0; /* Emas Mentega    — bg badge pasif */
-  --emas-200: #ffe080; /* Emas Langsat    — border badge emas */
-  --emas-300: #ffd040; /* Emas Kunyit     — aksen dekoratif */
-  --emas-400: #f5a800; /* Emas Sakral     — label utama, CTA hero */
-  --emas-500: #d48800; /* Emas Tua        — hover CTA emas */
-  --emas-600: #a86800; /* Emas Tembaga    — teks di atas bg emas muda */
-  --emas-700: #7c4c00; /* Emas Perunggu   — border kuat emas */
-  --emas-800: #503200; /* Emas Coklat     — teks gelap emas */
-  --emas-900: #2a1800; /* Emas Hitam      — teks terdalam emas */
+  /* ungu 2 */
+  --ungu-2-50: #faf6fe;
+  --ungu-2-100: #f3eafd;
+  --ungu-2-200: #ead9fb;
+  --ungu-2-300: #d9bcf6;
+  --ungu-2-400: #c190f0;
+  --ungu-2-500: #a966e6;
+  --ungu-2-600: #9446d7;
+  --ungu-2-700: #7e34bc;
+  --ungu-2-800: #6b2f9a;
+  --ungu-2-900: #58277c;
 
-  /* ============================================================
-     3. BASE PALETTE — RAMP MERAH MARUN (Aksen / Darurat)
-     Diambil dari warna merah pada logo
-     Nama: Marun Bali
-  ============================================================ */
-  --marun-50: #fff0f3; /* Marun Kapas     — bg badge darurat muda */
-  --marun-100: #fdd8e2; /* Marun Ros       — bg notifikasi pasif */
-  --marun-200: #f8a8bc; /* Marun Sakura    — border badge darurat */
-  --marun-300: #ee6e8c; /* Marun Flamingo  — aksen highlight */
-  --marun-400: #c8365a; /* Marun Delima    — elemen darurat interaktif */
-  --marun-500: #a0203e; /* Marun Kencana   — status error / warning */
-  --marun-600: #8b1a3a; /* Marun Puri      — teks badge darurat */
-  --marun-700: #6e1230; /* Marun Cendana   — border kuat darurat */
-  --marun-800: #4d0d22; /* Marun Malam     — heading darurat gelap */
-  --marun-900: #2e0614; /* Marun Tua       — teks terdalam darurat */
+  /* coklat dikit banyak deh */
+  --coklat-50: #faf5f2;
+  --coklat-100: #f2e8e2;
+  --coklat-200: #e5cec3;
+  --coklat-300: #d4ad9d;
+  --coklat-400: #c18876;
+  --coklat-500: #b46c5b;
+  --coklat-600: #a75a4f;
+  --coklat-700: #8b4843;
+  --coklat-800: #713d3b;
+  --coklat-900: #5c3432;
+  --coklat-950: #422222; /* warna awal */
 
-  /* ============================================================
-     4. BASE PALETTE — RAMP NETRAL (Teks / Border / Surface)
-     Netral bernuansa ungu, sesuai karakter logo
-     Nama: Netral Wangsa
-  ============================================================ */
-  --netral-50: #faf9fd; /* Netral Putih    — surface paling terang */
-  --netral-100: #f0ecfa; /* Netral Krim     — bg section sekunder */
-  --netral-200: #ddd5ee; /* Netral Abu Muda — border default */
-  --netral-300: #c0b0d8; /* Netral Lavender — border kuat, divider */
-  --netral-400: #a08ab8; /* Netral Anggrek  — teks muted / placeholder */
-  --netral-500: #7a5a96; /* Netral Ungu     — teks sekunder */
-  --netral-600: #5a3a78; /* Netral Tua      — teks nav, label */
-  --netral-700: #3d2058; /* Netral Pekat    — elemen struktural */
-  --netral-800: #240d38; /* Netral Gelap    — sub-heading */
-  --netral-900: #100518; /* Netral Malam    — teks paling gelap */
+  /* emas */
+  --emas-50: #fdf9ed;
+  --emas-100: #f9edcc;
+  --emas-200: #f3d994;
+  --emas-300: #edc05c;
+  --emas-400: #e8a937;
+  --emas-500: #e18a1f;
+  --emas-600: #d5701a; /* warna awal */
+  --emas-700: #a54a18;
+  --emas-800: #873a19;
+  --emas-900: #6f3118;
+  --emas-950: #3f1809;
 
-  /* ============================================================
-     5. SEMANTIC TOKENS — BACKGROUND
-     Gunakan variabel ini di CSS komponen, bukan ramp langsung
-  ============================================================ */
-  --bg-page: var(--ungu-50); /* Latar belakang seluruh halaman */
-  --bg-card: #ffffff; /* Latar kartu / panel konten */
-  --bg-section-alt: var(--netral-100); /* Section bergantian (abu krim) */
-  --bg-muted: var(--ungu-100); /* Area muted / tinted ringan */
-  --bg-overlay: rgba(26, 5, 51, 0.55); /* Overlay modal / hero gelap */
-  --bg-nav: #ffffff; /* Background navbar */
-  --bg-nav-hover: var(--ungu-50); /* Hover item navbar */
-  --bg-footer: var(--ungu-900); /* Background footer */
-  --bg-cta: var(--ungu-700); /* Background section CTA besar */
-  --bg-stats: var(--ungu-700); /* Background stats bar */
-  --bg-badge-emas: var(--emas-400); /* Badge/label warna emas */
-  --bg-badge-ungu: var(--netral-100); /* Badge ungu muda */
-  --bg-badge-gelap: var(--ungu-700); /* Badge gelap / status aktif */
-  --bg-badge-darurat: var(--marun-50); /* Badge peringatan / darurat */
-  --bg-icon: var(--ungu-50); /* Background kotak ikon layanan */
-  --bg-avatar: var(--ungu-100); /* Background avatar/inisial */
-
-  /* ============================================================
-     6. SEMANTIC TOKENS — TEKS
-  ============================================================ */
-  --text-heading: var(--ungu-900); /* Judul besar H1, H2 */
-  --text-subheading: var(--ungu-700); /* Sub judul H3, H4 */
-  --text-body: var(--ungu-800); /* Paragraf isi konten */
-  --text-secondary: var(--netral-500); /* Teks pendukung / deskripsi */
-  --text-muted: var(--netral-400); /* Placeholder, caption, hint */
-  --text-disabled: var(--netral-300); /* Teks nonaktif / disabled */
-  --text-on-dark: #ffffff; /* Teks di atas background gelap */
-  --text-on-emas: var(--ungu-900); /* Teks di atas background emas */
-  --text-link: var(--ungu-500); /* Warna teks link / anchor */
-  --text-link-hover: var(--ungu-700); /* Hover teks link */
-  --text-nav: var(--netral-600); /* Teks item navbar default */
-  --text-nav-active: var(--ungu-700); /* Teks item navbar aktif */
-  --text-badge-emas: var(--ungu-900); /* Teks di atas badge emas */
-  --text-badge-ungu: var(--ungu-700); /* Teks di atas badge ungu muda */
-  --text-badge-gelap: #ffffff; /* Teks di atas badge gelap */
-  --text-badge-darurat: var(--marun-600); /* Teks di atas badge darurat */
-  --text-footer: rgba(255, 255, 255, 0.6); /* Teks umum footer */
-  --text-footer-title: var(--emas-400); /* Judul kolom footer */
-  --text-footer-link: rgba(255, 255, 255, 0.55); /* Link footer */
-  --text-stat-num: var(--emas-400); /* Angka besar stats bar */
-  --text-stat-label: rgba(255, 255, 255, 0.7); /* Label angka stats bar */
-
-  /* ============================================================
-     7. SEMANTIC TOKENS — TOMBOL & INTERAKTIF
-  ============================================================ */
-  --btn-primary-bg: var(--ungu-700); /* Tombol utama — background */
-  --btn-primary-hover: var(--ungu-600); /* Tombol utama — hover */
-  --btn-primary-text: #ffffff; /* Tombol utama — teks */
-
-  --btn-emas-bg: var(--emas-400); /* Tombol CTA emas — background */
-  --btn-emas-hover: var(--emas-500); /* Tombol CTA emas — hover */
-  --btn-emas-text: var(--ungu-900); /* Tombol CTA emas — teks */
-
-  --btn-outline-border: var(--ungu-700); /* Tombol outline — border */
-  --btn-outline-text: var(--ungu-700); /* Tombol outline — teks */
-  --btn-outline-hover-bg: var(--ungu-50); /* Tombol outline — hover bg */
-
-  --btn-ghost-hover: var(--netral-100); /* Tombol ghost — hover bg */
-  --btn-ghost-text: var(--ungu-600); /* Tombol ghost — teks */
-
-  --btn-white-bg: #ffffff; /* Tombol putih (di bg gelap) */
-  --btn-white-text: var(--ungu-700); /* Tombol putih — teks */
-  --btn-white-hover: var(--ungu-50); /* Tombol putih — hover */
-
-  --btn-disabled-bg: var(--netral-200); /* Tombol nonaktif — bg */
-  --btn-disabled-text: var(--netral-400); /* Tombol nonaktif — teks */
-
-  /* ============================================================
-     8. SEMANTIC TOKENS — BORDER & DIVIDER
-  ============================================================ */
-  --border-default: var(--netral-200); /* Border kartu, input default */
-  --border-strong: var(--ungu-300); /* Border tegas, focus ring */
-  --border-divider: var(--ungu-100); /* Garis pemisah antar section */
-  --border-nav: var(--ungu-100); /* Border bawah navbar */
-  --border-card-hover: var(--ungu-300); /* Border kartu saat hover */
-  --border-avatar: var(--ungu-200); /* Border lingkaran avatar */
-  --border-footer: rgba(255, 255, 255, 0.1); /* Garis dalam footer */
-
-  /* ============================================================
-     9. SEMANTIC TOKENS — NAVBAR
-  ============================================================ */
-  --nav-bg: var(--bg-nav);
-  --nav-border: var(--border-nav);
-  --nav-text: var(--text-nav);
-  --nav-text-active: var(--text-nav-active);
-  --nav-underline: var(--emas-400); /* Garis bawah item nav aktif */
-  --nav-hover-bg: var(--bg-nav-hover);
-  --nav-btn-bg: var(--ungu-700); /* Background tombol Pengaduan */
-  --nav-btn-hover: var(--ungu-600); /* Hover tombol Pengaduan */
-  --nav-btn-text: #ffffff;
-  --nav-scroll-line: var(--emas-400); /* Garis progress scroll */
-
-  /* ============================================================
-     10. SEMANTIC TOKENS — TIPOGRAFI
-  ============================================================ */
-  --font-display: "Cormorant Garamond", serif; /* Judul besar, elegan */
-  --font-sans: "Plus Jakarta Sans", sans-serif; /* Body, UI, paragraf */
-  --font-accent: "Cinzel", serif; /* Label, badge, navbar btn */
+  /* netral */
+  --netral-50: #fcfbfb; /* warna asli */
+  --netral-100: #f5f3f2;
+  --netral-200: #e8e5e3;
+  --netral-300: #d4cfcc;
+  --netral-400: #b0a9a5;
+  --netral-500: #8c8480;
+  --netral-600: #6f6863;
+  --netral-700: #57514d;
+  --netral-800: #403c39;
+  --netral-900: #2c2927;
+  --netral-950: #1a1817;
 
   --text-size-xs: 11px; /* Caption, footnote */
   --text-size-sm: 13px; /* Label kecil, footer link */
@@ -277,23 +163,6 @@ html {
 
 body {
   background-color: var(--ungu-50);
-  /* background:
-    radial-gradient(
-      700px circle at -10% -20%,
-      rgba(232, 213, 255, 0.8),
-      transparent 60%
-    ),
-    radial-gradient(
-      500px circle at 110% 20%,
-      rgba(245, 238, 255, 0.8),
-      transparent 60%
-    ),
-    radial-gradient(
-      600px circle at 50% 120%,
-      rgba(232, 213, 255, 0.55),
-      transparent 60%
-    ),
-    linear-gradient(180deg, #ffffff 0%, var(--bg-page) 45%, #ffffff 100%); */
 }
 
 a {
@@ -316,11 +185,10 @@ ul {
 .navbar {
   position: fixed;
   width: 100%;
-  height: 90px;
+  height: 86px;
   top: 0;
   left: 0;
-  /* background: var(--nav-bg); */
-  /* background: #fffafa; */
+  background: var(--netral-50);
   backdrop-filter: blur(12px);
   display: flex;
   justify-content: space-between;
@@ -340,45 +208,113 @@ ul {
   transition: width 0.1s linear;
 }
 
+.navbar > a img {
+  width: 60px;
+  height: 60px;
+}
+
 .nav-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 6px;
+  gap: 10px;
 }
 
 .nav-items {
-  /* color: rgb(104, 104, 104); */
-  /* color: var(--nav-text); */
-  color: var(--netral-50);
-  font-family: var(--fonts-parf);
+  color: var(--netral-600);
+  font-family: var(--fonts-paragraf);
   font-weight: 500;
   font-size: 16px;
   padding: 8px 14px;
   cursor: pointer;
   white-space: nowrap;
+  position: relative;
+  list-style: none;
+}
+
+.nav-item > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  color: white;
+  font-family: var(--fonts-parf);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-item > a:hover {
+  color: var(--emas-200);
+}
+
+/* dropdown */
+.dropdown-menu {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  min-width: 220px;
+  background: white;
+  border-radius: 14px;
+  padding: 10px 0;
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: 0.3s;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 12px 18px;
+  color: var(--netral-600);
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.dropdown-menu li a:hover {
+  background: var(--emas-300);
+  color: var(--coklat-950);
+  padding-left: 24px;
+}
+
+.icon-roll {
+  font-size: 12px;
+  opacity: 0.9;
+  margin-left: 2px;
+}
+
+.nav-items > a:hover .icon-roll {
+  transform: rotate(180deg);
 }
 
 /* ============ pengaduan =============== */
 .nav-btn {
-  color: var(--nav-btn-text);
-  background: var(--nav-btn-bg);
+  color: var(--netral-900);
+  background: var(--emas-500);
   padding: 10px 22px;
   border-radius: 50px;
-  font-family: var(--font-accent);
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  font-family: var(--fonts-paragraf);
+  font-weight: 700;
+  font-size: 15px;
+  /* letter-spacing: 0.04em; */
   transition: 0.3s;
 }
 
 .nav-btn:hover {
-  background: var(--nav-btn-hover);
+  background: var(--emas-400);
 }
 
 .nav-items:hover {
   /* color: var(--nav-text-active); */
-  color: var(--emas-200);
-  border-bottom: 3px solid var(--nav-underline);
+  color: var(--emas-600);
+  border-bottom: 3px solid var(--emas-500);
 }
 
 /* ============= Hero ============= */
@@ -388,13 +324,13 @@ ul {
   justify-content: space-between;
   align-items: center;
   /* background: var(--emas-800); */
-  background: linear-gradient(
+  /* background: linear-gradient(
     to top,
     var(--ungu-50),
     var(--ungu-200),
     var(--ungu-500),
     var(--ungu-900)
-  );
+  ); */
   /* border-radius: 0 0 20% 20%; */
 }
 
@@ -487,9 +423,9 @@ ul {
   font-size: 3rem;
   margin-bottom: 1rem;
   line-height: 1.2;
-  font-family: var(--fonts-heeading);
+  font-family: var(--font-pop);
   /* font-family: var(--font-accent); */
-  font-weight: 900;
+  font-weight: 400;
   color: var(--netral-200);
 }
 
