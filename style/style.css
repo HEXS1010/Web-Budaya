@@ -3,7 +3,7 @@
   --fonts-heeading: "Cormorant Garamond", serif;
   --fonts-paraf: "Plus Jakarta Sans", sans-serif;
   --fonts-paragraf: "Inter", sans-serif;
-  --fonts-aksara: "Cinzel", serif;
+  --fonts-aksara: "Noto Sans Balinese", sans-serif;
 
   /* color fix */
   --ungu-50: #faf5ff;
@@ -202,7 +202,7 @@ ul {
 
 .container {
   width: 100%;
-  max-width: 1210px;
+  max-width: 1100px;
   margin: auto;
 }
 
@@ -389,19 +389,6 @@ ul {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  /* background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.658),
-    rgba(0, 0, 0, 0.653),
-    rgba(0, 0, 0, 0.655)
-  ); */
-  /* background: linear-gradient(
-    90deg,
-    rgba(62, 27, 121, 0.226),
-    rgba(62, 27, 121, 0.26),
-    rgba(62, 27, 121, 0.295)
-    
-  ); */
   background: #12011eac;
 }
 
@@ -428,7 +415,7 @@ ul {
   align-items: center;
   font-family: var(--fonts-aksara);
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 100;
   gap: 8px;
 }
 
@@ -481,7 +468,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 4rem;
+  gap: 7rem;
 }
 
 .wel-img {
@@ -500,7 +487,7 @@ ul {
 
 /* Posisi masing-masing */
 .top {
-  top: -50px;
+  top: 10px;
   left: -50px;
   transform: rotate(-12deg);
 }
@@ -514,28 +501,118 @@ ul {
 /* Gambar utama */
 .wel-person {
   position: relative;
-  z-index: 5;
+  z-index: 4;
   display: block;
   width: 300px;
 }
 
 .wel-figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
+  width: fit-content;
+  margin: 0;
+}
+
+.wel-img {
+  position: relative;
+  width: fit-content;
+}
+
+.wel-person {
+  display: block;
+  width: 360px;
+  height: auto;
 }
 
 .wel-caption {
-  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
+  z-index: 5;
+  background: var(--emas-400);
+  /* background: var(--netral-100); */
+  padding: 1rem 3rem;
+  border-radius: 8px;
   text-align: center;
+  white-space: nowrap;
+  box-shadow: 0 5px 9px var(--netral-950);
+  gap: 16px;
 }
 
-.wel-caption h3 {
+.icon {
+  font-size: 35px;
+  padding: 10px 10px;
+  /* background: var(--emas-600); */
+  border-radius: 50%;
+  color: var(--ungu-950);
+}
+
+.wel-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.wel-caption > h2 {
   font-family: var(--fonts-heeading);
+  color: var(--ungun-950);
+  font-weight: 900;
+  font-size: 1.7rem;
   margin-bottom: 0.25rem;
 }
 
 .wel-caption p {
-  opacity: 0.7;
   font-family: var(--fonts-paragraf);
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* ===== wel content ========= */
+
+.wel-content {
+  min-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: rgb(159, 159, 159); */
+}
+
+.wel-aksara {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  /* margin-bottom: 20px; */
+  font-family: "Noto Sans Balinese", sans-serif;
+}
+
+.wel-aksara > span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: var(--ungu-500);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.wel-content > h2 {
+  font-family: var(--fonts-heeading);
+  font-weight: 800;
+  font-size: 5rem;
+  color: var(--emas-950);
+}
+
+.wel-desc {
+  font-family: var(--fonts-paragraf);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.4;
+  padding-right: 100px;
+  margin-top: 15px;
+  /* background-color: rgb(205, 205, 205); */
 }
