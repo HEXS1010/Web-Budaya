@@ -70,18 +70,6 @@
   --emas-950: #3f1809;
 
   /* netral */
-  /* --netral-50: #fcfbfb;
-  --netral-100: #f5f3f2;
-  --netral-200: #e8e5e3;
-  --netral-300: #d4cfcc;
-  --netral-400: #b0a9a5;
-  --netral-500: #8c8480;
-  --netral-600: #6f6863;
-  --netral-700: #57514d;
-  --netral-800: #403c39;
-  --netral-900: #2c2927;
-  --netral-950: #1a1817; */
-
   --netral-50: #fafafa;
   --netral-100: #f5f5f5;
   --netral-200: #e6e6e6;
@@ -94,6 +82,7 @@
   --netral-900: #1a1a1a;
   --netral-950: #0d0d0d; /* warna asli */
 
+  /* font size */
   --text-size-xs: 11px; /* Caption, footnote */
   --text-size-sm: 13px; /* Label kecil, footer link */
   --text-size-base: 15px; /* Body teks utama */
@@ -103,14 +92,18 @@
   --text-size-2xl: 2.8rem; /* Judul hero / CTA */
   --text-size-3xl: 3.6rem; /* Judul hero terbesar */
 
-  /* ============================================================
-     11. SEMANTIC TOKENS — SPACING & LAYOUT
-  ============================================================ */
+  /* border radius */
   --radius-sm: 6px; /* Input kecil, badge */
   --radius-md: 10px; /* Tombol, input */
   --radius-lg: 16px; /* Kartu konten */
   --radius-xl: 20px; /* Gambar, bento box */
   --radius-full: 999px; /* Pil, badge bulat */
+
+  /* topbar */
+  --topbar-height: 40px;
+  --navbar-height: 90px;
+
+  --header-height: calc(var(--topbar-height) + var(--navbar-height));
 
   --space-xs: 8px;
   --space-sm: 14px;
@@ -137,44 +130,6 @@
   --transition-base: 0.2s ease;
   --transition-slow: 0.4s ease;
 }
-
-/* ================================================================
-   CARA PAKAI
-   ================================================================
- 
-   BACKGROUND:
-   background: var(--bg-page);           ← latar halaman
-   background: var(--bg-card);           ← latar kartu
-   background: var(--bg-section-alt);    ← section warna berbeda
-   background: var(--bg-badge-emas);     ← badge label emas
-   background: var(--bg-cta);            ← section pengaduan besar
- 
-   TEKS:
-   color: var(--text-heading);           ← judul H1/H2
-   color: var(--text-secondary);         ← deskripsi / paragraf pendukung
-   color: var(--text-muted);             ← placeholder, caption
-   color: var(--text-on-dark);           ← teks di bg ungu gelap
- 
-   TOMBOL:
-   background: var(--btn-primary-bg);    ← tombol utama ungu
-   background: var(--btn-emas-bg);       ← tombol CTA emas
-   border: 1.5px solid var(--btn-outline-border); ← tombol outline
- 
-   BORDER:
-   border: 1px solid var(--border-default);   ← border kartu biasa
-   border: 1px solid var(--border-strong);    ← border focus / hover
- 
-   NAVBAR:
-   background: var(--nav-bg);
-   color: var(--nav-text);
-   border-bottom: 1px solid var(--nav-border);
- 
-   TIPOGRAFI:
-   font-family: var(--font-display);     ← judul besar
-   font-family: var(--font-sans);        ← body / UI
-   font-family: var(--font-accent);      ← badge / label / cinzel
- 
-================================================================ */
 
 * {
   padding: 0;
@@ -205,13 +160,32 @@ ul {
   max-width: 1100px;
   margin: auto;
 }
+/* ====== top bar ========== */
+.top-bar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--topbar-height);
+  z-index: 101;
+  background: var(--ungu-300);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
 
 /* ============== Navbar =============== */
 .navbar {
   position: fixed;
   width: 100%;
-  height: 90px;
-  top: 0;
+  top: var(--topbar-height);
+  height: var(--navbar-height);
   left: 0;
   background: #0d0d0d46;
   display: flex;
@@ -531,9 +505,9 @@ ul {
   bottom: -6px;
   transform: translateX(-50%);
   z-index: 5;
-  background: var(--emas-400);
+  background: linear-gradient(135deg, var(--emas-500), var(--emas-400));
   /* background: var(--netral-100); */
-  padding: 1rem 3rem;
+  padding: 1rem 4rem;
   border-radius: 8px;
   text-align: center;
   white-space: nowrap;
@@ -546,7 +520,7 @@ ul {
   padding: 10px 10px;
   /* background: var(--emas-600); */
   border-radius: 50%;
-  color: var(--ungu-950);
+  color: var(--ungu-700);
 }
 
 .wel-text {

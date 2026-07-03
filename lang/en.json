@@ -1,0 +1,20 @@
+{
+  "navbar": {
+    "home": "Home",
+    "profile": "Profile",
+    "program": "Programs & Activities",
+    "information": "Information",
+    "citizen": "Community",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "title": "Center of Traditional, Social and Community Life of Banjar Kaliungu Kaja",
+
+    "description": "Preserving Balinese culture, strengthening community ties, and providing the best service for the Banjar community.",
+
+    "button1": "Explore Banjar",
+
+    "button2": "About Us"
+  }
+}

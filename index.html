@@ -49,54 +49,80 @@
     />
   </head>
   <body>
-    <!-- ============ Navbar ============= -->
-    <nav class="navbar">
-      <span class="scroll-line"></span>
-      <a href="">
-        <img src="img/logo-banjar-kaliungu.webp" alt="Logo Kaliungu" />
-      </a>
-
-      <ul class="nav-link">
-        <li class="nav-items">
-          <a href="">Beranda</a>
-        </li>
-        <li class="nav-items dropdown">
-          <a href="">Profil <i class="fa-solid fa-angle-down icon-roll"></i></a>
-
-          <ul class="dropdown-menu">
-            <li><a href="#">Visi & Misi</a></li>
-            <li><a href="#">Sejarah</a></li>
-            <li><a href="#">Struktur Organisasi</a></li>
-            <li><a href="#">Pengurus</a></li>
-            <li><a href="#">Awig-awig</a></li>
-          </ul>
-        </li>
-
-        <li class="nav-items dropdown">
+    <header>
+      <section class="top-bar">
+        <header class="content-top">
+          <p>Banjar Kaliungu Kaja</p>
           <a href=""
-            >Program & Kegiatan <i class="fa-solid fa-angle-down icon-roll"></i
-          ></a>
-
-          <ul class="dropdown-menu">
-            <li><a href="">Program Kerja</a></li>
-            <li><a href="">Agenda</a></li>
-          </ul>
-        </li>
-        <li class="nav-items dropdown">
+            ><i class="fa-solid fa-phone"></i> Telepon: +62 867-3904-9090</a
+          >
           <a href=""
-            >Informasi <i class="fa-solid fa-angle-down icon-roll"></i
-          ></a>
+            ><i class="fa-regular fa-envelope"></i> Email:
+            banjarkaliungukaja@gmail.com</a
+          >
+        </header>
 
-          <ul class="dropdown-menu">
-            <li><a href="">Berita & Pengumuman</a></li>
-            <li><a href="">Galery</a></li>
-            <li></li>
-          </ul>
-        </li>
-        <li class="nav-items"><a href="">warga Banjar</a></li>
-        <li class="nav-btn">Kontak</li>
-      </ul>
-    </nav>
+        <div class="language-switcher">
+          <button class="lang-btn active" data-lang="id">ID</button>
+
+          <span>|</span>
+
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </section>
+
+      <!-- ============ Navbar ============= -->
+      <nav class="navbar">
+        <span class="scroll-line"></span>
+        <a href="">
+          <img src="img/logo-banjar-kaliungu.webp" alt="Logo Kaliungu" />
+        </a>
+
+        <ul class="nav-link">
+          <li class="nav-items">
+            <a href="" data-i18n="navbar.home">Beranda</a>
+          </li>
+          <li class="nav-items dropdown">
+            <a href="" data-i18n="navbar.profile"
+              >Profil <i class="fa-solid fa-angle-down icon-roll"></i
+            ></a>
+
+            <ul class="dropdown-menu">
+              <li><a href="#">Visi & Misi</a></li>
+              <li><a href="#">Sejarah</a></li>
+              <li><a href="#">Struktur Organisasi</a></li>
+              <li><a href="#">Pengurus</a></li>
+              <li><a href="#">Awig-awig</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-items dropdown">
+            <a href="" data-i18n="navbar.program"
+              >Program & Kegiatan
+              <i class="fa-solid fa-angle-down icon-roll"></i
+            ></a>
+
+            <ul class="dropdown-menu">
+              <li><a href="">Program Kerja</a></li>
+              <li><a href="">Agenda</a></li>
+            </ul>
+          </li>
+          <li class="nav-items dropdown">
+            <a href=""
+              >Informasi <i class="fa-solid fa-angle-down icon-roll"></i
+            ></a>
+
+            <ul class="dropdown-menu">
+              <li><a href="">Berita & Pengumuman</a></li>
+              <li><a href="">Galery</a></li>
+              <li></li>
+            </ul>
+          </li>
+          <li class="nav-items"><a href="">warga Banjar</a></li>
+          <li class="nav-btn">Kontak</li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
       <!-- =============== Hero ============ -->
@@ -139,18 +165,22 @@
               <span class="label-dot"></span>
               ᬩᬜ᭄ᬚᬃᬓᬮᬶᬉᬗᬸᬓᬚ
             </p>
-            <h1>
+            <h1 data-i18n="hero.title">
               Pusat Kehidupan Adat, Sosial, dan Kebersamaan Warga Banjar
               Kaliungu Kaja
             </h1>
-            <p class="hero-description">
+            <p class="hero-description" data-i18n="hero.description">
               Melestarikan budaya Bali, mempererat kebersamaan, dan memberikan
               pelayanan terbaik bagi masyarakat Banjar.
             </p>
 
             <div class="hero-button">
-              <a href="#" class="btn btn-primary"> Jelajahi Banjar </a>
-              <a href="#" class="btn btn-second"> Kenali Kami </a>
+              <a href="#" data-i18n="hero.button1" class="btn btn-primary">
+                Jelajahi Banjar
+              </a>
+              <a href="#" data-i18n="hero.button2" class="btn btn-second">
+                Kenali Kami
+              </a>
             </div>
           </article>
         </div>
@@ -196,5 +226,6 @@
     </main>
 
     <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
   </body>
 </html>
