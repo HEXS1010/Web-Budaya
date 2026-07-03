@@ -11,6 +11,17 @@ window.addEventListener("scroll", () => {
   scrollLine.style.width = `${percent}%`;
 });
 
+// saat scroll navbar, akan ada backgroundnya
+const navbarScroll = document.querySelector(".navbar-scroll");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 120) {
+    navbarScroll.classList.add("show");
+  } else {
+    navbarScroll.classList.remove("show");
+  }
+});
+
 // slider img
 const slides = document.querySelectorAll(".slide");
 

@@ -83,7 +83,7 @@
   --netral-950: #0d0d0d; /* warna asli */
 
   /* topbar color */
-  --topbar-color: #AF0E2E;
+  --topbar-color: #af0e2e;
 
   /* font size */
   --text-size-xs: 11px; /* Caption, footnote */
@@ -116,7 +116,6 @@
   --space-2xl: 90px;
 
   --container-width: 1200px;
-  --navbar-height: 76px;
 
   /* ============================================================
      12. SEMANTIC TOKENS — SHADOW & EFEK
@@ -188,14 +187,14 @@ ul {
   font-family: var(--fonts-paragraf);
   font-weight: 600;
   font-size: 15px;
-  color: var(--netral-100);
+  color: var(--netral-200);
 }
 
 .content-top > a {
   font-size: 13px;
   font-family: var(--fonts-paragraf);
   font-weight: 600;
-  color: var(--netral-100);
+  color: var(--netral-200);
 }
 
 .line {
@@ -215,20 +214,55 @@ ul {
   border: none;
   font-size: 19px;
 }
+/* ========= navbar scroll ======== */
+.navbar-hero {
+  position: absolute;
+  top: var(--topbar-height);
+  left: 0;
+  background: transparent;
+  z-index: 100;
+}
 
+.navbar-scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--netral-100);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: 0.35s ease;
+  z-index: 999;
+}
+
+.navbar-scroll.show {
+  transform: translateY(0);
+  opacity: 1;
+  position: fixed;
+  top: 0;
+}
+/* =============================== */
 /* ============== Navbar =============== */
 .navbar {
-  position: fixed;
   width: 100%;
-  top: var(--topbar-height);
   height: var(--navbar-height);
   left: 0;
-  background: #0d0d0d46;
+  /* background: #0d0d0d46; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 150px;
+  padding: 0 clamp(20px, 6vw, 150px);
   z-index: 100;
+}
+
+/* =========== saat di scroll ========== */
+.navbar.scrolled {
+  background: rgba(20, 20, 20, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* ============= line scroll =========== */
@@ -243,8 +277,9 @@ ul {
 }
 
 .navbar > a img {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
+  /* background: var(--coklat-100); */
 }
 
 .nav-link {
@@ -319,7 +354,7 @@ ul {
   left: 0;
   min-width: 220px;
   background: white;
-  border-radius: 14px;
+  border-radius: var(--radius-sm);
   padding: 10px 0;
   list-style: none;
   opacity: 0;
@@ -373,6 +408,7 @@ ul {
   display: flex;
   align-items: center;
   overflow: hidden;
+  /* padding-top: calc(var(--topbar-height) + var(--navbar-height)); */
 }
 
 .hero-slider {

@@ -84,7 +84,7 @@
       </section>
 
       <!-- ============ Navbar ============= -->
-      <nav class="navbar">
+      <nav class="navbar navbar-hero">
         <span class="scroll-line"></span>
         <a href="">
           <img src="img/logo-banjar-kaliungu.webp" alt="Logo Kaliungu" />
@@ -92,11 +92,11 @@
 
         <ul class="nav-link">
           <li class="nav-items">
-            <a href="" data-i18n="navbar.home">Beranda</a>
+            <a href=""><span data-i18n="navbar.home">Beranda</span></a>
           </li>
           <li class="nav-items dropdown">
-            <a href="" data-i18n="navbar.profile"
-              >Profil <i class="fa-solid fa-angle-down icon-roll"></i
+            <a href=""
+              > <span data-i18n="navbar.profile">Profil</span> <i class="fa-solid fa-angle-down icon-roll"></i
             ></a>
 
             <ul class="dropdown-menu">
@@ -109,8 +109,8 @@
           </li>
 
           <li class="nav-items dropdown">
-            <a href="" data-i18n="navbar.program"
-              >Program & Kegiatan
+            <a href="">
+              <span data-i18n="navbar.program">Program & Kegiatan</span>
               <i class="fa-solid fa-angle-down icon-roll"></i
             ></a>
 
@@ -121,7 +121,8 @@
           </li>
           <li class="nav-items dropdown">
             <a href=""
-              >Informasi <i class="fa-solid fa-angle-down icon-roll"></i
+              ><span data-i18n="navbar.information">Informasi</span>
+              <i class="fa-solid fa-angle-down icon-roll"></i
             ></a>
 
             <ul class="dropdown-menu">
@@ -135,6 +136,59 @@
         </ul>
       </nav>
     </header>
+
+    <!-- ============ Navbar kedua ============= -->
+    <nav class="navbar  navbar-scroll">
+      <span class="scroll-line"></span>
+      <a href="">
+        <img src="img/logo-banjar-kaliungu.webp" alt="Logo Kaliungu" />
+      </a>
+
+      <ul class="nav-link">
+        <li class="nav-items">
+          <a href=""><span data-i18n="navbar.home">Beranda</span></a>
+        </li>
+        <li class="nav-items dropdown">
+          <a href=""
+            > <span data-i18n="navbar.profile">Profil</span> <i class="fa-solid fa-angle-down icon-roll"></i
+          ></a>
+
+          <ul class="dropdown-menu">
+            <li><a href="#">Visi & Misi</a></li>
+            <li><a href="#">Sejarah</a></li>
+            <li><a href="#">Struktur Organisasi</a></li>
+            <li><a href="#">Pengurus</a></li>
+            <li><a href="#">Awig-awig</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-items dropdown">
+          <a href="">
+            <span data-i18n="navbar.program">Program & Kegiatan</span>
+            <i class="fa-solid fa-angle-down icon-roll"></i
+          ></a>
+
+          <ul class="dropdown-menu">
+            <li><a href="">Program Kerja</a></li>
+            <li><a href="">Agenda</a></li>
+          </ul>
+        </li>
+        <li class="nav-items dropdown">
+          <a href=""
+            ><span data-i18n="navbar.information">Informasi</span>
+            <i class="fa-solid fa-angle-down icon-roll"></i
+          ></a>
+
+          <ul class="dropdown-menu">
+            <li><a href="">Berita & Pengumuman</a></li>
+            <li><a href="">Galery</a></li>
+            <li></li>
+          </ul>
+        </li>
+        <li class="nav-items"><a href="">warga Banjar</a></li>
+        <li class="nav-btn">Kontak</li>
+      </ul>
+    </nav>
 
     <main>
       <!-- =============== Hero ============ -->
