@@ -82,6 +82,9 @@
   --netral-900: #1a1a1a;
   --netral-950: #0d0d0d; /* warna asli */
 
+  /* topbar color */
+  --topbar-color: #AF0E2E;
+
   /* font size */
   --text-size-xs: 11px; /* Caption, footnote */
   --text-size-sm: 13px; /* Label kecil, footer link */
@@ -167,10 +170,11 @@ ul {
   width: 100%;
   height: var(--topbar-height);
   z-index: 101;
-  background: var(--ungu-300);
+  background: var(--topbar-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 12px 7rem;
 }
 
 .content-top {
@@ -178,6 +182,38 @@ ul {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+}
+
+.content-top > p {
+  font-family: var(--fonts-paragraf);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--netral-100);
+}
+
+.content-top > a {
+  font-size: 13px;
+  font-family: var(--fonts-paragraf);
+  font-weight: 600;
+  color: var(--netral-100);
+}
+
+.line {
+  color: var(--netral-400);
+}
+
+/* ========== tombol ganti bahasa ==================== */
+.language-switcher {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.lang-btn {
+  outline: none;
+  background: none;
+  border: none;
+  font-size: 19px;
 }
 
 /* ============== Navbar =============== */
@@ -435,7 +471,7 @@ ul {
 
 /* ========== welcome ============ */
 .welcome {
-  padding: 18rem 0;
+  padding: 15rem 0;
 }
 
 .welcome .container {
@@ -506,7 +542,6 @@ ul {
   transform: translateX(-50%);
   z-index: 5;
   background: linear-gradient(135deg, var(--emas-500), var(--emas-400));
-  /* background: var(--netral-100); */
   padding: 1rem 4rem;
   border-radius: 8px;
   text-align: center;
