@@ -214,6 +214,7 @@ ul {
   border: none;
   font-size: 19px;
 }
+
 /* ========= navbar scroll ======== */
 .navbar-hero {
   position: absolute;
@@ -227,9 +228,7 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
-  background: var(--netral-100);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+  background: #f5f5f5e5;
   transform: translateY(-100%);
   opacity: 0;
   transition: 0.35s ease;
@@ -242,7 +241,12 @@ ul {
   position: fixed;
   top: 0;
 }
+
+.navbar-scroll .nav-items > a {
+  color: var(--ungu-950);
+}
 /* =============================== */
+
 /* ============== Navbar =============== */
 .navbar {
   width: 100%;
@@ -261,7 +265,6 @@ ul {
   background: rgba(20, 20, 20, 0.92);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -272,13 +275,13 @@ ul {
   left: 0;
   width: 0%;
   height: 2px;
-  background: #9050e0;
-  transition: width 0.1s linear;
+  background: linear-gradient(90deg, var(--ungu-600), var(--emas-500));
+  transition: width 0.08s linear;
 }
 
 .navbar > a img {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   /* background: var(--coklat-100); */
 }
 
@@ -384,24 +387,7 @@ ul {
   padding-left: 24px;
 }
 
-/* ============ pengaduan =============== */
-.nav-btn {
-  color: var(--netral-200);
-  padding: 10px 24px;
-  border-radius: 50px;
-  font-family: var(--fonts-paragraf);
-  font-weight: 600;
-  font-size: 15px;
-  border: 3px solid var(--ungu-800);
-  /* letter-spacing: 0.04em; */
-  transition: 0.3s;
-}
-
-.nav-btn:hover {
-  background: var(--ungu-900);
-}
-
-/* hero */
+/* =============== hero =================== */
 .hero {
   position: relative;
   min-height: 100vh;
