@@ -544,8 +544,8 @@ ul {
 }
 
 .btn-second:hover {
-  background: rgba(113,31,170,.12);
-  box-shadow: 0 10px 22px rgba(113,31,170,.15);
+  background: rgba(113, 31, 170, 0.12);
+  box-shadow: 0 10px 22px rgba(113, 31, 170, 0.15);
 }
 
 /* ========== welcome ============ */
@@ -742,13 +742,52 @@ ul {
   opacity: 0.4;
 }
 
-
 /* =========== Historis =============== */
 .historis {
-  display: ;
+  padding: 4rem 0;
 }
 
-/* .histor-img {
-  width: 100px;
-  height: 100px;
-} */
+.historis .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.histor-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.histor-content > h3 {
+  font-family: var(--fonts-heeading);
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.histor-desc {
+  font-family: var(--fonts-paragraf);
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.histor-img{
+  width: 900px;
+    display:grid;
+    grid-template-columns:repeat(2,300px);
+    gap:5px;
+}
+
+.histor-img figure{
+    margin:0;
+    overflow:hidden;
+    border-radius:20px;
+}
+
+.histor-img img{
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
