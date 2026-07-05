@@ -758,36 +758,113 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 10px;
+  padding: 0 12px;
+  /* border: 2px solid black; */
 }
 
 .histor-content > h3 {
   font-family: var(--fonts-heeading);
-  font-weight: 600;
-  font-size: 3rem;
+  font-weight: 900;
+  font-size: 4rem;
+  color: var(--emas-950);
 }
 
 .histor-desc {
+  max-width: 470px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+.histor-btn {
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  max-width: 200px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  color: var(--netral-100);
+  background: linear-gradient(135deg, var(--ungu-950), var(--ungu-600));
   font-family: var(--fonts-paragraf);
-  font-weight: 200;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 15px;
 }
 
-.histor-img{
-  width: 900px;
-    display:grid;
-    grid-template-columns:repeat(2,300px);
-    gap:5px;
+.histor-btn > i {
+  padding-left: 10px;
 }
 
-.histor-img figure{
-    margin:0;
-    overflow:hidden;
-    border-radius:20px;
+.histor-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
 }
 
-.histor-img img{
-    width: 100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
+.histor-btn:hover {
+  transform: translateY(-4px);
+}
+
+.histor-btn:hover::after {
+  opacity: 0.4;
+}
+/* ======== histor img ========== */
+.histor-img {
+  width: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  gap: 20px;
+}
+
+.histor-img figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+.histor-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ====== buat ngatur naik dan turun =========== */
+.img-1 {
+  transform: translateY(-30px);
+}
+
+.img-2 {
+  transform: translateY(20px);
+}
+
+.img-3 {
+  transform: translateY(-20px);
+}
+
+.img-4 {
+  transform: translateY(30px);
+}
+
+/* ========== ngatur border radius ============ */
+.histor-img figure:nth-child(1) {
+  border-top-left-radius: 30%;
+}
+
+.histor-img figure:nth-child(2) {
+  border-radius: 20px;
+}
+
+.histor-img figure:nth-child(3) {
+  border-radius: 20px;
+}
+
+.histor-img figure:nth-child(4) {
+  border-bottom-right-radius: 50%;
 }
