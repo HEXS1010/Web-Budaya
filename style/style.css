@@ -887,15 +887,20 @@ ul {
   border-bottom-right-radius: 50%;
 }
 
-
 /* ========== vision dan mision ========== */
 .vision-mision {
   width: 100%;
   height: 500px;
   display: flex;
-  padding-inline: 5rem;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding-inline: 100px;
+  border: 2px solid black;
+}
+
+.vision {
+  width: 40%;
+  /* max-width: 70%; */
 }
 
 .vision-content {
@@ -903,19 +908,26 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 50px;
+  border: 2px solid black;
 }
 
 .vision-content > h4 {
   font-family: var(--fonts-heeading);
   font-weight: 800;
   font-size: 3rem;
+  
 }
 
 .vision-desc {
   font-family: var(--fonts-paragraf);
   font-weight: 400;
   font-size: 12px;
-  padding-inline: 4rem;
+
 }
 
+.line-vis-mis {
+  width: 3px;
+  height: 7rem;
+  color: var(--netral-900);
+  background: var(--netral-900);
+}
