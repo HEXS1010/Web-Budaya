@@ -34,3 +34,34 @@ setInterval(() => {
 
   slides[current].classList.add("active");
 }, 5000);
+
+// animasi untuk shape dot
+const parallaxItems = document.querySelectorAll(".parallax");
+
+let targetX = 0;
+let targetY = 0;
+
+let currentX = 0;
+let currentY = 0;
+
+const strength = 10;
+
+window.addEventListener("mousemove", (e) => {
+  targetX = (e.clientX / window.innerWidth - 0.5) * strength * 2;
+  targetY = (e.clientY / window.innerHeight - 0.5) * strength * 2;
+});
+
+function animateParallax() {
+  currentX += (targetX - currentX) * 0.08;
+  currentY += (targetY - currentY) * 0.08;
+
+  parallaxItems.forEach((item) => {
+    const speed = Number(item.dataset.speed) || 1;
+
+    item.style.transform = `translate(${currentX * speed}px, ${currentY * speed}px)`;
+  });
+
+  requestAnimationFrame(animateParallax);
+}
+
+animateParallax();

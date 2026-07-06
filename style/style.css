@@ -146,6 +146,16 @@ html {
   scroll-behavior: smooth;
 }
 
+::selection {
+  background: var(--ungu-600);
+  color: var(--netral-100);
+}
+
+::-moz-selection {
+  background: var(--ungu-600);
+  color: var(--netral-100);
+}
+
 body {
   position: relative;
   background: var(--emas-50);
@@ -580,7 +590,7 @@ section {
 
 /* ========== welcome ============ */
 .welcome {
-  padding-block:10rem;
+  padding-block: 10rem;
 }
 
 .welcome .section-wrapper {
@@ -775,7 +785,7 @@ section {
 
 /* =========== Historis =============== */
 .historis {
-  padding-block:10rem;
+  padding-block: 10rem;
 }
 
 .historis .section-wrapper {
@@ -845,6 +855,41 @@ section {
 
 .histor-btn:hover::after {
   opacity: 0.4;
+}
+
+/* ======== shape dot ======== */
+.shape-dot {
+  position: absolute;
+  top: 55%;
+  left: 49%;
+  width: 250px;
+  opacity: 0.7;
+  z-index: -1;
+  pointer-events: none;
+  will-change: transform;
+  margin: 0;
+}
+
+.shape-dot img {
+  width: 100%;
+  display: block;
+}
+
+/* ---- shape 2 === */
+.shape-dot-2 {
+  position: absolute;
+  bottom: 20%;
+  right: 2%;
+  width: 250px;
+  opacity: 0.7;
+  z-index: -1;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.shape-dot-2 img {
+  width: 100%;
+  display: block;
 }
 /* ======== histor img ========== */
 .histor-img {
