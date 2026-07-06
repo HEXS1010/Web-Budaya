@@ -471,7 +471,7 @@ section {
   background: #12011eac;
 }
 
-.hero .container {
+.hero .section-wrapper {
   position: relative;
   z-index: 10;
 }
@@ -773,23 +773,6 @@ section {
   opacity: 0.4;
 }
 
-/* ========== sun elemt ============ */
-.sun-element {
-  position: absolute;
-  width: 900px;
-  height: 900px;
-  /* overflow-x: hidden; */
-  opacity: 0.02;
-  top: 67rem;
-  z-index: -1;
-}
-
-.sun-element > img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
 /* =========== Historis =============== */
 .historis {
   padding-block:10rem;
@@ -941,10 +924,10 @@ section {
   top: 30%;
   right: -80px;
   transform: translateY(-50%);
-  background: url("../img/hiasan/wayang.png") no-repeat center/contain;
+  background: url("../img/hiasan/wayang4.png") no-repeat center/contain;
   width: 100%;
   height: 950px;
-  opacity: 0.12;
+  opacity: 0.18;
   pointer-events: none;
 }
 
