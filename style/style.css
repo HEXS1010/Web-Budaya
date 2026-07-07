@@ -189,12 +189,6 @@ section {
   padding-block: var(--section-padding-block);
 }
 
-/* .section-wrapper {
-  max-width: var(--content-width);
-  width: 100%;
-  margin-inline: auto;
-} */
-
 .section-wrapper {
   width: 100%;
   max-width: 1280px;
@@ -271,6 +265,7 @@ section {
   left: 0;
   background: var(--merah-50);
   transform: translateY(-100%);
+  box-shadow: 0 0 15px rgb(151, 151, 151);
   opacity: 0;
   transition: 0.35s ease;
   z-index: 999;
@@ -345,7 +340,7 @@ section {
   list-style: none;
 }
 
-/* === garis bawah items navbar */
+/* ====== garis bawah items navbar ========== */
 .nav-items::after {
   content: "";
   position: absolute;
@@ -588,9 +583,74 @@ section {
   box-shadow: 0 10px 22px rgba(113, 31, 170, 0.15);
 }
 
+
+/* ======= Statistics ======= */
+.statistics {
+  position: relative;
+  margin-top: -180px;
+  z-index: 20;
+}
+
+.statistics .section-wrapper {
+  max-width: 1280px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.statistics-list {
+  width: min(100%, 1050px);
+  /* max-width: 1050px; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: var(--ungu-800);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-card-hover);
+}
+
+.statistics-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 38px 24px;
+  text-align: center;
+}
+
+.statistics-item:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.statistics-number {
+  font-family: var(--fonts-heeading);
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--netral-100);
+}
+
+.statistics-line {
+  width: 55px;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--emas-400), var(--emas-600));
+}
+
+.statistics-title {
+  font-family: var(--fonts-paragraf);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  color: var(--netral-200);
+}
+
 /* ========== welcome ============ */
 .welcome {
-  padding-block: 10rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
 }
 
 .welcome .section-wrapper {
