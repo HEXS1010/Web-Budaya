@@ -171,7 +171,7 @@ body::before {
 
   background-size: 250px;
 
-  opacity: 0.25;
+  opacity: 0.3;
   pointer-events: none;
   z-index: -1;
 }
@@ -583,7 +583,6 @@ section {
   box-shadow: 0 10px 22px rgba(113, 31, 170, 0.15);
 }
 
-
 /* ======= Statistics ======= */
 .statistics {
   position: relative;
@@ -603,7 +602,7 @@ section {
   /* max-width: 1050px; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background: var(--ungu-800);
+  background: var(--ungu-950);
   border-radius: var(--radius-xl);
   overflow: hidden;
   box-shadow: var(--shadow-card-hover);
@@ -624,9 +623,9 @@ section {
 }
 
 .statistics-number {
-  font-family: var(--fonts-heeading);
-  font-size: 3.2rem;
-  font-weight: 800;
+  font-family: var(--fonts-paragraf);
+  font-size: 3rem;
+  font-weight: 600;
   line-height: 1;
   color: var(--netral-100);
 }
@@ -635,7 +634,7 @@ section {
   width: 55px;
   height: 3px;
   border-radius: 999px;
-  background: linear-gradient(90deg, var(--emas-400), var(--emas-600));
+  background: var(--emas-500);
 }
 
 .statistics-title {
@@ -801,8 +800,9 @@ section {
   font-size: 17px;
   line-height: 1.4;
   padding-right: 100px;
+  padding-left: 13px;
   margin-top: 15px;
-  /* background-color: rgb(205, 205, 205); */
+  border-left: 2.5px solid var(--ungu-950);
 }
 
 .btn-wel {
@@ -872,6 +872,8 @@ section {
 }
 
 .histor-desc {
+  padding: 0 13px;
+  border-left: 2.5px solid var(--ungu-950);
   max-width: 470px;
   line-height: 1.5;
   font-weight: 400;
