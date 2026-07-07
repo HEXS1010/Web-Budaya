@@ -507,7 +507,7 @@ section {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: var(--ungu-400);
+  background: var(--ungu-500);
   flex-shrink: 0;
 }
 
@@ -845,6 +845,7 @@ section {
 
 /* =========== Historis =============== */
 .historis {
+  position: relative;
   padding-block: 10rem;
 }
 
@@ -922,7 +923,7 @@ section {
 /* ======== shape dot ======== */
 .shape-dot {
   position: absolute;
-  top: 50%;
+  top: 6%;
   left: 49%;
   width: 250px;
   opacity: 0.7;
@@ -940,7 +941,7 @@ section {
 /* ---- shape 2 === */
 .shape-dot-2 {
   position: absolute;
-  bottom: 28%;
+  bottom: 6%;
   right: 2%;
   width: 250px;
   opacity: 0.7;
@@ -1132,4 +1133,71 @@ section {
   font-size: 15px;
   font-family: var(--fonts-paragraf);
   font-weight: 400;
+}
+
+/* ======= news & aticle ============= */
+.nwes {
+  padding-block: 5rem;
+}
+
+.nwes .section-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  border: 2px solid var(--netral-700);
+}
+
+.news-label {
+  display: flex;
+  align-items: center;
+  font-family: var(--fonts-aksara);
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.news-dot {
+  width: 10px;
+  height: 10px;
+  background: var(--ungu-500);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.news-head > h5 {
+  font-size: 4rem;
+  font-family: var(--fonts-heeading);
+  font-weight: 800;
+  color: var(--emas-950);
+}
+
+.news-desc {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--fonts-paragraf);
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 14px;
+}
+
+.horizontal-line {
+  width: 20px;
+  height: 3px;
+  background: var(--ungu-950);
+  flex-shrink: 0;
+}
+
+/* ======= news grid =========== */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
