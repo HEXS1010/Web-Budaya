@@ -65,3 +65,18 @@ function animateParallax() {
 }
 
 animateParallax();
+
+// agenda
+const agendaScroll = document.getElementById('agendaList');
+const prevBtn = document.querySelector('.agenda-nav-btn.is-prev');
+const nextBtn = document.querySelector('.agenda-nav-btn.is-next');
+
+const cardWidth = 260 + 16;
+
+prevBtn.addEventListener('click', () => {
+  agendaScroll.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+});
+
+nextBtn.addEventListener('click', () => {
+  agendaScroll.scrollBy({ left: cardWidth, behavior: 'smooth' });
+});
