@@ -350,6 +350,9 @@
     font-size: 0.7rem;
   }
 
+  .wel-aksara {
+    font-size: 1.1rem;
+  }
   .wel-content > h2 {
     font-size: 1.9rem;
   }
@@ -395,7 +398,7 @@
   }
 
   .histor-content > h3 {
-    font-size: 2.2rem;
+    font-size: 2.6rem;
   }
 
   .histor-desc {
@@ -404,10 +407,14 @@
     padding: 12px 0 0 0;
     max-width: 100%;
     text-align: left;
+    font-size: 16px;
   }
 
   .histor-btn {
     margin-inline: auto;
+    font-size: 12px;
+    padding: 0 20px 0 20px;
+    margin-top: 20px;
   }
 
   .histor-img {
@@ -415,6 +422,7 @@
     max-width: 420px;
     margin-inline: auto;
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
   }
 
   .shape-dot,
@@ -427,6 +435,7 @@
   .histor-img {
     grid-template-columns: 1fr 1fr;
     gap: 12px;
+    margin-top: 20px;
   }
 
   .img-1,
@@ -435,11 +444,28 @@
   .img-4 {
     transform: none;
   }
+
+  .histor-content > h3 {
+    font-size: 2.2rem;
+  }
+
+  .histor-desc {
+    border-left: none;
+    border-top: 2.5px solid var(--ungu-950);
+    padding: 12px 0 0 0;
+    max-width: 100%;
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .histor-btn {
+    margin-inline: auto;
+    font-size: 12px;
+    padding: 0 20px 0 20px;
+  }
 }
 
-/* ==========================================================
-   6. VISION & MISSION
-   ========================================================== */
+/* ======= visi & misi ================= */
 @media (max-width: 1024px) {
   .vision-mission {
     padding: 5rem 3rem;
