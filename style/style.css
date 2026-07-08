@@ -1504,9 +1504,9 @@ section {
   transition: transform 0.3s ease;
 }
 
-/* .agenda-item:hover .agenda-item-frame {
-  transform: translateY(-4px);
-} */
+.agenda-item:hover .agenda-item-frame {
+  transform: translateY(4px);
+}
 
 .agenda-item-frame img {
   width: 100%;
@@ -1530,8 +1530,8 @@ section {
   padding: 50px 16px 16px;
   background: linear-gradient(
     to top,
-    rgba(54, 0, 116, 0.85) 0%,
-    rgba(76, 0, 158, 0.4) 55%,
+    rgba(55, 0, 118, 0.915) 0%,
+    rgba(57, 0, 118, 0.695) 55%,
     rgba(20, 0, 52, 0) 100%
   );
 }
@@ -1556,6 +1556,10 @@ section {
   background: #d97706;
 }
 
+.agenda-item.is-selesai .agenda-item-badge {
+  background-color: rgb(0, 255, 102);
+  color: var(--ungu-950);
+}
 /* ---------- judul & meta ---------- */
 .agenda-item-title {
   font-family: var(--fonts-heeading);
@@ -1573,20 +1577,29 @@ section {
 .agenda-item-meta {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
   margin: 0;
   font-family: var(--fonts-paragraf);
-  font-size: 12.5px;
+  font-weight: 400;
+  font-size: 13px;
   color: rgba(255, 255, 255, 0.85);
 }
 
 .agenda-item-meta-row {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 10px;
 }
 
-.agenda-item-meta dt,
+.agenda-item-meta dt {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px; 
+  flex-shrink: 0;
+}
+
 .agenda-item-meta dd {
   margin: 0;
   display: inline-flex;
@@ -1595,6 +1608,7 @@ section {
 
 .agenda-item-meta i {
   font-size: 12px;
+  color: var(--emas-400);
 }
 
 /* ---------- tombol lihat agenda lainnya ---------- */
@@ -1694,16 +1708,12 @@ section {
 /* Optional Batik Decoration */
 .aspiration-card::before {
   content: "";
-
   position: absolute;
   inset: 0;
-
   background-image: url("../img/cta.png");
   background-size: 220px;
   background-repeat: repeat;
-
   opacity: 0.08;
-
   pointer-events: none;
 }
 
