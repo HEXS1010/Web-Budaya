@@ -1,5 +1,5 @@
 /* =====- responsif topbar =========== */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .top-bar {
     padding: 10px 2rem;
   }
@@ -20,7 +20,7 @@
   }
 
   .nav-link {
-    /* gap: 4px; */
+    gap: 4px;
     display: none;
   }
 
@@ -88,6 +88,76 @@
 
   .dropdown:hover .dropdown-menu {
     display: block;
+  }
+} */
+
+@media (max-width: 1024px) {
+  .top-bar {
+    padding: 10px 2rem;
+  }
+
+  .content-top {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .content-top a span,
+  .content-top > p {
+    font-size: 13px;
+  }
+
+  .navbar {
+    padding: 0 2rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: flex;
+  }
+
+  .nav-action {
+    border-left: none;
+    padding: 0;
+    gap: 16px;
+    margin-left: auto;
+  }
+
+  .navbar-scroll .nav-action i {
+    color: var(--ungu-950);
+  }
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    padding: 10px 1.2rem;
+  }
+
+  .content-top {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .content-top a {
+    font-size: 12px;
+  }
+
+  .navbar {
+    padding: 0 1.2rem;
+  }
+
+  .navbar > a img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .nav-action {
+    gap: 14px;
   }
 }
 
