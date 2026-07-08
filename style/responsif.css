@@ -199,7 +199,7 @@
 
 @media (max-width: 768px) {
   .statistics {
-    margin-top: -180px;
+    margin-top: -130px;
   }
 
   .statistics-list {
@@ -211,12 +211,12 @@
   }
 
   .statistics-number {
-    font-size: 1rem;
+    font-size: 2.5rem;
   }
 
   .statistics-line {
-    width: 25px;
-    height: 2px;
+    width: 35px;
+    height: 3px;
   }
 
   .statistics-title {
@@ -249,12 +249,9 @@
   .statistics-title {
     font-size: 0.7rem;
   }
-
 }
 
-/* ==========================================================
-   4. WELCOME (Sambutan)
-   ========================================================== */
+/* ========= welcome ============ */
 @media (max-width: 1024px) {
   .welcome .section-wrapper {
     gap: 2rem;
@@ -280,7 +277,7 @@
 
 @media (max-width: 768px) {
   .welcome .section-wrapper {
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
   }
 
@@ -289,11 +286,16 @@
   }
 
   .wel-person {
-    width: 260px;
+    width: 390px;
+    margin-top: 50px;
   }
 
   .wel-caption {
     padding: 0.8rem 2rem;
+  }
+
+  .wel-content {
+    padding: 0 40px 0 40px;
   }
 
   .wel-caption > h2 {
@@ -317,28 +319,48 @@
 
   .btn-wel {
     margin-inline: auto;
+    padding: 0 40px;
+    font-size: 13px;
   }
 }
 
 @media (max-width: 480px) {
   .wel-person {
-    width: 200px;
+    width: 300px;
   }
 
   .wel-caption {
-    flex-direction: column;
     gap: 8px;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1.6rem;
+  }
+  .wel-caption > i {
+    font-size: 1.7rem;
+  }
+
+  .wel-content {
+    padding: 0 10px 0 10px;
+  }
+
+  .wel-text > h2 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+
+  .wel-text > p {
+    font-size: 0.7rem;
   }
 
   .wel-content > h2 {
     font-size: 1.9rem;
   }
+
+  .btn-wel {
+    font-size: 0.9rem;
+    padding: 0 2rem;
+  }
 }
 
-/* ==========================================================
-   5. HISTORIS
-   ========================================================== */
+/* ============ historis =========== */
 @media (max-width: 1024px) {
   .historis {
     padding-block: 6rem;
@@ -360,8 +382,16 @@
   }
 
   .historis .section-wrapper {
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: center;
+  }
+
+  .histor-content {
+    order: 1;
+  }
+
+  .histor-img {
+    order: 2;
   }
 
   .histor-content > h3 {
