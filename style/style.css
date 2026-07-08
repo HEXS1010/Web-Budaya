@@ -1207,8 +1207,9 @@ section {
 .card-news {
   display: flex;
   flex-direction: column;
-  background: var(--ungu-50);
+  background: var(--emas-100);
   border-radius: var(--radius-lg);
+  border: 2px solid var(--netral-900);
   overflow: hidden;
   transition:
     box-shadow 0.3s ease,
@@ -1347,7 +1348,7 @@ section {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
-  flex: 1; /* dorong footer ke bawah biar sejajar antar card */
+  flex: 1; 
 }
 
 .news-footer {
@@ -1362,7 +1363,7 @@ section {
   align-items: center;
   gap: 6px;
   font-family: var(--fonts-paragraf);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 13.9px;
   color: var(--ungu-950);
   text-decoration: none;
