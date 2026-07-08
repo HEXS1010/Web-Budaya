@@ -1469,6 +1469,7 @@ section {
 /* ---------- list horizontal (scroll-snap) ---------- */
 .agenda-list {
   display: flex;
+  user-select: none;
   gap: 16px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -1478,20 +1479,27 @@ section {
   scrollbar-width: none;
 }
 
+.agenda-list.is-dragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
+}
+
 .agenda-list::-webkit-scrollbar {
   display: none;
 }
 
 /* ---------- item agenda ---------- */
 .agenda-item {
-  flex: 0 0 260px;
+  flex: 0 0 calc((100% - 32px) / 3);
   scroll-snap-align: start;
+  scroll-snap-stop: always;
+  box-shadow: 0 0 20px var(--netral-300);
 }
 
 .agenda-item-frame {
   position: relative;
   margin: 0;
-  height: 300px;
+  height: 420px;
   border-radius: var(--radius-lg);
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -1506,6 +1514,7 @@ section {
   height: 100%;
   object-fit: cover;
   display: block;
+  -webkit-user-drag: none;
 }
 
 .agenda-item.is-selesai .agenda-item-frame img {

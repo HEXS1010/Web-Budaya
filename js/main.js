@@ -67,16 +67,84 @@ function animateParallax() {
 animateParallax();
 
 // agenda
-const agendaScroll = document.getElementById('agendaList');
-const prevBtn = document.querySelector('.agenda-nav-btn.is-prev');
-const nextBtn = document.querySelector('.agenda-nav-btn.is-next');
+const agendaScroll = document.getElementById("agendaList");
+const prevBtn = document.querySelector(".agenda-nav-btn.is-prev");
+const nextBtn = document.querySelector(".agenda-nav-btn.is-next");
 
-const cardWidth = 260 + 16;
+function getCardStep() {
+  const firstCard = agendaScroll.querySelector(".agenda-item");
+  if (!firstCard) return 300;
+  const gap = parseFloat(getComputedStyle(agendaScroll).gap) || 16;
+  return firstCard.getBoundingClientRect().width + gap;
+}
 
-prevBtn.addEventListener('click', () => {
-  agendaScroll.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+function snapToNearest() {
+  const step = getCardStep();
+  const index = Math.round(agendaScroll.scrollLeft / step);
+  agendaScroll.scrollTo({ left: index * step, behavior: "smooth" });
+}
+
+prevBtn.addEventListener("click", () => {
+  agendaScroll.scrollBy({ left: -getCardStep() * 3, behavior: "smooth" });
 });
 
-nextBtn.addEventListener('click', () => {
-  agendaScroll.scrollBy({ left: cardWidth, behavior: 'smooth' });
+nextBtn.addEventListener("click", () => {
+  agendaScroll.scrollBy({ left: getCardStep() * 3, behavior: "smooth" });
 });
+
+agendaScroll.querySelectorAll("img").forEach((img) => {
+  img.setAttribute("draggable", "false");
+  img.addEventListener("dragstart", (e) => e.preventDefault());
+});
+
+let isDown = false;
+let startX = 0;
+let scrollLeftStart = 0;
+
+agendaScroll.addEventListener("pointerdown", (e) => {
+  isDown = true;
+  agendaScroll.classList.add("is-dragging");
+  agendaScroll.setPointerCapture(e.pointerId);
+  startX = e.clientX;
+  scrollLeftStart = agendaScroll.scrollLeft;
+});
+
+agendaScroll.addEventListener("pointermove", (e) => {
+  if (!isDown) return;
+  const delta = e.clientX - startX;
+  agendaScroll.scrollLeft = scrollLeftStart - delta;
+});
+
+function endDrag(e) {
+  if (!isDown) return;
+  isDown = false;
+  agendaScroll.classList.remove("is-dragging");
+  agendaScroll.releasePointerCapture(e.pointerId);
+  snapToNearest();
+}
+
+agendaScroll.addEventListener("pointerup", endDrag);
+agendaScroll.addEventListener("pointercancel", endDrag);
+
+let isWheeling = false;
+
+agendaScroll.addEventListener(
+  "wheel",
+  (e) => {
+    if (Math.abs(e.deltaY) <= Math.abs(e.deltaX)) return;
+    e.preventDefault();
+    if (isWheeling) return;
+    isWheeling = true;
+
+    const direction = e.deltaY > 0 ? 1 : -1;
+    agendaScroll.scrollBy({
+      left: direction * getCardStep(),
+      behavior: "smooth",
+    });
+
+    setTimeout(() => {
+      isWheeling = false;
+    }, 350);
+  },
+  { passive: false },
+);
