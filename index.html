@@ -6,6 +6,7 @@
     <title>Kalika.id</title>
     <!-- css -->
     <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/responsif.css" />
 
     <!-- fonts -->
 
@@ -138,6 +139,18 @@
             <i class="fa-solid fa-magnifying-glass"></i>
           </ul>
         </ul>
+
+        <button
+          type="button"
+          class="hamburger-btn"
+          aria-label="Buka menu"
+          aria-expanded="false"
+          aria-controls="mobileSidebar"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
     </header>
 
@@ -198,7 +211,91 @@
           <i class="fa-solid fa-magnifying-glass"></i>
         </ul>
       </ul>
+
+      <button
+        type="button"
+        class="hamburger-btn"
+        aria-label="Buka menu"
+        aria-expanded="false"
+        aria-controls="mobileSidebar"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
+
+    <!-- ======= sidebar ========= -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <aside class="mobile-sidebar" id="mobileSidebar" aria-hidden="true">
+      <div class="mobile-sidebar-head">
+        <a href="" class="mobile-sidebar-logo">
+          <img src="img/logo-banjar-kaliungu.webp" alt="Logo Kaliungu" />
+          <span>Kaliungu Kaja</span>
+        </a>
+        <button
+          type="button"
+          class="mobile-sidebar-close"
+          aria-label="Tutup menu"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+          <a href="">Beranda</a>
+        </li>
+
+        <li class="mobile-nav-item has-submenu">
+          <button type="button" class="mobile-nav-toggle">
+            Profil <i class="fa-solid fa-angle-down"></i>
+          </button>
+          <ul class="mobile-submenu">
+            <li><a href="#">Visi & Misi</a></li>
+            <li><a href="#">Sejarah</a></li>
+            <li><a href="#">Struktur Organisasi</a></li>
+            <li><a href="#">Pengurus</a></li>
+            <li><a href="#">Awig-awig</a></li>
+          </ul>
+        </li>
+
+        <li class="mobile-nav-item has-submenu">
+          <button type="button" class="mobile-nav-toggle">
+            Program & Kegiatan <i class="fa-solid fa-angle-down"></i>
+          </button>
+          <ul class="mobile-submenu">
+            <li><a href="">Program Kerja</a></li>
+            <li><a href="">Agenda</a></li>
+          </ul>
+        </li>
+
+        <li class="mobile-nav-item has-submenu">
+          <button type="button" class="mobile-nav-toggle">
+            Informasi <i class="fa-solid fa-angle-down"></i>
+          </button>
+          <ul class="mobile-submenu">
+            <li><a href="">Berita & Pengumuman</a></li>
+            <li><a href="">Galery</a></li>
+          </ul>
+        </li>
+
+        <li class="mobile-nav-item">
+          <a href="">Warga Banjar</a>
+        </li>
+
+        <li class="mobile-nav-item">
+          <a href="">Kontak</a>
+        </li>
+      </ul>
+
+      <div class="mobile-sidebar-actions">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-regular fa-bell"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </aside>
 
     <main>
       <!-- =============== Hero ============ -->
@@ -635,7 +732,7 @@
                           </dt>
                           <dd>
                             <time datetime="06:30">06.30</time> -
-                            <time datetime="09:00">09.00</time>  WITA
+                            <time datetime="09:00">09.00</time> WITA
                           </dd>
                         </div>
                         <div class="agenda-item-meta-row">
@@ -1021,7 +1118,10 @@
       <div class="section-wrapper">
         <section class="footer-brand" aria-labelledby="footer-brand-title">
           <a href="index.html" class="footer-logo">
-            <img src="img/logo/logo-banjar.png" alt="Logo Banjar Kaliungu Kaja" />
+            <img
+              src="img/logo/logo-banjar.png"
+              alt="Logo Banjar Kaliungu Kaja"
+            />
 
             <div class="footer-brand-text">
               <h2 id="footer-brand-title">Banjar Kaliungu Kaja</h2>

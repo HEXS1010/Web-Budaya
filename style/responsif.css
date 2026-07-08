@@ -1,0 +1,648 @@
+/* =====- responsif topbar =========== */
+@media (max-width: 1024px) {
+  .top-bar {
+    padding: 10px 2rem;
+  }
+
+  .content-top {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .content-top a span,
+  .content-top > p {
+    font-size: 13px;
+  }
+
+  .navbar {
+    padding: 0 2rem;
+    justify-content: space-between;
+  }
+
+  .nav-link {
+    /* gap: 4px; */
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: flex;
+  }
+
+  .nav-items {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    padding: 10px 1.2rem;
+  }
+
+  .content-top {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .content-top a {
+    font-size: 12px;
+  }
+
+  .navbar {
+    padding: 0 1.2rem;
+    flex-wrap: wrap;
+    height: auto;
+    padding-block: 12px;
+  }
+
+  .navbar > a img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .nav-link {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .nav-items {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+
+  .nav-action {
+    padding: 6px 0 0 14px;
+    gap: 18px;
+  }
+
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    display: none;
+    padding-left: 12px;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-top {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .content-top .line {
+    display: none;
+  }
+
+  .language-switcher {
+    margin-top: 6px;
+  }
+
+  .nav-link {
+    gap: 2px;
+  }
+
+  .nav-items {
+    font-size: 12px;
+    padding: 5px 6px;
+  }
+}
+
+/* ==========================================================
+   2. HERO
+   ========================================================== */
+@media (max-width: 1024px) {
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-description {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 90vh;
+    text-align: center;
+  }
+
+  .hero .section-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-label {
+    justify-content: center;
+    font-size: 16px;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+    line-height: 1.25;
+  }
+
+  .hero-description {
+    font-size: 15px;
+    margin-bottom: 28px;
+  }
+
+  .hero-button {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .btn {
+    padding: 14px 24px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+  .hero-button {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ==========================================================
+   3. STATISTICS
+   ========================================================== */
+@media (max-width: 1024px) {
+  .statistics {
+    margin-top: -100px;
+  }
+
+  .statistics-number {
+    font-size: 2.2rem;
+  }
+
+  .statistics-title {
+    font-size: 13px;
+  }
+
+  .statistics-item {
+    padding: 26px 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .statistics {
+    margin-top: -60px;
+  }
+
+  .statistics-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .statistics-item:nth-child(2) {
+    border-right: none;
+  }
+
+  .statistics-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .statistics-item:nth-last-child(-n + 2) {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .statistics {
+    margin-top: -40px;
+  }
+
+  .statistics-list {
+    grid-template-columns: 1fr;
+  }
+
+  .statistics-item {
+    border-right: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .statistics-item:last-child {
+    border-bottom: none;
+  }
+}
+
+/* ==========================================================
+   4. WELCOME (Sambutan)
+   ========================================================== */
+@media (max-width: 1024px) {
+  .welcome .section-wrapper {
+    gap: 2rem;
+  }
+
+  .wel-person {
+    width: 380px;
+  }
+
+  .wel-content {
+    min-width: 0;
+  }
+
+  .wel-content > h2 {
+    font-size: 3.5rem;
+  }
+
+  .wel-desc {
+    padding-right: 0;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome .section-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .wel-figure {
+    margin: 0 auto;
+  }
+
+  .wel-person {
+    width: 260px;
+  }
+
+  .wel-caption {
+    padding: 0.8rem 2rem;
+  }
+
+  .wel-caption > h2 {
+    font-size: 1.3rem;
+  }
+
+  .wel-aksara {
+    justify-content: center;
+  }
+
+  .wel-content > h2 {
+    font-size: 2.4rem;
+  }
+
+  .wel-desc {
+    border-left: none;
+    border-top: 2.5px solid var(--ungu-950);
+    padding: 12px 0 0 0;
+    text-align: left;
+  }
+
+  .btn-wel {
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .wel-person {
+    width: 200px;
+  }
+
+  .wel-caption {
+    flex-direction: column;
+    gap: 8px;
+    padding: 1rem 1.5rem;
+  }
+
+  .wel-content > h2 {
+    font-size: 1.9rem;
+  }
+}
+
+/* ==========================================================
+   5. HISTORIS
+   ========================================================== */
+@media (max-width: 1024px) {
+  .historis {
+    padding-block: 6rem;
+  }
+
+  .histor-content > h3 {
+    font-size: 3rem;
+  }
+
+  .histor-img {
+    width: 420px;
+    grid-template-columns: repeat(2, 200px);
+  }
+}
+
+@media (max-width: 768px) {
+  .historis {
+    padding-block: 4rem;
+  }
+
+  .historis .section-wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .histor-content > h3 {
+    font-size: 2.2rem;
+  }
+
+  .histor-desc {
+    border-left: none;
+    border-top: 2.5px solid var(--ungu-950);
+    padding: 12px 0 0 0;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .histor-btn {
+    margin-inline: auto;
+  }
+
+  .histor-img {
+    width: 100%;
+    max-width: 420px;
+    margin-inline: auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .shape-dot,
+  .shape-dot-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .histor-img {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .img-1,
+  .img-2,
+  .img-3,
+  .img-4 {
+    transform: none;
+  }
+}
+
+/* ==========================================================
+   6. VISION & MISSION
+   ========================================================== */
+@media (max-width: 1024px) {
+  .vision-mission {
+    padding: 5rem 3rem;
+    gap: 35px;
+  }
+
+  .vision-content > h4,
+  .mission > h4 {
+    font-size: 2.3rem;
+  }
+
+  .vision-desc {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .vision-mission {
+    flex-direction: column;
+    padding: 3.5rem 1.5rem;
+    gap: 40px;
+  }
+
+  .line-vis-mis {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--netral-900),
+      transparent
+    );
+  }
+
+  .mission-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .vision-content > h4,
+  .mission > h4 {
+    font-size: 1.9rem;
+  }
+
+  .vision-desc {
+    font-size: 1rem;
+  }
+
+  .mission-content > li {
+    padding: 16px;
+  }
+}
+
+/* ==========================================================
+   7. AGENDA
+   (catatan: breakpoint jumlah card sudah ada di style.css,
+    di sini hanya menyesuaikan spacing & tipografi)
+   ========================================================== */
+@media (max-width: 1024px) {
+  .agenda {
+    padding-top: 6rem;
+  }
+
+  .agenda-title-main {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .agenda {
+    padding-top: 4rem;
+  }
+
+  .agenda-eyebrow {
+    font-size: 16px;
+  }
+
+  .agenda-title-main {
+    font-size: 2.2rem;
+  }
+
+  .agenda-subtitle {
+    font-size: 13px;
+  }
+
+  .agenda-item-title {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .agenda-title-main {
+    font-size: 1.8rem;
+  }
+
+  .agenda-item {
+    flex-basis: 90%;
+  }
+
+  .agenda-item-frame {
+    height: 380px;
+  }
+}
+
+/* ==========================================================
+   8. NEWS / BERITA
+   ========================================================== */
+@media (max-width: 1024px) {
+  .news-head > h5 {
+    font-size: 3rem;
+  }
+
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .nwes {
+    padding-block: 3rem;
+  }
+
+  .news-head > h5 {
+    font-size: 2.2rem;
+  }
+
+  .news-label {
+    font-size: 16px;
+  }
+
+  .news-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .news-head > h5 {
+    font-size: 1.8rem;
+  }
+
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .news-title {
+    font-size: 17px;
+  }
+}
+
+/* ==========================================================
+   9. ASPIRATION BANNER
+   ========================================================== */
+@media (max-width: 1024px) {
+  .aspiration-title {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .aspiration {
+    padding-block: 3.5rem;
+  }
+
+  .aspiration-card {
+    min-height: 320px;
+    padding: 3rem 1.5rem;
+  }
+
+  .aspiration-title {
+    font-size: 2rem;
+  }
+
+  .aspiration-description {
+    font-size: 14px;
+  }
+
+  .btn-aspiration {
+    padding: 14px 26px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aspiration-card {
+    min-height: 280px;
+    padding: 2.5rem 1.2rem;
+  }
+
+  .aspiration-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* ==========================================================
+   10. FOOTER
+   (grid-template-columns sudah diatur di style.css,
+    di sini hanya spacing & tipografi tambahan)
+   ========================================================== */
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 3rem;
+  }
+
+  .footer-brand-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .footer-nav h3,
+  .footer-contact h3 {
+    margin-top: 24px;
+  }
+
+  .footer-contact p {
+    justify-content: center;
+  }
+
+  .footer-bottom p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-brand-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .footer-description {
+    font-size: 14px;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+}

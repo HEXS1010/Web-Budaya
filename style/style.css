@@ -439,6 +439,205 @@ section {
 .navbar-scroll .nav-action > i {
   color: var(--ungu-950);
 }
+
+/* ============== sidebar ============ */
+
+/* ==========================================================
+   0. HAMBURGER + SIDEBAR (berlaku semua ukuran layar,
+      tapi hamburger cuma KELIHATAN di breakpoint mobile)
+   ========================================================== */
+
+.hamburger-btn {
+  display: none; /* default disembunyikan di desktop */
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 110;
+}
+
+.hamburger-btn span {
+  display: block;
+  width: 100%;
+  height: 2.5px;
+  background: #fff;
+  border-radius: 2px;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+/* di navbar-scroll (background solid), warna garis ikut warna gelap */
+.navbar-scroll .hamburger-btn span {
+  background: var(--ungu-950);
+}
+
+/* animasi jadi tanda "X" saat sidebar terbuka */
+.hamburger-btn.is-active span:nth-child(1) {
+  transform: translateY(7.5px) rotate(45deg);
+}
+
+.hamburger-btn.is-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-btn.is-active span:nth-child(3) {
+  transform: translateY(-7.5px) rotate(-45deg);
+}
+
+/* ---------- overlay gelap di belakang sidebar ---------- */
+.sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 200;
+}
+
+.sidebar-overlay.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ---------- sidebar drawer ---------- */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  max-width: 85vw;
+  height: 100vh;
+  background: var(--ungu-950);
+  color: #fff;
+  z-index: 201;
+  transform: translateX(100%);
+  transition: transform 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.mobile-sidebar.is-active {
+  transform: translateX(0);
+}
+
+.mobile-sidebar-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.mobile-sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-family: var(--fonts-heeading);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.mobile-sidebar-logo img {
+  width: 38px;
+  height: 38px;
+}
+
+.mobile-sidebar-close {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.mobile-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  flex: 1;
+}
+
+.mobile-nav-item > a,
+.mobile-nav-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 20px;
+  color: #fff;
+  font-family: var(--fonts-paragraf);
+  font-size: 15px;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.mobile-nav-toggle i {
+  transition: transform 0.3s ease;
+  font-size: 13px;
+}
+
+.mobile-nav-item.is-open .mobile-nav-toggle i {
+  transform: rotate(180deg);
+}
+
+.mobile-submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.15);
+  transition: max-height 0.35s ease;
+}
+
+.mobile-nav-item.is-open .mobile-submenu {
+  max-height: 400px; /* cukup besar untuk menampung semua item submenu */
+}
+
+.mobile-submenu li a {
+  display: block;
+  padding: 12px 20px 12px 34px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.mobile-submenu li a:hover {
+  color: var(--emas-500);
+}
+
+.mobile-sidebar-actions {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.mobile-sidebar-actions i {
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ---------- kunci scroll body saat sidebar terbuka ---------- */
+body.sidebar-open {
+  overflow: hidden;
+}
+
 /* =============== hero =================== */
 .hero {
   position: relative;
@@ -1596,7 +1795,7 @@ section {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 18px; 
+  width: 18px;
   flex-shrink: 0;
 }
 

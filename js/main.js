@@ -1,4 +1,72 @@
-// scorll navbar line
+
+
+// ================== hamburger dan sidebar ==================
+const hamburgerBtns = document.querySelectorAll(".hamburger-btn");
+const sidebar = document.getElementById("mobileSidebar");
+const sidebarOverlay = document.getElementById("sidebarOverlay");
+const sidebarClose = document.querySelector(".mobile-sidebar-close");
+const body = document.body;
+
+function openSidebar() {
+  sidebar.classList.add("is-active");
+  sidebarOverlay.classList.add("is-active");
+  sidebar.setAttribute("aria-hidden", "false");
+  body.classList.add("sidebar-open");
+  hamburgerBtns.forEach((btn) => {
+    btn.classList.add("is-active");
+    btn.setAttribute("aria-expanded", "true");
+  });
+}
+
+function closeSidebar() {
+  sidebar.classList.remove("is-active");
+  sidebarOverlay.classList.remove("is-active");
+  sidebar.setAttribute("aria-hidden", "true");
+  body.classList.remove("sidebar-open");
+  hamburgerBtns.forEach((btn) => {
+    btn.classList.remove("is-active");
+    btn.setAttribute("aria-expanded", "false");
+  });
+
+  // tutup semua submenu yang lagi kebuka juga
+  document.querySelectorAll(".mobile-nav-item.is-open").forEach((item) => {
+    item.classList.remove("is-open");
+  });
+}
+
+hamburgerBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const isOpen = sidebar.classList.contains("is-active");
+    isOpen ? closeSidebar() : openSidebar();
+  });
+});
+
+sidebarClose.addEventListener("click", closeSidebar);
+sidebarOverlay.addEventListener("click", closeSidebar);
+
+// accordion submenu di dalam sidebar
+document.querySelectorAll(".mobile-nav-toggle").forEach((toggle) => {
+  toggle.addEventListener("click", () => {
+    const parentItem = toggle.closest(".mobile-nav-item");
+    const isOpen = parentItem.classList.contains("is-open");
+
+    // tutup submenu lain yang lagi kebuka (biar cuma 1 yang aktif)
+    document.querySelectorAll(".mobile-nav-item.is-open").forEach((item) => {
+      if (item !== parentItem) item.classList.remove("is-open");
+    });
+
+    parentItem.classList.toggle("is-open", !isOpen);
+  });
+});
+
+// tutup sidebar otomatis kalau layar di-resize balik ke desktop
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768) {
+    closeSidebar();
+  }
+});
+
+//================ scorll navbar line ==================
 const scrollLine = document.querySelector(".scroll-line");
 
 window.addEventListener("scroll", () => {
