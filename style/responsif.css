@@ -1,96 +1,4 @@
 /* =====- responsif topbar =========== */
-/* @media (max-width: 1024px) {
-  .top-bar {
-    padding: 10px 2rem;
-  }
-
-  .content-top {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .content-top a span,
-  .content-top > p {
-    font-size: 13px;
-  }
-
-  .navbar {
-    padding: 0 2rem;
-    justify-content: space-between;
-  }
-
-  .nav-link {
-    gap: 4px;
-    display: none;
-  }
-
-  .hamburger-btn {
-    display: flex;
-  }
-
-  .nav-items {
-    font-size: 14px;
-    padding: 8px 10px;
-  }
-}
-
-@media (max-width: 768px) {
-  .top-bar {
-    padding: 10px 1.2rem;
-  }
-
-  .content-top {
-    justify-content: center;
-    text-align: center;
-  }
-
-  .content-top a {
-    font-size: 12px;
-  }
-
-  .navbar {
-    padding: 0 1.2rem;
-    flex-wrap: wrap;
-    height: auto;
-    padding-block: 12px;
-  }
-
-  .navbar > a img {
-    width: 55px;
-    height: 55px;
-  }
-
-  .nav-link {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 6px;
-  }
-
-  .nav-items {
-    font-size: 13px;
-    padding: 6px 8px;
-  }
-
-  .nav-action {
-    padding: 6px 0 0 14px;
-    gap: 18px;
-  }
-
-  .dropdown-menu {
-    position: static;
-    opacity: 1;
-    visibility: visible;
-    transform: none;
-    box-shadow: none;
-    display: none;
-    padding-left: 12px;
-  }
-
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-} */
-
 @media (max-width: 1024px) {
   .top-bar {
     padding: 10px 2rem;
@@ -103,7 +11,7 @@
 
   .content-top a span,
   .content-top > p {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .navbar {
@@ -147,6 +55,14 @@
     font-size: 12px;
   }
 
+  .content-top > span {
+    display: none;
+  }
+
+  .delete {
+    display: none;
+  }
+
   .navbar {
     padding: 0 1.2rem;
   }
@@ -185,20 +101,19 @@
   }
 }
 
-/* ==========================================================
-   2. HERO
-   ========================================================== */
+/* ============= hero ================ */
 @media (max-width: 1024px) {
   .hero-content {
     width: 100%;
   }
 
   .hero h1 {
-    font-size: 2.8rem;
+    padding-right: 300px;
+    font-size: 3rem;
   }
 
   .hero-description {
-    width: 100%;
+    width: 50%;
     font-size: 16px;
   }
 }
@@ -222,11 +137,13 @@
   .hero h1 {
     font-size: 2.1rem;
     line-height: 1.25;
+    padding: 0;
   }
 
   .hero-description {
     font-size: 15px;
     margin-bottom: 28px;
+    width: 100%;
   }
 
   .hero-button {
@@ -261,9 +178,7 @@
   }
 }
 
-/* ==========================================================
-   3. STATISTICS
-   ========================================================== */
+/* ================ statistics ================= */
 @media (max-width: 1024px) {
   .statistics {
     margin-top: -100px;
