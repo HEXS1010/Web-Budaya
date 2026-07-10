@@ -441,19 +441,13 @@ section {
 }
 
 /* ============== sidebar ============ */
-
-/* ==========================================================
-   0. HAMBURGER + SIDEBAR (berlaku semua ukuran layar,
-      tapi hamburger cuma KELIHATAN di breakpoint mobile)
-   ========================================================== */
-
 .hamburger-btn {
-  display: none; /* default disembunyikan di desktop */
+  display: none;
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  width: 32px;
-  height: 32px;
+  width: 22px;
+  height: 17px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -464,7 +458,7 @@ section {
   display: block;
   width: 100%;
   height: 2.5px;
-  background: #fff;
+  background: var(--netral-100);
   border-radius: 2px;
   transition:
     transform 0.3s ease,
@@ -489,7 +483,7 @@ section {
   transform: translateY(-7.5px) rotate(-45deg);
 }
 
-/* ---------- overlay gelap di belakang sidebar ---------- */
+/* ============ gelap jika sidebar di buka =================== */
 .sidebar-overlay {
   position: fixed;
   inset: 0;
@@ -505,16 +499,16 @@ section {
   pointer-events: auto;
 }
 
-/* ---------- sidebar drawer ---------- */
+/* ======== sidebar drawer ================== */
 .mobile-sidebar {
   position: fixed;
   top: 0;
   right: 0;
   width: 300px;
   max-width: 85vw;
-  height: 100vh;
-  background: var(--ungu-950);
-  color: #fff;
+  height: 100dvh;
+  background: var(--ungu-900);
+  color: var(--netral-100);
   z-index: 201;
   transform: translateX(100%);
   transition: transform 0.35s ease;
@@ -584,12 +578,18 @@ section {
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.mobile-nav-toggle i {
+.mobile-nav-toggle-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mobile-nav-toggle > i {
   transition: transform 0.3s ease;
   font-size: 13px;
 }
 
-.mobile-nav-item.is-open .mobile-nav-toggle i {
+.mobile-nav-item.is-open .mobile-nav-toggle > i {
   transform: rotate(180deg);
 }
 
@@ -604,7 +604,7 @@ section {
 }
 
 .mobile-nav-item.is-open .mobile-submenu {
-  max-height: 400px; /* cukup besar untuk menampung semua item submenu */
+  max-height: 400px;
 }
 
 .mobile-submenu li a {
@@ -624,7 +624,7 @@ section {
   justify-content: center;
   gap: 28px;
   padding: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 2px solid rgba(255, 255, 255, 0.12);
 }
 
 .mobile-sidebar-actions i {
@@ -633,7 +633,6 @@ section {
   cursor: pointer;
 }
 
-/* ---------- kunci scroll body saat sidebar terbuka ---------- */
 body.sidebar-open {
   overflow: hidden;
 }
@@ -2233,37 +2232,3 @@ body.sidebar-open {
 .footer-bottom strong {
   color: var(--emas-500);
 }
-
-/* @media (max-width: 992px) {
-  .footer > .section-wrapper {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 45px;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer > .section-wrapper {
-    grid-template-columns: 1fr;
-
-    text-align: center;
-  }
-
-  .footer-logo {
-    justify-content: center;
-  }
-
-  .footer-social {
-    justify-content: center;
-  }
-
-  .footer-contact p {
-    justify-content: center;
-  }
-
-  .footer-bottom .section-wrapper {
-    flex-direction: column;
-    gap: 12px;
-
-    text-align: center;
-  }
-} */

@@ -247,16 +247,23 @@
 
       <ul class="mobile-nav-list">
         <li class="mobile-nav-item">
-          <a href="">Beranda</a>
+          <a href="">
+            <span class="mobile-nav-toggle-label">
+              <i class="fa-solid fa-home"></i> Beranda
+            </span>
+          </a>
         </li>
 
         <li class="mobile-nav-item has-submenu">
           <button type="button" class="mobile-nav-toggle">
-            Profil <i class="fa-solid fa-angle-down"></i>
+            <span class="mobile-nav-toggle-label">
+              <i class="fa-solid fa-landmark"></i> Profil
+            </span>
+            <i class="fa-solid fa-angle-down"></i>
           </button>
           <ul class="mobile-submenu">
-            <li><a href="#">Visi & Misi</a></li>
             <li><a href="#">Sejarah</a></li>
+            <li><a href="#">Visi & Misi</a></li>
             <li><a href="#">Struktur Organisasi</a></li>
             <li><a href="#">Pengurus</a></li>
             <li><a href="#">Awig-awig</a></li>
@@ -265,7 +272,10 @@
 
         <li class="mobile-nav-item has-submenu">
           <button type="button" class="mobile-nav-toggle">
-            Program & Kegiatan <i class="fa-solid fa-angle-down"></i>
+            <span class="mobile-nav-toggle-label">
+              <i class="fa-solid fa-calendar-days"></i> Program & Kegiatan
+            </span>
+            <i class="fa-solid fa-angle-down"></i>
           </button>
           <ul class="mobile-submenu">
             <li><a href="">Program Kerja</a></li>
@@ -275,7 +285,10 @@
 
         <li class="mobile-nav-item has-submenu">
           <button type="button" class="mobile-nav-toggle">
-            Informasi <i class="fa-solid fa-angle-down"></i>
+            <span class="mobile-nav-toggle-label">
+              <i class="fa-solid fa-circle-info"></i> Informasi
+            </span>
+            <i class="fa-solid fa-angle-down"></i>
           </button>
           <ul class="mobile-submenu">
             <li><a href="">Berita & Pengumuman</a></li>
@@ -284,18 +297,32 @@
         </li>
 
         <li class="mobile-nav-item">
-          <a href="">Warga Banjar</a>
+          <a href="">
+            <span class="mobile-nav-toggle-label">
+              <i class="fa-solid fa-users"></i> Warga Banjar
+            </span>
+          </a>
         </li>
 
         <li class="mobile-nav-item">
-          <a href="">Kontak</a>
+          <a href="">
+            <span class="mobile-nav-toggle-label">
+              <i class="fa-solid fa-envelope"></i> Kontak
+            </span>
+          </a>
         </li>
       </ul>
 
       <div class="mobile-sidebar-actions">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <i class="fa-regular fa-bell"></i>
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <a href="">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
       </div>
     </aside>
 
@@ -1119,7 +1146,7 @@
       </section>
     </main>
 
-    <!-- ============= footer ========== -->
+    <!-- ============= footer  -->
     <footer class="footer">
       <div class="section-wrapper">
         <section class="footer-brand" aria-labelledby="footer-brand-title">
