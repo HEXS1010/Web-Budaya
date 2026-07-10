@@ -1,7 +1,7 @@
 /* ========== hero ========== */
 .hero {
   width: 100%;
-  height: 400px;
+  height: 350px;
   background: url("../../img/historis/sejarah.png");
   background-size: cover;
   background-position: center;
@@ -39,4 +39,41 @@
   font-weight: 500;
   font-size: var(--text-size-base);
   color: var(--netral-400);
+}
+
+/* ========== historis =========== */
+.historis {
+  position: relative;
+  margin-top: -170px; 
+  z-index: 5;
+  padding-inline: 24px;
+}
+
+.paper {
+  max-width: 950px;
+  margin-inline: auto;
+  padding: 60px;
+  background: var(--netral-100);
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.paper-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.paper-header > h2 {
+    font-size: var(--text-size-2xl);
+    font-family: var(--fonts-heeading);
+    font-weight: 900;
+}
+
+.paper-header > p {
+    font-family: var(--fonts-paragraf);
+    font-weight: 500;
+    font-size: var(--text-size-base)
 }
