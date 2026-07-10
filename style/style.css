@@ -1582,9 +1582,9 @@ body.sidebar-open {
   font-family: var(--fonts-paragraf);
   font-weight: 700;
   font-size: 14px;
-  color: var(--ungu-2-600);
+  color: var(--ungu-600);
   background: transparent;
-  border: 2px solid var(--ungu-2-600);
+  border: 2px solid var(--ungu-600);
   border-radius: 30px;
   padding: 10px 28px;
   cursor: pointer;
@@ -1598,12 +1598,12 @@ body.sidebar-open {
 }
 
 .agenda-more-btn:hover {
-  background: var(--ungu-2-600);
-  color: #fff;
+  background: var(--ungu-600);
+  color: var(--netral-100);
 }
 
 .agenda-more-btn:focus-visible {
-  outline: 2px solid var(--ungu-2-600);
+  outline: 2px solid var(--ungu-600);
   outline-offset: 3px;
 }
 
@@ -1856,6 +1856,40 @@ body.sidebar-open {
 
 .news-footer > a:hover {
   text-decoration: underline;
+}
+
+.news-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.news-btn-content {
+  border: 2px solid var(--ungu-600);
+  background: transparent;
+  padding: 10px 28px;
+  border-radius: 30px;
+  font-family: var(--fonts-paragraf);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--ungu-600);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.news-btn-content:hover {
+  background: var(--ungu-600);
+  color: var(--netral-100);
+}
+
+.news-btn-content:focus-visible {
+  outline: 2px solid var(--ungu-600);
+  outline-offset: 3px;
 }
 
 /* ========== aspiration banner =========== */
