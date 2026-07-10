@@ -2067,7 +2067,7 @@ body.sidebar-open {
   font-size: 2rem;
   font-weight: 800;
 
-  color: #fff;
+  color: var(--netral-100);
 
   line-height: 1.1;
 }
@@ -2110,7 +2110,7 @@ body.sidebar-open {
 
   text-decoration: none;
 
-  color: #fff;
+  color: var(--netral-100);
 
   background: rgba(255, 255, 255, 0.08);
 
@@ -2234,7 +2234,7 @@ body.sidebar-open {
   color: var(--emas-500);
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .footer > .section-wrapper {
     grid-template-columns: repeat(2, 1fr);
     gap: 45px;
@@ -2266,4 +2266,4 @@ body.sidebar-open {
 
     text-align: center;
   }
-}
+} */

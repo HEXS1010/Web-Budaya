@@ -528,7 +528,7 @@
   .mission-content {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .mission-icon {
     font-size: 20px;
   }
@@ -539,7 +539,7 @@
   .mission > h4 {
     font-size: 2.5rem;
   }
-  
+
   .mission-content {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -575,7 +575,7 @@
   .agenda-item {
     flex-basis: calc((100% - 16px) / 2);
   }
-  
+
   .agenda-title-main {
     font-size: 2.8rem;
   }
@@ -585,19 +585,19 @@
   .agenda {
     padding-top: 4rem;
   }
-  
+
   .agenda-eyebrow {
     font-size: 16px;
   }
-  
+
   .agenda-title-main {
     font-size: 2.2rem;
   }
-  
+
   .agenda-subtitle {
     font-size: 13px;
   }
-  
+
   .agenda-item {
     flex-basis: calc((100% - 16px) / 2);
   }
@@ -605,7 +605,7 @@
   .agenda-nav-btn {
     display: none;
   }
-  
+
   .agenda-item-title {
     font-size: 17px;
   }
@@ -681,9 +681,7 @@
   }
 }
 
-/* ==========================================================
-   9. ASPIRATION BANNER
-   ========================================================== */
+/* ======= aspiration banner =========== */
 @media (max-width: 1024px) {
   .aspiration-title {
     font-size: 2.6rem;
@@ -720,23 +718,78 @@
     padding: 2.5rem 1.2rem;
   }
 
+  .aspiration-label {
+    font-size: 14px;
+  }
+
+  .aspiration-dot {
+    width: 9px;
+    height: 9px;
+  }
+
   .aspiration-title {
     font-size: 1.6rem;
   }
+
+  .aspiration-description {
+    font-size: 12px;
+    padding: 0 12px;
+  }
 }
 
-/* ==========================================================
-   10. FOOTER
-   (grid-template-columns sudah diatur di style.css,
-    di sini hanya spacing & tipografi tambahan)
-   ========================================================== */
+/* ======== footer ============ */
+@media (max-width: 992px) {
+  .footer > .section-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px;
+  }
+}
+
 @media (max-width: 768px) {
+  .footer > .section-wrapper {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    text-align: center;
+  }
+
   .footer {
     padding-top: 3rem;
   }
 
+  .footer-logo {
+    justify-content: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer-contact p {
+    justify-content: center;
+  }
+
+  .footer-bottom .section-wrapper {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .footer-brand-text {
+    text-align: left;
+  }
+  
   .footer-brand-text h2 {
     font-size: 1.6rem;
+  }
+
+  .footer-brand-text > span {
+    font-size: .8rem;
+    margin-top: 5px;
+  }
+
+  .footer-description {
+    font-size: .9rem;
+    padding: 0 60px;
   }
 
   .footer-nav h3,
@@ -759,6 +812,7 @@
   }
 
   .footer-description {
+    padding: 0 10px;
     font-size: 14px;
   }
 
