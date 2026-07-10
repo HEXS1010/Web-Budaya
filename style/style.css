@@ -1289,7 +1289,7 @@ body.sidebar-open {
   font-weight: 800;
   color: var(--emas-950);
   text-align: center;
-  margin-bottom: 3px;
+  margin-bottom: 20px;
 }
 
 .mission-content {
@@ -1301,7 +1301,7 @@ body.sidebar-open {
 .mission-content > li {
   position: relative;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 15px;
   padding: 22px;
   border-radius: 18px;
@@ -1386,7 +1386,7 @@ body.sidebar-open {
   background: var(--ungu-950);
 }
 
-/* ---------- wrapper + tombol navigasi ---------- */
+/* ==================  wrapper dan tombol navigasi ============= */
 .agenda-wrapper {
   position: relative;
 }
@@ -1425,7 +1425,7 @@ body.sidebar-open {
   right: -18px;
 }
 
-/* ---------- list horizontal (scroll-snap) ---------- */
+/* ============== buat scroll nya atau bagian line horizontal ========== */
 .agenda-list {
   display: flex;
   user-select: none;
@@ -1447,7 +1447,7 @@ body.sidebar-open {
   display: none;
 }
 
-/* ---------- item agenda ---------- */
+/* =============== item card =============== */
 .agenda-item {
   flex: 0 0 calc((100% - 32px) / 3);
   scroll-snap-align: start;
@@ -1496,7 +1496,7 @@ body.sidebar-open {
   );
 }
 
-/* ---------- badge status/tanggal ---------- */
+/* ============== tanggal dan jam ================ */
 .agenda-item-badge {
   display: inline-flex;
   align-items: center;
@@ -1520,7 +1520,7 @@ body.sidebar-open {
   background-color: rgb(0, 255, 102);
   color: var(--ungu-950);
 }
-/* ---------- judul & meta ---------- */
+/* ============ content agenda ============ */
 .agenda-item-title {
   font-family: var(--fonts-heeading);
   font-weight: 800;
@@ -1571,7 +1571,7 @@ body.sidebar-open {
   color: var(--emas-400);
 }
 
-/* ---------- tombol lihat agenda lainnya ---------- */
+/* ======== btn lihat lainnya ================ */
 .agenda-more-wrap {
   display: flex;
   justify-content: center;
@@ -1857,7 +1857,6 @@ body.sidebar-open {
 .news-footer > a:hover {
   text-decoration: underline;
 }
-
 
 /* ========== aspiration banner =========== */
 .aspiration {

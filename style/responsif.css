@@ -99,6 +99,10 @@
     font-size: 12px;
     padding: 5px 6px;
   }
+
+  .navbar-scroll {
+    height: 90px;
+  }
 }
 
 /* ============= hero ================ */
@@ -478,7 +482,21 @@
   }
 
   .vision-desc {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
+  }
+
+  .mission-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  .mission-icon > i {
+    font-size: 19px;
+  }
+
+  .mission-text {
+    font-size: 12px;
   }
 }
 
@@ -508,14 +526,22 @@
   }
 
   .mission-content {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .mission-icon {
+    font-size: 20px;
   }
 }
 
 @media (max-width: 480px) {
   .vision-content > h4,
   .mission > h4 {
-    font-size: 1.9rem;
+    font-size: 2.5rem;
+  }
+  
+  .mission-content {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .vision-desc {
@@ -523,7 +549,20 @@
   }
 
   .mission-content > li {
-    padding: 16px;
+    padding: 10px;
+  }
+
+  .mission-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 13px;
+  }
+  .mission-icon > i {
+    font-size: 19px;
+  }
+
+  .mission-text {
+    font-size: 12px;
   }
 }
 
@@ -533,6 +572,10 @@
     padding-top: 6rem;
   }
 
+  .agenda-item {
+    flex-basis: calc((100% - 16px) / 2);
+  }
+  
   .agenda-title-main {
     font-size: 2.8rem;
   }
@@ -542,7 +585,7 @@
   .agenda {
     padding-top: 4rem;
   }
-
+  
   .agenda-eyebrow {
     font-size: 16px;
   }
@@ -553,6 +596,14 @@
   
   .agenda-subtitle {
     font-size: 13px;
+  }
+  
+  .agenda-item {
+    flex-basis: calc((100% - 16px) / 2);
+  }
+
+  .agenda-nav-btn {
+    display: none;
   }
   
   .agenda-item-title {
@@ -571,6 +622,10 @@
 
   .agenda-item {
     flex-basis: 90%;
+  }
+
+  .agenda-nav-btn {
+    display: none;
   }
 
   .agenda-item-frame {
