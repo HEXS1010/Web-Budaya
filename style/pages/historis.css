@@ -22,11 +22,21 @@
 .hero-content {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }
 
 .hero-content > h1 {
   color: var(--netral-100);
   font-family: var(--fonts-heeading);
   font-weight: 700;
+  font-size: 4.5rem;
+}
+
+.hero-content > p {
+  font-family: var(--fonts-paragraf);
+  font-weight: 500;
+  font-size: var(--text-size-base);
+  color: var(--netral-400);
 }
