@@ -492,8 +492,8 @@
   .vision-mission::before {
     width: 1500px;
     height: 1500px;
-    right: -150px; 
-    opacity: 0.12; 
+    right: -150px;
+    opacity: 0.12;
   }
 
   .line-vis-mis {
@@ -527,11 +527,7 @@
   }
 }
 
-/* ==========================================================
-   7. AGENDA
-   (catatan: breakpoint jumlah card sudah ada di style.css,
-    di sini hanya menyesuaikan spacing & tipografi)
-   ========================================================== */
+/* ============ agenda ============== */
 @media (max-width: 1024px) {
   .agenda {
     padding-top: 6rem;
@@ -550,15 +546,15 @@
   .agenda-eyebrow {
     font-size: 16px;
   }
-
+  
   .agenda-title-main {
     font-size: 2.2rem;
   }
-
+  
   .agenda-subtitle {
     font-size: 13px;
   }
-
+  
   .agenda-item-title {
     font-size: 17px;
   }
@@ -566,7 +562,11 @@
 
 @media (max-width: 480px) {
   .agenda-title-main {
-    font-size: 1.8rem;
+    font-size: 2rem;
+  }
+
+  .agenda-eyebrow {
+    font-size: 18px;
   }
 
   .agenda-item {
