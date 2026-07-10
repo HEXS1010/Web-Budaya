@@ -633,12 +633,10 @@
   }
 }
 
-/* ==========================================================
-   8. NEWS / BERITA
-   ========================================================== */
+/* ============= news ========== */
 @media (max-width: 1024px) {
   .news-head > h5 {
-    font-size: 3rem;
+    font-size: 3.3rem;
   }
 
   .news-grid {
@@ -647,8 +645,13 @@
 }
 
 @media (max-width: 768px) {
-  .nwes {
+  .news {
     padding-block: 3rem;
+  }
+
+  .news-overlay > img {
+    width: 100px;
+    height: 100px;
   }
 
   .news-head > h5 {
@@ -660,7 +663,7 @@
   }
 
   .news-title {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -674,7 +677,7 @@
   }
 
   .news-title {
-    font-size: 17px;
+    font-size: 21px;
   }
 }
 
