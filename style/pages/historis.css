@@ -48,15 +48,21 @@
   position: relative;
   margin-top: -170px;
   z-index: 5;
-  padding-inline: 24px;
+  padding-inline: 16px;
 }
 
 .paper {
-  max-width: 950px;
+  max-width: 800px;
   margin-inline: auto;
   padding: 60px;
-  background: var(--netral-100);
-  border-radius: 12px;
+  background-image:
+    linear-gradient(rgba(195, 180, 145, 0.434), rgba(216, 202, 168, 0.484)),
+    url("../../img/historis/paper-old.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  border: 2px solid #000000;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
@@ -74,8 +80,96 @@
   font-weight: 900;
 }
 
-.paper-header > p {
+.paper-subtitle {
   font-family: var(--fonts-paragraf);
   font-weight: 500;
   font-size: var(--text-size-base);
+}
+
+/* ========== title paper section ============== */
+.paper-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.introduction {
+  color: var(--netral-950);
+  font-family: var(--fonts-heeading);
+  font-weight: 900;
+  font-size: var(--text-size-xl);
+}
+
+.paper-quote {
+  font-family: var(--fonts-paragraf);
+  font-weight: 500;
+  font-style: italic;
+  font-size: var(--text-size-md);
+}
+
+.margin {
+  margin-top: 30px;
+}
+
+.paper-section > p {
+  font-family: var(--fonts-paragraf);
+  font-weight: 500;
+  font-size: var(--text-size-md);
+  color: var(--netral-900);
+  text-align: justify;
+  line-height: 1.5;
+  max-width: 68ch;
+  margin-inline: auto;
+}
+
+.italic {
+  font-family: var(--fonts-paragraf);
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+/* ========== style gambar ============== */
+.wiki-img {
+  float: right;
+  width: 580px;
+  margin: 4px 0 16px 24px;
+  background: var(--netral-100);
+  border: 1px solid var(--netral-300);
+  padding: 6px;
+}
+
+.wiki-img--left {
+  float: left;
+  margin: 4px 24px 16px 0;
+}
+
+.wiki-img img {
+  width: 100%;
+  display: block;
+}
+
+.wiki-img figcaption {
+  font-size: var(--text-size-md);
+  color: var(--netral-500);
+  line-height: 1.4;
+  padding-top: 6px;
+  text-align: center;
+}
+
+.paper-section--sejarah::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@media (max-width: 640px) {
+  .wiki-img,
+  .wiki-img--left {
+    float: none;
+    width: 100%;
+    margin: 16px 0;
+  }
 }
