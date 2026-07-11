@@ -169,7 +169,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  color: white;
+  color: var(--netral-100);
   font-family: var(--fonts-parf);
   text-decoration: none;
   transition: 0.3s;
@@ -194,7 +194,7 @@
   top: 120%;
   left: 0;
   min-width: 220px;
-  background: white;
+  background: var(--netral-100);
   border-radius: var(--radius-sm);
   padding: 10px 0;
   list-style: none;
@@ -221,7 +221,7 @@
 
 .dropdown-menu li a:hover {
   background: var(--ungu-100);
-  color: var(--coklat-950);
+  color: var(--emas-950);
   padding-left: 24px;
 }
 
