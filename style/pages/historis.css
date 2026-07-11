@@ -130,20 +130,15 @@
   font-style: italic;
 }
 
-
 /* ========== style gambar ============== */
 .wiki-img {
-  float: right;
-  width: 580px;
-  margin: 4px 0 16px 24px;
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  margin: 32px auto;
   background: var(--netral-100);
   border: 1px solid var(--netral-300);
   padding: 6px;
-}
-
-.wiki-img--left {
-  float: left;
-  margin: 4px 24px 16px 0;
 }
 
 .wiki-img img {
@@ -152,24 +147,15 @@
 }
 
 .wiki-img figcaption {
-  font-size: var(--text-size-md);
+  font-size: var(--text-size-sm, 0.85rem);
   color: var(--netral-500);
   line-height: 1.4;
   padding-top: 6px;
   text-align: center;
 }
 
-.paper-section--sejarah::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 @media (max-width: 640px) {
-  .wiki-img,
-  .wiki-img--left {
-    float: none;
-    width: 100%;
-    margin: 16px 0;
+  .wiki-img {
+    max-width: 100%;
   }
 }
