@@ -100,6 +100,7 @@
   font-family: var(--fonts-heeading);
   font-weight: 900;
   font-size: var(--text-size-xl);
+  text-align: center;
 }
 
 .paper-quote {
