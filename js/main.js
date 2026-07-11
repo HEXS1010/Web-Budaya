@@ -1,5 +1,3 @@
-
-
 // ================== hamburger dan sidebar ==================
 const hamburgerBtns = document.querySelectorAll(".hamburger-btn");
 const sidebar = document.getElementById("mobileSidebar");
