@@ -131,9 +131,11 @@
 }
 
 .close {
+  margin-top: 20px;
   font-family: var(--fonts-paragraf);
   font-weight: 500;
   font-size: var(--text-size-md);
+  text-align: center;
   
 }
 
