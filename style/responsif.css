@@ -777,18 +777,18 @@
   .footer-brand-text {
     text-align: left;
   }
-  
+
   .footer-brand-text h2 {
     font-size: 1.6rem;
   }
 
   .footer-brand-text > span {
-    font-size: .8rem;
+    font-size: 0.8rem;
     margin-top: 5px;
   }
 
   .footer-description {
-    font-size: .9rem;
+    font-size: 0.9rem;
     padding: 0 60px;
   }
 
@@ -818,5 +818,47 @@
 
   .footer-social {
     justify-content: center;
+  }
+}
+
+/* ============= historis html ========== */
+@media (max-width: 640px) {
+  .hero-historis {
+    height: 300px;
+  }
+
+  .hero-content > h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-historis {
+    height: 300px;
+  }
+  /* ==== historis ======= */
+  .historis {
+    padding-inline: 2px;
+    margin-top: -140px;
+  }
+  .paper {
+    max-width: 350px;
+    margin-inline: 5px;
+  }
+
+  .paper-header > h2 {
+    font-size: var(--text-size-lg);
+  }
+
+  .paper-subtitle {
+    font-size: var(--text-size-sm);
+  }
+
+  .introduction {
+    font-size: var(--text-size-lg);
+  }
+
+  .paper-quote {
+    font-size: var(--text-size-sm);
   }
 }
