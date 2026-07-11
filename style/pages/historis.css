@@ -130,6 +130,13 @@
   font-style: italic;
 }
 
+.close {
+  font-family: var(--fonts-paragraf);
+  font-weight: 500;
+  font-size: var(--text-size-md);
+  
+}
+
 /* ========== style gambar ============== */
 .wiki-img {
   display: block;
