@@ -45,10 +45,10 @@
   color: var(--netral-100);
 }
 
-.hero h1 {
+.hero-title {
   font-family: var(--fonts-heading);
   font-weight: 800;
-  font-size: 3.7rem;
+  font-size: 3.5rem;
   line-height: 1.15;
   margin: 20px 0;
 }
@@ -1266,7 +1266,7 @@
   min-height: 420px;
   padding: 4rem 2rem;
   border-radius: var(--radius-xl);
-  background: url("../../img/cta.png");
+  background: url("../../img/pengaduan/cta.png");
 
   background-size: cover;
   background-position: center;
