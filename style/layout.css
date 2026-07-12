@@ -205,6 +205,28 @@
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
 }
 
+.dropdown-menu.is-split {
+  columns: 2;
+  column-gap: 24px;
+  min-width: 380px;
+  padding: 16px 20px;
+  position: absolute; 
+}
+
+.dropdown-menu.is-split li {
+  break-inside: avoid;
+}
+
+.dropdown-menu.is-split::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  bottom: 16px;
+  left: 50%;
+  width: 1px;
+  background: var(--netral-200);
+}
+
 .dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
