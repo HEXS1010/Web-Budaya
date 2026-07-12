@@ -962,6 +962,10 @@
     font-size: var(--text-size-xs);
   }
 
+  .agreement label {
+    font-size: var(--text-size-xs);
+  } 
+  
   .field small.hint {
     font-size: var(--text-size-xs);
   }

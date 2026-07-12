@@ -296,13 +296,26 @@ address.info-contact {
   background: var(--netral-50);
 }
 
+.select-wrap {
+  position: relative;
+}
+
 .field select {
   appearance: none;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23711FAA'><path d='M5.5 7.5l4.5 4.5 4.5-4.5' stroke='%23711FAA' stroke-width='1.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>");
-  background-repeat: no-repeat;
-  background-position: right 14px center;
+  -webkit-appearance: none;
+  background-image: none; 
   padding-right: 40px;
   cursor: pointer;
+}
+
+.select-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: var(--ungu-700);
+  pointer-events: none; 
 }
 
 .field small.hint {
@@ -335,9 +348,9 @@ address.info-contact {
 }
 
 .upload-box > i {
-    font-size: var(--text-size-md);
-    color: var(--ungu-800);
-    margin-block: 5px;
+  font-size: var(--text-size-md);
+  color: var(--ungu-800);
+  margin-block: 5px;
 }
 
 .upload-box .txt {
@@ -372,7 +385,9 @@ address.info-contact {
 
 .agreement label {
   font-size: var(--text-size-sm);
-  color: var(--netral-900);
+  font-family: var(--fonts-paragraf);
+  font-weight: 400;
+  color: var(--netral-950);
   line-height: 1.55;
 }
 
