@@ -55,29 +55,6 @@
   align-items: start;
 }
 
-.complaint-info::before {
-  content: "";
-  position: absolute;
-  top: -40px;
-  right: -40px;
-  width: 160px;
-  height: 160px;
-  border: 1px solid rgba(237, 192, 92, 0.35);
-  border-radius: 50%;
-}
-
-.complaint-info::after {
-  content: "";
-  position: absolute;
-  bottom: -60px;
-  left: -60px;
-  width: 180px;
-  height: 180px;
-  border: 1px solid rgba(237, 192, 92, 0.2);
-  border-radius: 50%;
-}
-
-/* -- panel info kiri -- */
 .complaint-info {
   /* background: linear-gradient(175deg, var(--ungu-800), var(--ungu-950)); */
   background: var(--ungu-900);
@@ -112,7 +89,7 @@
   border-radius: 50%;
 }
 
-.pengaduan-info .eyebrow {
+.complaint-info .eyebrow {
   font-family: var(--fonts-paragraf);
   font-weight: 400;
   font-size: var(--text-size-xs);
@@ -206,7 +183,7 @@ address.info-contact {
 /* ========= form pengaduan =============== */
 .complaint-card {
   background: var(--emas-400);
-  border: 1px solid var(--emas-200);
+  border: 1px solid var(--netral-900);
   border-radius: var(--radius-xl);
   padding: var(--space-lg);
   box-shadow: var(--shadow-card);
@@ -357,8 +334,10 @@ address.info-contact {
   background: var(--ungu-100);
 }
 
-.upload-box svg {
-  flex-shrink: 0;
+.upload-box > i {
+    font-size: var(--text-size-md);
+    color: var(--ungu-800);
+    margin-block: 5px;
 }
 
 .upload-box .txt {
@@ -376,14 +355,14 @@ address.info-contact {
 }
 
 /* persetujuan */
-.persetujuan {
+.agreement {
   display: flex;
   align-items: flex-start;
   gap: 10px;
   margin-top: 2px;
 }
 
-.persetujuan input[type="checkbox"] {
+.agreement input[type="checkbox"] {
   margin-top: 3px;
   width: 17px;
   height: 17px;
@@ -391,19 +370,19 @@ address.info-contact {
   flex-shrink: 0;
 }
 
-.persetujuan label {
+.agreement label {
   font-size: var(--text-size-sm);
-  color: var(--netral-600);
+  color: var(--netral-900);
   line-height: 1.55;
 }
 
-.persetujuan a {
+.agreement a {
   color: var(--ungu-700);
   text-decoration: underline;
 }
 
 /* tombol kirim */
-.tombol-kirim {
+.btn-send {
   margin-top: var(--space-xs);
   display: inline-flex;
   align-items: center;
@@ -411,7 +390,7 @@ address.info-contact {
   gap: 10px;
   width: 100%;
   padding: 15px 24px;
-  background: linear-gradient(135deg, var(--merah-700), var(--topbar-color));
+  background: linear-gradient(135deg, var(--ungu-700), var(--ungu-950));
   color: #fff;
   font-family: var(--fonts-paraf);
   font-weight: 700;
@@ -427,20 +406,22 @@ address.info-contact {
     filter var(--transition-base);
 }
 
-.tombol-kirim:hover {
+.btn-send:hover {
   filter: brightness(1.06);
   box-shadow: var(--shadow-card-hover);
   transform: translateY(-1px);
 }
 
-.tombol-kirim:active {
+.btn-send:active {
   transform: translateY(0);
 }
 
-.catatan-privasi {
+.privacy-notes {
+  font-family: var(--fonts-paragraf);
+  font-weight: 400;
   text-align: center;
   font-size: var(--text-size-xs);
-  color: var(--netral-400);
+  color: var(--netral-800);
   margin-top: var(--space-xs);
 }
 
@@ -509,4 +490,3 @@ legend.grup-legend {
   padding: 0;
   margin: 0;
 }
-

@@ -898,7 +898,22 @@
 }
 
 /* ========== compalint html ========== */
-@media (max-width: 860px) {
+@media (max-width: 480px) {
+  /* ======== header complaint ========= */
+  .hero-complaint {
+    height: 300px;
+  }
+
+  .complaint-header > h1 {
+    margin-top: 30px;
+    font-size: var(--text-size-xl);
+  }
+
+  .complaint-header > p {
+    font-size: var(--text-size-sm);
+  }
+
+  /* ======= compalint grid ========== */
   .complaint-grid {
     grid-template-columns: 1fr;
   }
@@ -906,5 +921,48 @@
   .complaint-info {
     position: static;
     top: auto;
+  }
+
+  .complaint-info h2 {
+    font-size: var(--text-size-lg);
+  }
+
+  .complaint-info p.lede {
+    font-size: var(--text-size-xs);
+  }
+
+  /* ======= langkah langkahnya ======== */
+  .info-poin .text p {
+    font-size: var(--text-size-xs);
+  }
+
+  address.info-contact {
+    font-size: var(--text-size-xs);
+  }
+
+  .info-contact strong {
+    font-size: var(--text-size-base);
+  }
+  .complaint-info::before,
+  .complaint-info::after {
+    display: none;
+  }
+
+  /* ======== formnya ============ */
+  .card-kop > img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .card-kop h3 {
+    font-size: var(--text-size-md);
+  }
+
+  .card-kop span {
+    font-size: var(--text-size-xs);
+  }
+
+  .field small.hint {
+    font-size: var(--text-size-xs);
   }
 }
