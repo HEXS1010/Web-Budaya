@@ -55,10 +55,26 @@
   align-items: start;
 }
 
-@media (max-width: 860px) {
-  .complaint-grid {
-    grid-template-columns: 1fr;
-  }
+.complaint-info::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 160px;
+  height: 160px;
+  border: 1px solid rgba(237, 192, 92, 0.35);
+  border-radius: 50%;
+}
+
+.complaint-info::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  left: -60px;
+  width: 180px;
+  height: 180px;
+  border: 1px solid rgba(237, 192, 92, 0.2);
+  border-radius: 50%;
 }
 
 /* -- panel info kiri -- */
@@ -206,8 +222,8 @@ address.info-contact {
 }
 
 .card-kop > img {
-    width: 70px;
-    height: 70px;
+  width: 70px;
+  height: 70px;
 }
 
 .card-kop h3 {
@@ -301,7 +317,6 @@ address.info-contact {
   outline: none;
   border-color: var(--ungu-600);
   background: var(--netral-50);
-  box-shadow: 0 0 0 3px var(--ungu-100);
 }
 
 .field select {
@@ -316,8 +331,10 @@ address.info-contact {
 .field small.hint {
   display: block;
   margin-top: 4px;
-  font-size: var(--text-size-xs);
-  color: var(--netral-500);
+  font-family: var(--fonts-paragraf);
+  font-weight: 400;
+  font-size: var(--text-size-sm);
+  color: var(--netral-800);
 }
 
 /* upload bukti */
@@ -492,3 +509,4 @@ legend.grup-legend {
   padding: 0;
   margin: 0;
 }
+

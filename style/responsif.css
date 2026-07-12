@@ -852,7 +852,7 @@
   }
 
   .hero-content > p {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .paper {
@@ -894,5 +894,17 @@
   /* ========== img ========= */
   .wiki-img figcaption {
     font-size: var(--text-size-sm);
+  }
+}
+
+/* ========== compalint html ========== */
+@media (max-width: 860px) {
+  .complaint-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .complaint-info {
+    position: static;
+    top: auto;
   }
 }
