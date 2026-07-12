@@ -496,7 +496,7 @@ body.sidebar-open {
   flex-direction: column;
 }
 
-.footer-brand-text h2 {
+.footer-brand-text > h2 {
   margin: 0;
   font-family: var(--fonts-heeading);
   font-size: 2rem;

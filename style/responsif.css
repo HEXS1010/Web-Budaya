@@ -807,17 +807,38 @@
 }
 
 @media (max-width: 480px) {
+  .footer-logo > img {
+    width: 65px;
+    height: 65px;
+  }
+
   .footer-brand-text h2 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 
   .footer-description {
     padding: 0 10px;
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .footer-social {
     justify-content: center;
+  }
+
+  .footer-nav > h3 {
+    font-size: var(--text-size-md);
+  }
+
+  .footer-nav > ul > li > a {
+    font-size: var(--text-size-base);
+  }
+
+  .footer-contact > h3 {
+    font-size: var(--text-size-md);
+  }
+
+  .footer-contact address {
+    font-size: var(--text-size-base);
   }
 }
 
