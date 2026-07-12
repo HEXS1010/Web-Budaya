@@ -150,7 +150,7 @@
 
 .info-poin .text h3 {
   font-family: var(--fonts-heading);
-  font-size: var(--text-size-base);
+  font-size: var(--text-size-md);
   font-weight: 600;
   color: var(--emas-100);
   margin-bottom: 2px;
@@ -158,27 +158,31 @@
 
 .info-poin .text p {
   font-family: var(--fonts-paragraf);
-  font-size: var(--text-size-sm);
+  font-size: var(--text-size-base);
   color: var(--ungu-200);
   line-height: 1.55;
 }
 
-.info-kontak {
+.info-contact {
   margin-top: var(--space-md);
   padding-top: var(--space-md);
   border-top: 1px dashed rgba(237, 192, 92, 0.3);
   font-size: var(--text-size-sm);
   color: var(--ungu-200);
   position: relative;
+  font-family: var(--fonts-paragraf);
+  font-weight: 400;
 }
 
-.info-kontak strong {
+.info-contact strong {
   color: var(--emas-200);
   display: block;
   margin-bottom: 4px;
-  font-family: var(--fonts-paraf);
+  font-family: var(--fonts-paragraf);
+  font-weight: 500;
+  font-size: var(--text-size-md);
 }
 
-address.info-kontak {
+address.info-contact {
   font-style: normal;
 }
