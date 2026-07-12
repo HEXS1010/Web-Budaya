@@ -898,7 +898,8 @@
 }
 
 /* ========== compalint html ========== */
-@media (max-width: 480px) {
+
+@media (max-width: 840px) {
   /* ======== header complaint ========= */
   .hero-complaint {
     height: 300px;
@@ -964,7 +965,11 @@
 
   .agreement label {
     font-size: var(--text-size-xs);
-  } 
+  }
+  
+  .field textarea::placeholder {
+    font-size: var(--text-size-sm);
+  }
   
   .field small.hint {
     font-size: var(--text-size-xs);
