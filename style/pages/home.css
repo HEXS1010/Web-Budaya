@@ -46,7 +46,7 @@
 }
 
 .hero h1 {
-  font-family: var(--fonts-heeading);
+  font-family: var(--fonts-heading);
   font-weight: 800;
   font-size: 3.7rem;
   line-height: 1.15;
@@ -110,7 +110,6 @@
 
 .btn:hover {
   transform: translateY(-4px) scale(1.03);
-
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
 }
 
@@ -301,7 +300,7 @@
 }
 
 .wel-caption > h2 {
-  font-family: var(--fonts-heeading);
+  font-family: var(--fonts-heading);
   color: var(--ungun-950);
   font-weight: 900;
   font-size: 1.7rem;
@@ -333,7 +332,7 @@
   font-weight: 400;
   letter-spacing: 1px;
   /* margin-bottom: 20px; */
-  font-family: "Noto Sans Balinese", sans-serif;
+  font-family: var(--fonts-aksara);
 }
 
 .wel-aksara > span {
@@ -346,7 +345,7 @@
 }
 
 .wel-content > h2 {
-  font-family: var(--fonts-heeading);
+  font-family: var(--fonts-heading);
   font-weight: 800;
   font-size: 5rem;
   color: var(--emas-950);
@@ -424,7 +423,7 @@
 }
 
 .histor-content > h3 {
-  font-family: var(--fonts-heeading);
+  font-family: var(--fonts-heading);
   font-weight: 900;
   font-size: 4rem;
   color: var(--emas-950);
@@ -621,7 +620,7 @@
 }
 
 .vision-content > h4 {
-  font-family: var(--fonts-heeading);
+  font-family: var(--fonts-heading);
   font-size: 3rem;
   font-weight: 800;
   color: var(--emas-950);
@@ -645,7 +644,7 @@
 
 .mission > h4 {
   font-size: 3rem;
-  font-family: var(--fonts-heeading);
+  font-family: var(--fonts-heading);
   font-weight: 800;
   color: var(--emas-950);
   text-align: center;
@@ -722,7 +721,7 @@
 }
 
 .agenda-title-main {
-  font-family: var(--fonts-heeading);
+  font-family: var(--fonts-heading);
   font-weight: 800;
   font-size: 4rem;
   color: var(--emas-950);
@@ -773,7 +772,7 @@
 }
 
 .agenda-nav-btn:focus-visible {
-  outline: 2px solid var(--ungu-2-600);
+  outline: 2px solid var(--ungu-600);
   outline-offset: 2px;
 }
 
@@ -882,7 +881,7 @@
 }
 /* ============ content agenda ============ */
 .agenda-item-title {
-  font-family: var(--fonts-heeading);
+  font-family: var(--fonts-heading);
   font-weight: 800;
   font-size: 20px;
   color: #fff;
@@ -1018,7 +1017,7 @@
 
 .news-head > h5 {
   font-size: 4rem;
-  font-family: var(--fonts-heeading);
+  font-family: var(--fonts-heading);
   font-weight: 800;
   color: var(--emas-950);
 }
@@ -1134,7 +1133,7 @@
 
 .news-title {
   padding: 10px 0;
-  font-family: var(--fonts-heeading);
+  font-family: var(--fonts-heading);
   font-weight: 900;
   font-size: 21px;
   line-height: 1.3;
@@ -1314,7 +1313,7 @@
 
 .aspiration-title {
   margin-top: 18px;
-  font-family: var(--fonts-heeading);
+  font-family: var(--fonts-heading);
   font-size: clamp(2.4rem, 5vw, 3.8rem);
   font-weight: 800;
   color: var(--netral-100);

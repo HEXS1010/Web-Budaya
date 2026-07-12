@@ -107,7 +107,7 @@
 }
 
 .complaint-info h2 {
-  font-family: var(--fonts-heeading);
+  font-family: var(--fonts-heading);
   font-weight: 600;
   font-size: var(--text-size-xl);
   color: var(--emas-50);
@@ -149,7 +149,7 @@
 }
 
 .info-poin .text h3 {
-  font-family: var(--fonts-paraf);
+  font-family: var(--fonts-heading);
   font-size: var(--text-size-base);
   font-weight: 600;
   color: var(--emas-100);
