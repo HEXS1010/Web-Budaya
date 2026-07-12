@@ -83,7 +83,8 @@
 .navbar-scroll .nav-items > a {
   color: var(--ungu-950);
 }
-/* =============================== */
+
+/* ======= tooltip text  ========= */
 .tooltip {
   position: relative;
   cursor: pointer;
@@ -91,11 +92,11 @@
 
 .tooltip-text {
   visibility: hidden;
-  background-color: aqua;
-  color: black;
+  background-color: var(--emas-400);
+  color: var(--ungu-950);
   text-align: center;
   border-radius: 6px;
-  padding: 6px;
+  padding: 6px 10px;
   position: absolute;
   z-index: 1;
   bottom: 125%;
@@ -103,12 +104,23 @@
   transform: translateX(-50%);
   opacity: 0;
   transition: opacity 0.3s;
-  font-size: 5px;
+  font-size: 13.5px;
+  letter-spacing: 1px;
+  font-family: var(--fonts-paragraf);
+  font-weight: 600;
+}
+
+.tooltip > i {
+  color: var(--ungu-950);
 }
 
 .tooltip:hover .tooltip-text {
   visibility: visible;
   opacity: 1;
+}
+
+#white > i {
+  color: var(--netral-100);
 }
 
 /* ============== Navbar =============== */
