@@ -164,7 +164,8 @@
 
 @media (max-width: 480px) {
   .hero-title {
-    font-size: var(--text-size-xl);
+    font-size: 32px;
+    padding: 0 23px;
   }
 
   .hero-description {
@@ -447,6 +448,10 @@
   .img-3,
   .img-4 {
     transform: none;
+  }
+
+  .hero-label {
+    margin-top: 10rem;
   }
 
   .histor-content > h3 {
