@@ -20,3 +20,165 @@
   opacity: 0.08;
   pointer-events: none;
 }
+
+.complaint-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.complaint-header > h1 {
+  font-family: var(--fonts-heading);
+  font-weight: 700;
+  font-size: var(--text-size-3xl);
+  color: var(--netral-100);
+}
+
+.complaint-header > p {
+  font-family: var(--fonts-paragraf);
+  font-weight: 400;
+  font-size: var(--text-size-md);
+  color: var(--netral-400);
+}
+
+/* ============ informasi pengisian ========= */
+.complaint-section {
+  padding-top: var(--space-lg);
+}
+
+.complaint-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+@media (max-width: 860px) {
+  .complaint-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -- panel info kiri -- */
+.complaint-info {
+  /* background: linear-gradient(175deg, var(--ungu-800), var(--ungu-950)); */
+  background: var(--ungu-900);
+  border-radius: var(--radius-xl);
+  padding: var(--space-lg) var(--space-md);
+  color: var(--emas-50);
+  position: sticky;
+  top: var(--space-md);
+  box-shadow: var(--shadow-card-hover);
+  overflow: hidden;
+}
+
+.complaint-info::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 160px;
+  height: 160px;
+  border: 1px solid rgba(237, 192, 92, 0.35);
+  border-radius: 50%;
+}
+
+.complaint-info::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  left: -60px;
+  width: 180px;
+  height: 180px;
+  border: 1px solid rgba(237, 192, 92, 0.2);
+  border-radius: 50%;
+}
+
+.pengaduan-info .eyebrow {
+  font-family: var(--fonts-paragraf);
+  font-weight: 400;
+  font-size: var(--text-size-xs);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--emas-300);
+  margin-bottom: var(--space-xs);
+}
+
+.complaint-info h2 {
+  font-family: var(--fonts-heeading);
+  font-weight: 600;
+  font-size: var(--text-size-xl);
+  color: var(--emas-50);
+  margin-bottom: var(--space-sm);
+  position: relative;
+}
+
+.complaint-info p.lede {
+  font-size: var(--text-size-base);
+  font-family: var(--fonts-paragraf);
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--ungu-200);
+  margin-bottom: var(--space-md);
+  position: relative;
+}
+
+.info-poin {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+  position: relative;
+}
+
+.icon-complaint {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background: var(--emas-500);
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+}
+
+.icon-complaint > i {
+  font-size: 16px;
+  color: var(--ungu-700);
+}
+
+.info-poin .text h3 {
+  font-family: var(--fonts-paraf);
+  font-size: var(--text-size-base);
+  font-weight: 600;
+  color: var(--emas-100);
+  margin-bottom: 2px;
+}
+
+.info-poin .text p {
+  font-family: var(--fonts-paragraf);
+  font-size: var(--text-size-sm);
+  color: var(--ungu-200);
+  line-height: 1.55;
+}
+
+.info-kontak {
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px dashed rgba(237, 192, 92, 0.3);
+  font-size: var(--text-size-sm);
+  color: var(--ungu-200);
+  position: relative;
+}
+
+.info-kontak strong {
+  color: var(--emas-200);
+  display: block;
+  margin-bottom: 4px;
+  font-family: var(--fonts-paraf);
+}
+
+address.info-kontak {
+  font-style: normal;
+}

@@ -332,13 +332,296 @@
 
     <main>
       <section class="hero-complaint">
-        <header class="-complaint-header">
+        <header class="complaint-header">
           <h1>Pengaduan</h1>
           <p>Beranda > Pengaduan</p>
         </header>
       </section>
 
-      <form action=""></form>
+      <section class="complaint-section">
+        <div class="section-wrapper">
+          <div class="complaint-grid">
+            <!-- ========= informasi pengisian-->
+            <aside
+              class="complaint-info"
+              aria-labelledby="alur-pengaduan-judul"
+            >
+              <p class="eyebrow">Pengaduan anda</p>
+              <h2 id="alur-pengaduan-judul">
+                Sampaikan keluhan Anda,<br />kami yang tindak lanjuti
+              </h2>
+              <p class="lede">
+                Setiap laporan warga akan diteruskan ke pengurus banjar dan
+                dibahas pada paruman terdekat sesuai tingkat urgensinya.
+              </p>
+
+              <ol class="info-poin-list">
+                <li class="info-poin">
+                  <span class="icon-complaint">
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                  <span class="text">
+                    <h3>Isi formulir</h3>
+                    <p>
+                      Lengkapi identitas dan uraikan keluhan sejelas mungkin.
+                    </p>
+                  </span>
+                </li>
+
+                <li class="info-poin">
+                  <span class="icon-complaint">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <span class="text">
+                    <h3>Diverifikasi pengurus</h3>
+                    <p>Kelian banjar akan meninjau laporan dalam 1x24 jam.</p>
+                  </span>
+                </li>
+
+                <li class="info-poin">
+                  <span class="icon-complaint">
+                    <i class="fa-solid fa-clock"></i>
+                  </span>
+                  <span class="text">
+                    <h3>Tindak lanjut</h3>
+                    <p>Status dan hasil pembahasan diinfokan lewat WhatsApp.</p>
+                  </span>
+                </li>
+              </ol>
+
+              <address class="info-kontak">
+                <strong>Butuh bantuan mendesak?</strong>
+                Hubungi kantor Bendesa Adat di
+                <a href="tel:+62361000000">(0361) 000-000</a> atau datang
+                langsung pada jam layanan, Senin–Jumat 08.00–15.00 WITA.
+              </address>
+            </aside>
+
+            <!-- ====== form pengaduan ======== -->
+            <form
+              class="pengaduan-card"
+              action=""
+              method="post"
+              novalidate
+              aria-labelledby="form-judul"
+            >
+              <header class="card-kop">
+                <svg
+                  class="ornamen"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M16 2c3 4 3 7 0 10-3-3-3-6 0-10Z"
+                    fill="var(--ungu-600)"
+                  />
+                  <path
+                    d="M16 30c-3-4-3-7 0-10 3 3 3 6 0 10Z"
+                    fill="var(--ungu-600)"
+                  />
+                  <circle cx="16" cy="16" r="4.5" fill="var(--emas-500)" />
+                </svg>
+                <div>
+                  <h3 id="form-judul">Formulir Pengaduan</h3>
+                  <span>Data diri Anda dijaga kerahasiaannya</span>
+                </div>
+              </header>
+
+              <div class="pengaduan-form">
+                <fieldset class="grup-field">
+                  <legend class="grup-legend">Data pelapor</legend>
+
+                  <div class="baris-dua">
+                    <div class="field">
+                      <label for="nama"
+                        >Nama lengkap<span class="wajib" aria-hidden="true"
+                          >*</span
+                        ><span class="sr-only"> (wajib diisi)</span></label
+                      >
+                      <input
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        placeholder="Contoh: I Wayan Suarta"
+                        autocomplete="name"
+                        required
+                      />
+                    </div>
+                    <div class="field">
+                      <label for="banjar"
+                        >Asal banjar / dusun<span
+                          class="wajib"
+                          aria-hidden="true"
+                          >*</span
+                        ><span class="sr-only"> (wajib diisi)</span></label
+                      >
+                      <input
+                        type="text"
+                        id="banjar"
+                        name="banjar"
+                        placeholder="Contoh: Banjar Kaja"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label for="whatsapp"
+                      >Nomor WhatsApp<span class="wajib" aria-hidden="true"
+                        >*</span
+                      ><span class="sr-only"> (wajib diisi)</span></label
+                    >
+                    <input
+                      type="tel"
+                      id="whatsapp"
+                      name="whatsapp"
+                      placeholder="08xx-xxxx-xxxx"
+                      autocomplete="tel"
+                      required
+                    />
+                  </div>
+                </fieldset>
+
+                <fieldset class="grup-field">
+                  <legend class="grup-legend">Detail keluhan</legend>
+
+                  <div class="baris-dua">
+                    <div class="field">
+                      <label for="kategori"
+                        >Kategori keluhan<span class="wajib" aria-hidden="true"
+                          >*</span
+                        ><span class="sr-only"> (wajib diisi)</span></label
+                      >
+                      <select id="kategori" name="kategori" required>
+                        <option value="" selected disabled>
+                          Pilih kategori
+                        </option>
+                        <option value="infrastruktur">
+                          Infrastruktur & Jalan
+                        </option>
+                        <option value="keamanan">Keamanan & Ketertiban</option>
+                        <option value="lingkungan">
+                          Kebersihan & Lingkungan
+                        </option>
+                        <option value="administrasi">
+                          Administrasi & Pelayanan
+                        </option>
+                        <option value="lainnya">Lainnya</option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <label for="lokasi"
+                        >Lokasi kejadian
+                        <span class="opsional">(opsional)</span></label
+                      >
+                      <input
+                        type="text"
+                        id="lokasi"
+                        name="lokasi"
+                        placeholder="Contoh: Jalan Raya Kaja, dekat Pura Dalem"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label for="keluhan"
+                      >Isi keluhan<span class="wajib" aria-hidden="true">*</span
+                      ><span class="sr-only"> (wajib diisi)</span></label
+                    >
+                    <textarea
+                      id="keluhan"
+                      name="keluhan"
+                      placeholder="Ceritakan keluhan Anda secara rinci: apa yang terjadi, sejak kapan, dan dampaknya bagi warga sekitar."
+                      aria-describedby="keluhan-hint"
+                      required
+                    ></textarea>
+                    <small class="hint" id="keluhan-hint"
+                      >Semakin rinci uraian Anda, semakin cepat pengurus dapat
+                      menindaklanjuti.</small
+                    >
+                  </div>
+
+                  <div class="field">
+                    <label for="bukti"
+                      >Lampiran foto bukti
+                      <span class="opsional">(opsional)</span></label
+                    >
+                    <label class="upload-box" for="bukti">
+                      <svg
+                        width="26"
+                        height="26"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M12 16V4M12 4l-4 4M12 4l4 4"
+                          stroke="#711FAA"
+                          stroke-width="1.6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2"
+                          stroke="#711FAA"
+                          stroke-width="1.6"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                      <span class="txt"
+                        ><strong>Klik untuk unggah foto</strong>JPG atau PNG,
+                        maksimal 5 MB</span
+                      >
+                      <input
+                        type="file"
+                        id="bukti"
+                        name="bukti"
+                        accept="image/*"
+                      />
+                    </label>
+                  </div>
+                </fieldset>
+
+                <fieldset class="grup-field">
+                  <legend class="sr-only">Persetujuan</legend>
+                  <div class="persetujuan">
+                    <input type="checkbox" id="setuju" name="setuju" required />
+                    <label for="setuju"
+                      >Saya menyatakan keluhan ini benar dan bersedia data saya
+                      digunakan pengurus banjar untuk keperluan tindak lanjut,
+                      sesuai <a href="#">ketentuan privasi</a>.</label
+                    >
+                  </div>
+                </fieldset>
+
+                <button type="submit" class="tombol-kirim">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M4 12h16M14 6l6 6-6 6"
+                      stroke="#fff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Kirim Pengaduan
+                </button>
+                <p class="catatan-privasi">
+                  Formulir ini hanya untuk keluhan warga banjar, bukan untuk
+                  keadaan darurat.
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- ============= footer ==============  -->
