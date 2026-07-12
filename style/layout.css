@@ -84,6 +84,32 @@
   color: var(--ungu-950);
 }
 /* =============================== */
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: aqua;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 5px;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
 
 /* ============== Navbar =============== */
 .navbar {
@@ -210,7 +236,7 @@
   column-gap: 24px;
   min-width: 380px;
   padding: 16px 20px;
-  position: absolute; 
+  position: absolute;
 }
 
 .dropdown-menu.is-split li {
@@ -263,7 +289,6 @@
 .navbar-scroll .nav-action > i {
   color: var(--ungu-950);
 }
-
 /* ============== sidebar ============ */
 .hamburger-btn {
   display: none;
