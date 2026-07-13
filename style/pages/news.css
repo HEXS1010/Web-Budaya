@@ -65,6 +65,7 @@
   border: 2px solid var(--netral-900);
   border-radius: var(--radius-lg);
   margin-bottom: 40px;
+  max-width: 850px;
 }
 
 .filter-fieldset {

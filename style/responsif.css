@@ -1059,13 +1059,14 @@
 
 /* =========== news page ============= */
 
-/* =========== hero news ==================== */
+/* ===== hero news ======= */
 @media (max-width: 1024px) {
   .news-page {
-    height: 380px;
+    height: 280px;
   }
 
   .news-page-header > h1 {
+    margin-top: 20px;
     font-size: 3.5rem;
   }
 
@@ -1076,7 +1077,7 @@
 
 @media (max-width: 768px) {
   .news-page {
-    height: 220px;
+    height: 260px;
   }
 
   .news-page-header {
@@ -1085,7 +1086,7 @@
   }
 
   .news-page-header > h1 {
-    font-size: 2.4rem;
+    font-size: 2.9rem;
   }
 
   .news-page-header > p {
@@ -1109,7 +1110,7 @@
   }
 }
 
-/* ============ article page wrapper ============= */
+/* ====== article page wrapper ====== */
 @media (max-width: 768px) {
   .article-page {
     padding-block: 3rem;
@@ -1130,7 +1131,7 @@
   }
 }
 
-/* ============ filter bar ============= */
+/* ===== filter bar ======= */
 @media (max-width: 1024px) {
   .filter-bar {
     padding: 18px 20px;
@@ -1264,7 +1265,7 @@
   }
 }
 
-/* ============ pagination ============= */
+/* ===== pagination ======= */
 @media (max-width: 768px) {
   .pagination {
     margin-top: 36px;
