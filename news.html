@@ -333,12 +333,476 @@
     </aside>
 
     <main>
-        <section class="news-page">
-            <header class="news-page-header">
-                <h1>Berita</h1>
-                <p>Beranda > Informasi > Berita</p>
-            </header>
-        </section>
+      <section class="news-page">
+        <header class="news-page-header">
+          <h1>Berita</h1>
+          <p>Beranda > Informasi > Berita</p>
+        </header>
+      </section>
+
+      <section class="article-page">
+        <div class="article-wrapper">
+          <!-- ======= filter news ========== -->
+          <form class="filter-bar" role="search" aria-label="Filter berita">
+            <fieldset class="filter-fieldset">
+              <legend class="filter-legend">Cari berdasarkan tanggal</legend>
+
+              <div class="filter-group">
+                <label for="filterYear">Tahun</label>
+                <select id="filterYear" name="year" class="filter-select">
+                  <option value="">Semua Tahun</option>
+                  <option value="2026">2026</option>
+                  <option value="2025">2025</option>
+                  <option value="2024">2024</option>
+                </select>
+              </div>
+
+              <div class="filter-group">
+                <label for="filterMonth">Bulan</label>
+                <select id="filterMonth" name="month" class="filter-select">
+                  <option value="">Semua Bulan</option>
+                  <option value="01">Januari</option>
+                  <option value="02">Februari</option>
+                  <option value="03">Maret</option>
+                  <option value="04">April</option>
+                  <option value="05">Mei</option>
+                  <option value="06">Juni</option>
+                  <option value="07">Juli</option>
+                  <option value="08">Agustus</option>
+                  <option value="09">September</option>
+                  <option value="10">Oktober</option>
+                  <option value="11">November</option>
+                  <option value="12">Desember</option>
+                </select>
+              </div>
+
+              <div class="filter-group">
+                <label for="filterDate">Tanggal</label>
+                <input
+                  type="date"
+                  id="filterDate"
+                  name="date"
+                  class="filter-select"
+                />
+              </div>
+            </fieldset>
+
+            <div class="filter-actions">
+              <button type="submit" class="filter-btn">
+                <i class="fa-solid fa-filter" aria-hidden="true"></i> Terapkan
+              </button>
+
+              <button type="reset" class="filter-reset">Reset</button>
+            </div>
+          </form>
+
+          <!-- ===== grid news =========== -->
+          <div class="article-grid">
+            <article class="card-article">
+              <figure class="article-img">
+                <img src="img/berita/gotong-royong.JPG" alt="gambar-content" />
+
+                <div class="article-overlay">
+                  <img
+                    src="img/logo/logo-banjar.png"
+                    alt="logo"
+                    aria-hidden="true"
+                  />
+                </div>
+              </figure>
+
+              <header class="article-card-header">
+                <p class="article-category">Berita</p>
+
+                <h2 class="article-title">
+                  <a href="#"> Gotong royong persiapan odalan 2026 </a>
+                </h2>
+
+                <div class="article-info">
+                  <time datetime="2026-07-07" class="article-time"
+                    ><i class="fa-solid fa-calendar"></i> 7 Juli 2026
+                  </time>
+                  <div class="article-view">
+                    <i class="fa-solid fa-eye"></i> 200
+                  </div>
+                </div>
+              </header>
+
+              <p class="article-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                sapiente cum dolorum maiores pariatur ea asperiores minus! Nemo,
+                distinctio dolorem.
+              </p>
+
+              <footer class="article-card-footer">
+                <a href="#">
+                  Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </footer>
+            </article>
+
+            <article class="card-article">
+              <figure class="article-img">
+                <img src="img/berita/odalan.jpg" alt="gambar-content" />
+
+                <div class="article-overlay">
+                  <img
+                    src="img/logo/logo-banjar.png"
+                    alt="logo"
+                    aria-hidden="true"
+                  />
+                </div>
+              </figure>
+
+              <header class="article-card-header">
+                <p class="article-category">Berita</p>
+
+                <h2 class="article-title">
+                  <a href="#"> Odalan banjar kaliungu 2026 </a>
+                </h2>
+
+                <div class="article-info">
+                  <time datetime="2026-07-07" class="article-time"
+                    ><i class="fa-solid fa-calendar"></i> 7 Juli 2026
+                  </time>
+                  <div class="article-view">
+                    <i class="fa-solid fa-eye"></i> 200
+                  </div>
+                </div>
+              </header>
+
+              <p class="article-description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam
+                repudiandae dignissimos aliquid reiciendis dolore culpa placeat
+                ad deserunt vitae ullam.
+              </p>
+
+              <footer class="article-card-footer">
+                <a href="#">
+                  Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </footer>
+            </article>
+
+            <article class="card-article">
+              <figure class="article-img">
+                <img src="img/berita/posyandu.JPG" alt="gambar-content" />
+
+                <div class="article-overlay">
+                  <img
+                    src="img/logo/logo-banjar.png"
+                    alt="logo"
+                    aria-hidden="true"
+                  />
+                </div>
+              </figure>
+
+              <header class="article-card-header">
+                <p class="article-category">Berita</p>
+
+                <h2 class="article-title">
+                  <a href="#"> Kegiatan Posyandu kaliungu </a>
+                </h2>
+
+                <div class="article-info">
+                  <time datetime="2026-07-07" class="article-time"
+                    ><i class="fa-solid fa-calendar"></i> 7 Juli 2026
+                  </time>
+                  <div class="article-view">
+                    <i class="fa-solid fa-eye"></i> 200
+                  </div>
+                </div>
+              </header>
+
+              <p class="article-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati laudantium aperiam beatae praesentium ab saepe odio
+                mollitia incidunt, itaque earum.
+              </p>
+
+              <footer class="article-card-footer">
+                <a href="#">
+                  Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </footer>
+            </article>
+            <article class="card-article">
+              <figure class="article-img">
+                <img src="img/berita/gotong-royong.JPG" alt="gambar-content" />
+
+                <div class="article-overlay">
+                  <img
+                    src="img/logo/logo-banjar.png"
+                    alt="logo"
+                    aria-hidden="true"
+                  />
+                </div>
+              </figure>
+
+              <header class="article-card-header">
+                <p class="article-category">Berita</p>
+
+                <h2 class="article-title">
+                  <a href="#"> Gotong royong persiapan odalan 2026 </a>
+                </h2>
+
+                <div class="article-info">
+                  <time datetime="2026-07-07" class="article-time"
+                    ><i class="fa-solid fa-calendar"></i> 7 Juli 2026
+                  </time>
+                  <div class="article-view">
+                    <i class="fa-solid fa-eye"></i> 200
+                  </div>
+                </div>
+              </header>
+
+              <p class="article-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                sapiente cum dolorum maiores pariatur ea asperiores minus! Nemo,
+                distinctio dolorem.
+              </p>
+
+              <footer class="article-card-footer">
+                <a href="#">
+                  Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </footer>
+            </article>
+
+            <article class="card-article">
+              <figure class="article-img">
+                <img src="img/berita/odalan.jpg" alt="gambar-content" />
+
+                <div class="article-overlay">
+                  <img
+                    src="img/logo/logo-banjar.png"
+                    alt="logo"
+                    aria-hidden="true"
+                  />
+                </div>
+              </figure>
+
+              <header class="article-card-header">
+                <p class="article-category">Berita</p>
+
+                <h2 class="article-title">
+                  <a href="#"> Odalan banjar kaliungu 2026 </a>
+                </h2>
+
+                <div class="article-info">
+                  <time datetime="2026-07-07" class="article-time"
+                    ><i class="fa-solid fa-calendar"></i> 7 Juli 2026
+                  </time>
+                  <div class="article-view">
+                    <i class="fa-solid fa-eye"></i> 200
+                  </div>
+                </div>
+              </header>
+
+              <p class="article-description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam
+                repudiandae dignissimos aliquid reiciendis dolore culpa placeat
+                ad deserunt vitae ullam.
+              </p>
+
+              <footer class="article-card-footer">
+                <a href="#">
+                  Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </footer>
+            </article>
+
+            <article class="card-article">
+              <figure class="article-img">
+                <img src="img/berita/posyandu.JPG" alt="gambar-content" />
+
+                <div class="article-overlay">
+                  <img
+                    src="img/logo/logo-banjar.png"
+                    alt="logo"
+                    aria-hidden="true"
+                  />
+                </div>
+              </figure>
+
+              <header class="article-card-header">
+                <p class="article-category">Berita</p>
+
+                <h2 class="article-title">
+                  <a href="#"> Kegiatan Posyandu kaliungu </a>
+                </h2>
+
+                <div class="article-info">
+                  <time datetime="2026-07-07" class="article-time"
+                    ><i class="fa-solid fa-calendar"></i> 7 Juli 2026
+                  </time>
+                  <div class="article-view">
+                    <i class="fa-solid fa-eye"></i> 200
+                  </div>
+                </div>
+              </header>
+
+              <p class="article-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati laudantium aperiam beatae praesentium ab saepe odio
+                mollitia incidunt, itaque earum.
+              </p>
+
+              <footer class="article-card-footer">
+                <a href="#">
+                  Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </footer>
+            </article>
+          </div>
+
+          <!-- ========= navigasi pagination ======= -->
+          <nav class="pagination" aria-label="Navigasi halaman berita">
+            <ul class="pagination-list">
+              <li>
+                <a
+                  href="#"
+                  class="pagination-link pagination-prev"
+                  aria-label="Halaman sebelumnya"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="pagination-link is-active"
+                  aria-current="page"
+                  >1</a
+                >
+              </li>
+              <li>
+                <a href="#" class="pagination-link">2</a>
+              </li>
+              <li>
+                <a href="#" class="pagination-link">3</a>
+              </li>
+              <li>
+                <a href="#" class="pagination-link">4</a>
+              </li>
+
+              <li>
+                <span class="pagination-dots">...</span>
+              </li>
+
+              <li>
+                <a href="#" class="pagination-link">10</a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="pagination-link pagination-next"
+                  aria-label="Halaman berikutnya"
+                >
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      <!-- ============= footer ==============  -->
+      <footer class="footer">
+        <div class="section-wrapper">
+          <section class="footer-brand" aria-labelledby="footer-brand-title">
+            <a href="index.html" class="footer-logo">
+              <img
+                src="img/logo/logo-banjar.png"
+                alt="Logo Banjar Kaliungu Kaja"
+              />
+
+              <div class="footer-brand-text">
+                <h2 id="footer-brand-title">Banjar Kaliungu Kaja</h2>
+                <span>Desa Adat Denpasar</span>
+              </div>
+            </a>
+
+            <p class="footer-description">
+              Melestarikan budaya, mempererat kebersamaan, serta memberikan
+              pelayanan terbaik bagi seluruh warga Banjar Kaliungu Kaja.
+            </p>
+
+            <nav class="footer-social" aria-label="Media sosial">
+              <a href="#" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+
+              <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a href="#" aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </nav>
+          </section>
+
+          <nav class="footer-nav" aria-labelledby="footer-profile">
+            <h3 id="footer-profile">Profil</h3>
+
+            <ul>
+              <li><a href="#">Sejarah</a></li>
+              <li><a href="#">Visi &amp; Misi</a></li>
+              <li><a href="#">Struktur Organisasi</a></li>
+              <li><a href="#">Program</a></li>
+            </ul>
+          </nav>
+
+          <nav class="footer-nav" aria-labelledby="footer-information">
+            <h3 id="footer-information">Informasi</h3>
+
+            <ul>
+              <li><a href="#">Berita</a></li>
+              <li><a href="#">Agenda</a></li>
+              <li><a href="#">Pengumuman</a></li>
+              <li><a href="#">Galeri</a></li>
+            </ul>
+          </nav>
+
+          <section
+            class="footer-contact"
+            aria-labelledby="footer-contact-title"
+          >
+            <h3 id="footer-contact-title">Kontak</h3>
+
+            <address>
+              <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Denpasar, Bali
+              </p>
+
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+628123456789">0812-3456-789</a>
+              </p>
+
+              <p>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:banjar@email.com"> banjar@email.com </a>
+              </p>
+            </address>
+          </section>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="section-wrapper">
+            <p>© 2026 Banjar Kaliungu Kaja. Seluruh Hak Cipta Dilindungi.</p>
+
+            <p>Designed &amp; Developed by <strong>.......</strong></p>
+          </div>
+        </div>
+      </footer>
     </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
   </body>
 </html>
