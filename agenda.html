@@ -339,8 +339,65 @@
           <p>Beranda > Agenda Kegiatan</p>
         </header>
       </section>
+
+      <!-- ====== agenda content ============ -->
       <section class="event-page">
         <div class="event-wrapper">
+          <!-- ======= filter bar ========== -->
+          <form class="filter-bar" role="search" aria-label="Filter berita">
+            <fieldset class="filter-fieldset">
+              <legend class="filter-legend">Cari berdasarkan tanggal</legend>
+
+              <div class="filter-group">
+                <label for="filterYear">Tahun</label>
+                <select id="filterYear" name="year" class="filter-select">
+                  <option value="">Semua Tahun</option>
+                  <option value="2026">2026</option>
+                  <option value="2025">2025</option>
+                  <option value="2024">2024</option>
+                </select>
+              </div>
+
+              <div class="filter-group">
+                <label for="filterMonth">Bulan</label>
+                <select id="filterMonth" name="month" class="filter-select">
+                  <option value="">Semua Bulan</option>
+                  <option value="01">Januari</option>
+                  <option value="02">Februari</option>
+                  <option value="03">Maret</option>
+                  <option value="04">April</option>
+                  <option value="05">Mei</option>
+                  <option value="06">Juni</option>
+                  <option value="07">Juli</option>
+                  <option value="08">Agustus</option>
+                  <option value="09">September</option>
+                  <option value="10">Oktober</option>
+                  <option value="11">November</option>
+                  <option value="12">Desember</option>
+                </select>
+              </div>
+
+              <div class="filter-group">
+                <label for="filterDate">Tanggal</label>
+                <input
+                  type="date"
+                  id="filterDate"
+                  name="date"
+                  class="filter-select"
+                />
+              </div>
+            </fieldset>
+
+            <div class="filter-actions">
+              <button type="submit" class="filter-btn">
+                <i class="fa-solid fa-filter" aria-hidden="true"></i> Terapkan
+              </button>
+
+              <button type="reset" class="filter-reset">Reset</button>
+            </div>
+          </form>
+
+          <!-- ========== agenda grid ============ -->
           <div class="event-grid">
             <article class="card-event is-upcoming">
               <figure class="event-frame">
