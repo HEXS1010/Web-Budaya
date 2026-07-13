@@ -693,3 +693,114 @@ body.sidebar-open {
 .footer-bottom strong {
   color: var(--emas-500);
 }
+
+/* ============ filter bar ============= */
+.filter-bar {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 20px 24px;
+  background: var(--emas-400);
+  border: 2px solid var(--netral-900);
+  border-radius: var(--radius-lg);
+  margin-bottom: 40px;
+  max-width: 850px;
+}
+
+.filter-fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* legend hidden visually but still read by screen readers */
+.filter-legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filter-group label {
+  font-family: var(--fonts-paragraf);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ungu-950);
+}
+
+.filter-select {
+  padding: 10px 14px;
+  border: 2px solid var(--netral-900);
+  border-radius: 8px;
+  font-family: var(--fonts-paragraf);
+  font-size: 14px;
+  background: var(--netral-100);
+  color: var(--ungu-950);
+  min-width: 150px;
+  cursor: pointer;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: var(--ungu-600);
+}
+
+.filter-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 22px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--ungu-950), var(--ungu-600));
+  color: var(--netral-100);
+  font-family: var(--fonts-paragraf);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.filter-btn:hover {
+  transform: translateY(-2px);
+}
+
+.filter-reset {
+  padding: 11px 18px;
+  border: 2px solid var(--netral-900);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--netral-900);
+  font-family: var(--fonts-paragraf);
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.filter-reset:hover {
+  background: var(--netral-900);
+  color: var(--netral-100);
+}
