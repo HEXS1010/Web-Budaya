@@ -748,6 +748,11 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 45px;
   }
+
+  .foooter-brand-text > h2 {
+    font-size: 1px;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -783,8 +788,8 @@
     text-align: left;
   }
 
-  .footer-brand-text h2 {
-    font-size: 1.6rem;
+  .footer-brand-text > h2 {
+    font-size: 1.4rem;
   }
 
   .footer-brand-text > span {

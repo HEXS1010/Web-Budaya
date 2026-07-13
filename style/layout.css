@@ -558,7 +558,7 @@ body.sidebar-open {
 .footer-brand-text > h2 {
   margin: 0;
   font-family: var(--fonts-heeading);
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 800;
   color: var(--netral-100);
   line-height: 1.1;
