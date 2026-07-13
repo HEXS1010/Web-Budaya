@@ -330,6 +330,10 @@
 }
 
 @media (max-width: 480px) {
+  /* .welcome {
+    background: red;
+  } */
+
   .wel-person {
     width: 300px;
   }
@@ -369,29 +373,73 @@
 }
 
 /* ============ historis =========== */
-@media (max-width: 1024px) {
+@media (max-width: 1324px) {
   .historis {
-    padding-block: 6rem;
+    /* background: greenyellow; */
+    padding-block: 9rem;
   }
 
-  .histor-content > h3 {
-    font-size: 3rem;
+  .histor-content {
+    padding: 0 12px;
+  }
+
+  .shape-dot-2 {
+    right: 2%;
+    bottom: 6%;
   }
 
   .histor-img {
-    width: 420px;
+    width: fit-content;
+    grid-template-columns: repeat(2, 280px);
+    /* border: 2px solid black; */
+  }
+}
+
+@media (max-width: 1024px) {
+  .historis {
+    padding-block: 6rem;
+    /* background: aqua; */
+  }
+
+  .histor-content > h3 {
+    font-size: 2.5rem;
+  }
+
+  .histor-desc {
+    font-size: 15px;
+  }
+
+  .hero-label {
+    font-size: 18px;
+  }
+
+  .histor-img {
+    width: fit-content;
     grid-template-columns: repeat(2, 200px);
+  }
+
+  .shape-dot,
+  .shape-dot-2 {
+    width: 200px;
   }
 }
 
 @media (max-width: 768px) {
   .historis {
     padding-block: 4rem;
+    /* background: goldenrod; */
   }
 
   .historis .section-wrapper {
     flex-direction: column;
     text-align: center;
+  }
+
+  .histor-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
   }
 
   .histor-content {
@@ -403,7 +451,7 @@
   }
 
   .histor-content > h3 {
-    font-size: 2.6rem;
+    font-size: 2.2rem;
   }
 
   .histor-desc {
@@ -450,12 +498,15 @@
     transform: none;
   }
 
-  .hero-label {
+  .histor-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 10rem;
   }
 
   .histor-content > h3 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 
   .histor-desc {
@@ -464,7 +515,7 @@
     padding: 12px 0 0 0;
     max-width: 100%;
     text-align: left;
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .histor-btn {
@@ -752,7 +803,6 @@
   .foooter-brand-text > h2 {
     font-size: 1px;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -997,11 +1047,11 @@
   .agreement label {
     font-size: var(--text-size-xs);
   }
-  
+
   .field textarea::placeholder {
     font-size: var(--text-size-sm);
   }
-  
+
   .field small.hint {
     font-size: var(--text-size-xs);
   }
