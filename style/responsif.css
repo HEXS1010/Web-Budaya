@@ -1297,3 +1297,123 @@
     border-width: 1.5px;
   }
 }
+
+/* ====== agenda page header ======= */
+@media (max-width: 1024px) {
+  .agenda-page {
+    height: 280px;
+  }
+  .agenda-page-header > h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .agenda-page {
+    height: 260px;
+  }
+  .agenda-page-header {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .agenda-page-header > h1 {
+    font-size: 2.1rem;
+  }
+
+  .agenda-page-header > p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .agenda-page {
+    height: 220px;
+  }
+  .agenda-page-header > h1 {
+    margin-top: 20px;
+    font-size: 1.7rem;
+  }
+
+  .agenda-page-header > p {
+    font-size: 12px;
+  }
+}
+
+/* ============ event page wrapper ============= */
+@media (max-width: 768px) {
+  .event-page {
+    padding-block: 3rem;
+  }
+
+  .event-wrapper {
+    padding-inline: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-page {
+    padding-block: 2.5rem;
+  }
+
+  .event-wrapper {
+    padding-inline: 12px;
+  }
+}
+
+/* ======= event grid ========= */
+@media (max-width: 1024px) {
+  .event-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .event-frame {
+    height: 360px;
+  }
+
+  .event-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .event-frame {
+    height: 320px;
+  }
+
+  .event-caption {
+    padding: 40px 14px 14px;
+  }
+
+  .event-badge {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+
+  .event-title {
+    font-size: 19px;
+    margin: 8px 0 6px 0;
+  }
+
+  .event-meta {
+    font-size: 12px;
+    gap: 6px;
+  }
+
+  .event-meta i {
+    font-size: 11px;
+  }
+}
