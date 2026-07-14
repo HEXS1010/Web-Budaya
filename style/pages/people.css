@@ -465,7 +465,7 @@
     grid-template-columns: 1fr;
     gap: 12px;
   }
-  
+
   .load-more-btn {
     width: 100%;
     justify-content: center;
@@ -519,5 +519,6 @@
   .people-content p {
     font-size: var(--text-size-sm);
   }
+  /* =================== */
 
 }
