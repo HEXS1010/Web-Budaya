@@ -62,7 +62,7 @@
   font-family: var(--fonts-paraf);
   font-size: 0.95rem;
   font-weight: 700;
-  color: var(--gold-500);
+  color: var(--emas-500);
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 12px;
@@ -71,7 +71,7 @@
 .section-title {
   font-family: var(--fonts-heeading);
   font-size: clamp(2.5rem, 4vw, 3.6rem);
-  color: var(--brown-900);
+  color: var(--emas-900);
   margin-bottom: 18px;
   line-height: 1.2;
 }
@@ -81,7 +81,7 @@
   width: 80px;
   height: 4px;
   border-radius: 999px;
-  background: var(--gold-500);
+  background: var(--emas-500);
   margin-inline: auto;
   margin-bottom: 22px;
 }
@@ -90,7 +90,7 @@
   font-family: var(--fonts-paraf);
   font-size: 1rem;
   line-height: 1.9;
-  color: var(--neutral-700);
+  color: var(--netral-700);
 }
 
 /*====================================*/
@@ -104,7 +104,7 @@
 /*====================================*/
 
 .people-card {
-  background: #fff;
+  background: var(--netral-100);
   border-radius: 24px;
   padding: 22px;
   border: 1px solid rgba(0, 0, 0, 0.06);
@@ -149,13 +149,13 @@
 .people-content h3 {
   font-family: var(--fonts-heeading);
   font-size: 1.6rem;
-  color: var(--brown-900);
+  color: var(--ungu-900);
   margin-bottom: 8px;
 }
 
 .people-content p {
   font-family: var(--fonts-paraf);
-  color: var(--gold-600);
+  color: var(--ungu-800);
   font-size: 0.95rem;
   font-weight: 600;
 }
@@ -189,5 +189,84 @@
 
   .people-content h3 {
     font-size: 1.4rem;
+  }
+}
+
+/* ========== warga banjar =========== */
+.citizen {
+  padding-block: 120px;
+}
+
+/*===============================*/
+
+.citizen-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/*===============================*/
+
+.load-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.btn-load {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 34px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: var(--fonts-paraf);
+  font-size: 0.95rem;
+  font-weight: 700;
+  background: var(--gold-500);
+  color: #fff;
+  transition: 0.35s;
+}
+
+.btn-load:hover {
+  transform: translateY(-3px);
+  background: var(--gold-600);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.btn-load i {
+  transition: 0.3s;
+}
+
+.btn-load:hover i {
+  transform: translateY(4px);
+}
+
+/*===============================*/
+
+@media (max-width: 992px) {
+  .citizen-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .citizen {
+    padding-block: 90px;
+  }
+
+  .citizen-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .load-more {
+    margin-top: 45px;
+  }
+
+  .btn-load {
+    width: 100%;
+    justify-content: center;
   }
 }
