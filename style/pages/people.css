@@ -49,155 +49,7 @@
   padding-block: 120px;
 }
 
-/* === headernya ===== */
-
-.section-header {
-  max-width: 700px;
-  margin-inline: auto;
-  text-align: center;
-  margin-bottom: 70px;
-}
-
-.section-subtitle {
-  font-family: var(--fonts-paraf);
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--emas-500);
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  margin-bottom: 12px;
-}
-
-.section-title {
-  font-family: var(--fonts-heeading);
-  font-size: clamp(2.5rem, 4vw, 3.6rem);
-  color: var(--emas-900);
-  margin-bottom: 18px;
-  line-height: 1.2;
-}
-
-.section-divider {
-  display: block;
-  width: 80px;
-  height: 4px;
-  border-radius: 999px;
-  background: var(--emas-500);
-  margin-inline: auto;
-  margin-bottom: 22px;
-}
-
-.section-description {
-  font-family: var(--fonts-paraf);
-  font-size: 1rem;
-  line-height: 1.9;
-  color: var(--netral-700);
-}
-
-/*====================================*/
-
-.committee-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
-}
-
-/*====================================*/
-
-.people-card {
-  background: var(--netral-100);
-  border-radius: 24px;
-  padding: 22px;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.06);
-  transition: 0.35s;
-}
-
-.people-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 24px 45px rgba(0, 0, 0, 0.1);
-}
-
-/*====================================*/
-
-.people-image {
-  margin: 0;
-  border-radius: 18px;
-  overflow: hidden;
-  background: #f7f7f7;
-  aspect-ratio: 4/5;
-}
-
-.people-image img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  transition: 0.45s;
-}
-
-.people-card:hover img {
-  transform: scale(1.05);
-}
-
-/*====================================*/
-
-.people-content {
-  text-align: center;
-  padding-top: 22px;
-}
-
-.people-content h3 {
-  font-family: var(--fonts-heeading);
-  font-size: 1.6rem;
-  color: var(--ungu-900);
-  margin-bottom: 8px;
-}
-
-.people-content p {
-  font-family: var(--fonts-paraf);
-  color: var(--ungu-800);
-  font-size: 0.95rem;
-  font-weight: 600;
-}
-
-/*====================================*/
-
-@media (max-width: 992px) {
-  .committee-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .committee {
-    padding-block: 90px;
-  }
-
-  .section-header {
-    margin-bottom: 50px;
-  }
-
-  .committee-grid {
-    grid-template-columns: 1fr;
-
-    gap: 24px;
-  }
-
-  .people-card {
-    padding: 18px;
-  }
-
-  .people-content h3 {
-    font-size: 1.4rem;
-  }
-}
-
-/* ============ citizen / warga banjar ============= */
-.citizen {
-  padding-block: 6rem;
-}
-
-/* ======= header section ========= */
+/* ======= citizen + committee header yang sama ========= */
 .section-header {
   display: flex;
   flex-direction: column;
@@ -209,7 +61,7 @@
 
 .section-subtitle {
   font-family: var(--fonts-aksara);
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 400;
   color: var(--ungu-600);
   margin-bottom: 6px;
@@ -237,142 +89,17 @@
   color: var(--netral-900);
 }
 
-/* ======= layout: sidebar + content ========= */
-.citizen-layout {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 32px;
-  align-items: start;
-}
+/*====================================*/
 
-/* ================= SIDEBAR ================= */
-.citizen-sidebar {
-  position: sticky;
-  top: 100px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.sidebar-card {
-  background: var(--emas-400);
-  border: 2px solid var(--netral-900);
-  border-radius: var(--radius-lg);
-  padding: 20px;
-}
-
-.sidebar-card h3 {
-  font-family: var(--fonts-heading);
-  font-weight: 800;
-  font-size: 16px;
-  color: var(--ungu-950);
-  margin-bottom: 14px;
-}
-
-/* ======= search box ========= */
-.search-box {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  border: 2px solid var(--netral-900);
-  border-radius: 8px;
-  padding: 10px 14px;
-  transition: border-color 0.2s ease;
-}
-
-.search-box:focus-within {
-  border-color: var(--ungu-600);
-}
-
-.search-box i {
-  color: var(--ungu-600);
-  font-size: 14px;
-  flex-shrink: 0;
-}
-
-.search-box input {
-  border: none;
-  outline: none;
-  width: 100%;
-  font-family: var(--fonts-paragraf);
-  font-size: 14px;
-  color: var(--ungu-950);
-  background: transparent;
-}
-
-.search-box input::placeholder {
-  color: var(--netral-900);
-  opacity: 0.6;
-}
-
-/* ======= gender filter (pill style) ========= */
-.gender-filter {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.gender-filter label {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 14px;
-  border: 2px solid var(--netral-900);
-  border-radius: 8px;
-  cursor: pointer;
-  font-family: var(--fonts-paragraf);
-  font-size: 14px;
-  color: var(--ungu-950);
-  transition:
-    background 0.2s ease,
-    border-color 0.2s ease,
-    color 0.2s ease;
-}
-
-.gender-filter label:hover {
-  border-color: var(--ungu-600);
-}
-
-.gender-filter input[type="radio"] {
-  accent-color: var(--ungu-600);
-  cursor: pointer;
-}
-
-.gender-filter input[type="radio"]:checked + span {
-  font-weight: 700;
-}
-
-.gender-filter label:has(input:checked) {
-  background: var(--ungu-600);
-  border-color: var(--ungu-600);
-  color: var(--netral-100);
-}
-
-/* ======= info card ========= */
-.sidebar-card p {
-  font-family: var(--fonts-paragraf);
-  font-size: 13px;
-  line-height: 1.6;
-  color: var(--netral-900);
-}
-
-.sidebar-card p strong {
-  color: var(--ungu-600);
-  font-weight: 700;
-}
-
-/* ================= CONTENT ================= */
-.citizen-content {
-  min-width: 0;
-}
-
-.citizen-grid {
+.committee-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 32px;
 }
 
-/* ======= card warga ========= */
+/*====================================*/
+
+/* ======= card warga + dengan card pengurus ========= */
 .people-card {
   display: flex;
   flex-direction: column;
@@ -423,6 +150,177 @@
   font-family: var(--fonts-paragraf);
   font-size: 13px;
   color: var(--netral-900);
+}
+
+/*====================================*/
+
+@media (max-width: 992px) {
+  .committee-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .committee {
+    padding-block: 90px;
+  }
+
+  .section-header {
+    margin-bottom: 50px;
+  }
+
+  .committee-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .people-card {
+    padding: 18px;
+  }
+
+  .people-content h3 {
+    font-size: 1.4rem;
+  }
+}
+
+/* ============ citizen / warga banjar ============= */
+.citizen {
+  padding-block: 6rem;
+}
+
+/* ======= ini yang nangatur navigasi dan cardnya ========= */
+.citizen-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+/* ========= nav info ============== */
+.citizen-sidebar {
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-card {
+  background: var(--emas-400);
+  border: 2px solid var(--netral-900);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+}
+
+.sidebar-card h3 {
+  font-family: var(--fonts-heading);
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--ungu-950);
+  margin-bottom: 14px;
+}
+
+.sidebar-card p {
+  font-family: var(--fonts-paragraf);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--netral-900);
+}
+
+.sidebar-card p strong {
+  color: var(--ungu-600);
+  font-weight: 700;
+}
+
+/* ======= tempat pencarian namanya ========= */
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid var(--netral-900);
+  border-radius: 8px;
+  padding: 10px 14px;
+  transition: border-color 0.2s ease;
+}
+
+.search-box:focus-within {
+  border-color: var(--ungu-600);
+}
+
+.search-box i {
+  color: var(--ungu-600);
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-family: var(--fonts-paragraf);
+  font-size: 14px;
+  color: var(--ungu-950);
+  background: transparent;
+}
+
+.search-box input::placeholder {
+  color: var(--netral-900);
+  opacity: 0.6;
+}
+
+/* ======= style radio button ========= */
+.gender-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gender-filter label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border: 2px solid var(--netral-900);
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: var(--fonts-paragraf);
+  font-size: 14px;
+  color: var(--ungu-950);
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.gender-filter label:hover {
+  border-color: var(--ungu-600);
+}
+
+.gender-filter input[type="radio"] {
+  accent-color: var(--ungu-600);
+  cursor: pointer;
+}
+
+.gender-filter input[type="radio"]:checked + span {
+  font-weight: 700;
+}
+
+.gender-filter label:has(input:checked) {
+  background: var(--ungu-600);
+  border-color: var(--ungu-600);
+  color: var(--netral-100);
+}
+
+/* ======= contentnya ======== */
+.citizen-content {
+  min-width: 0;
+}
+
+.citizen-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 /* ======= load more ========= */
@@ -561,7 +459,7 @@
   }
 
   .sidebar-card h3 {
-    font-size: 14px;
+    font-size: var(--text-size-md);
     margin-bottom: 10px;
   }
 
@@ -585,27 +483,27 @@
   }
 
   .people-card {
-    flex-direction: row;
-    text-align: left;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
-    gap: 12px;
-    padding: 12px;
+    /* gap: 12px; */
+    padding: 12px 0;
   }
 
   .people-image {
-    width: 70px;
-    height: 70px;
+    width: 200px;
+    height: 300px;
     aspect-ratio: 1 / 1;
     margin-bottom: 0;
     flex-shrink: 0;
   }
 
   .people-content h3 {
-    font-size: 14px;
+    font-size: var(--text-size-lg);
   }
 
   .people-content p {
-    font-size: 12px;
+    font-size: var(--text-size-sm);
   }
 
   .load-more-btn {
