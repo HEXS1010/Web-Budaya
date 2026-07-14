@@ -1426,7 +1426,7 @@
     height: 300px;
   }
   .people-page-header > h1 {
-    margin-top: 20px;
+    margin-top: 26px;
     font-size: 2.5rem;
   }
   /* ============= */
@@ -1469,7 +1469,7 @@
 
   /* ==== ini punya judul bannernya ======= */
   .people-page-header > h1 {
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 2rem;
   }
 
@@ -1477,7 +1477,7 @@
     font-size: .8rem;
   }
   /* =================== */
-  
+
   /* ===== ini punya warga =========== */
   .citizen {
     padding-block: 3rem;
@@ -1527,6 +1527,21 @@
 }
 
 @media (max-width: 480px) {
+
+  /* ====== ini punya judul bannernya ========= */
+  .people-page {
+    height: 250px;
+  }
+  .people-page-header > h1 {
+    margin-top: 30px;
+    font-size: 1.7rem;
+  }
+
+  .people-page-header > p {
+    font-size: 0.8rem;
+  }
+  /* ============= */
+
   /* =========== ini punya warga ======== */
   .citizen {
     padding-block: 2.5rem;
