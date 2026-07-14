@@ -79,37 +79,6 @@
   transform: scale(1.03);
 }
 
-@media (max-width: 1024px) {
-  .gallery-masonry {
-    column-count: 3;
-  }
-}
-
-@media (max-width: 768px) {
-  .gallery-page {
-    padding-block: 3rem;
-  }
-
-  .gallery-wrapper {
-    padding-inline: 16px;
-  }
-
-  .gallery-masonry {
-    column-count: 2;
-    column-gap: 10px;
-  }
-
-  .gallery-item {
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .gallery-masonry {
-    column-count: 1;
-  }
-}
-
 /* == btn load more ==== */
 .gallery-loadmore {
   display: flex;
