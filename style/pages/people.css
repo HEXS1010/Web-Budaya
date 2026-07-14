@@ -235,7 +235,7 @@
 .sidebar-card p {
   font-family: var(--fonts-paragraf);
   font-weight: 400;
-  font-size: 13px;
+  font-size: 13.5px;
   line-height: 1.6;
   color: var(--netral-900);
 }
@@ -315,7 +315,7 @@
 }
 
 .gender-filter input[type="radio"]:checked + span {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .gender-filter label:has(input:checked) {
