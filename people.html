@@ -444,128 +444,159 @@
 
           <p class="section-description">
             Seluruh warga Banjar Kaliungu Kaja yang terdaftar sebagai bagian
-            dari keluarga besar Banjar.
+            dari keluarga besar Banjar. Gunakan pencarian atau filter untuk
+            menemukan warga dengan lebih mudah.
           </p>
         </header>
 
-         <div class="citizen-layout">
+        <div class="citizen-layout">
+          <!-- ================= SIDEBAR ================= -->
 
-        <!-- Aside -->
-
-        <aside class="citizen-sidebar">
+          <aside class="citizen-sidebar">
             <div class="sidebar-card">
-                <h3>Pencarian</h3>
-                <div class="search-box">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input
-                        type="text"
-                        placeholder="Cari nama warga">
+              <h3>Temukan Warga</h3>
+
+              <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input type="text" placeholder="Cari nama warga..." />
+              </div>
+            </div>
+
+            <div class="sidebar-card">
+              <h3>Filter Gender</h3>
+
+              <div class="gender-filter">
+                <label>
+                  <input type="radio" name="gender" checked />
+
+                  <span>Semua</span>
+                </label>
+
+                <label>
+                  <input type="radio" name="gender" />
+
+                  <span>Laki-laki</span>
+                </label>
+
+                <label>
+                  <input type="radio" name="gender" />
+
+                  <span>Perempuan</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="sidebar-card">
+              <h3>Informasi</h3>
+
+              <p>
+                Menampilkan
+                <strong>6</strong>
+                dari
+                <strong>245</strong>
+                warga Banjar.
+              </p>
+            </div>
+          </aside>
+
+          <!-- ================= CONTENT ================= -->
+
+          <div class="citizen-content">
+            <div class="citizen-grid">
+              <!-- CARD 1 -->
+
+              <article class="people-card">
+                <figure class="people-image">
+                  <img src="img/people/user.png" alt="Komang Arya" />
+                </figure>
+
+                <div class="people-content">
+                  <h3>Komang Arya</h3>
+
+                  <p>Warga Banjar</p>
                 </div>
+              </article>
+
+              <!-- CARD 2 -->
+
+              <article class="people-card">
+                <figure class="people-image">
+                  <img src="img/people/user.png" alt="Made Putra" />
+                </figure>
+
+                <div class="people-content">
+                  <h3>Made Putra</h3>
+
+                  <p>Warga Banjar</p>
+                </div>
+              </article>
+
+              <!-- CARD 3 -->
+
+              <article class="people-card">
+                <figure class="people-image">
+                  <img src="img/people/user.png" alt="Ketut Ardana" />
+                </figure>
+
+                <div class="people-content">
+                  <h3>Ketut Ardana</h3>
+
+                  <p>Warga Banjar</p>
+                </div>
+              </article>
+
+              <!-- CARD 4 -->
+
+              <article class="people-card">
+                <figure class="people-image">
+                  <img src="img/people/user.png" alt="Ni Luh Sriani" />
+                </figure>
+
+                <div class="people-content">
+                  <h3>Ni Luh Sriani</h3>
+
+                  <p>Warga Banjar</p>
+                </div>
+              </article>
+
+              <!-- CARD 5 -->
+
+              <article class="people-card">
+                <figure class="people-image">
+                  <img src="img/people/user.png" alt="Putu Mahendra" />
+                </figure>
+
+                <div class="people-content">
+                  <h3>Putu Mahendra</h3>
+
+                  <p>Warga Banjar</p>
+                </div>
+              </article>
+
+              <!-- CARD 6 -->
+
+              <article class="people-card">
+                <figure class="people-image">
+                  <img src="img/people/user.png" alt="Wayan Suantara" />
+                </figure>
+
+                <div class="people-content">
+                  <h3>Wayan Suantara</h3>
+                  <p>Warga Banjar</p>
+                </div>
+              </article>
             </div>
 
-            <div class="sidebar-card">
-                <h3>Gender</h3>
-                <label>
-                    <input
-                        type="radio"
-                        checked
-                        name="gender">
-                    Semua
-                </label>
+            <!-- ================= LOAD MORE ================= -->
 
-                <label>
-
-                    <input
-                        type="radio"
-                        name="gender">
-                    Laki-laki
-                </label>
-
-                <label>
-                    <input
-                        type="radio"
-                        name="gender">
-                    Perempuan
-                </label>
+            <div class="load-more">
+              <button type="button" class="load-more-btn">
+                <span>Lihat Lebih Banyak</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
             </div>
-        </aside>
-
-
-        <!-- ====== warga content ========== -->
-        <div class="citizen-grid">
-          <article class="people-card">
-            <figure class="people-image">
-              <img src="img/people/user.png" alt="Komang Aswameda" />
-            </figure>
-
-            <div class="people-content">
-              <h3>Komang arya</h3>
-              <p>Warga Banjar</p>
-            </div>
-          </article>
-
-          <article class="people-card">
-            <figure class="people-image">
-              <img src="img/people/user.png" alt="Made Putra" />
-            </figure>
-
-            <div class="people-content">
-              <h3>Made Putra</h3>
-              <p>Warga Banjar</p>
-            </div>
-          </article>
-
-          <article class="people-card">
-            <figure class="people-image">
-              <img src="img/people/user.png" alt="Ketut Ardana" />
-            </figure>
-
-            <div class="people-content">
-              <h3>Ketut Ardana</h3>
-              <p>Warga Banjar</p>
-            </div>
-          </article>
-
-          <article class="people-card">
-            <figure class="people-image">
-              <img src="img/people/user.png" alt="Ni Luh Sriani" />
-            </figure>
-
-            <div class="people-content">
-              <h3>Ni Luh Sriani</h3>
-              <p>Warga Banjar</p>
-            </div>
-          </article>
-
-          <article class="people-card">
-            <figure class="people-image">
-              <img src="img/people/user.png" alt="Wayan Suantara" />
-            </figure>
-
-            <div class="people-content">
-              <h3>Wayan Suantara</h3>
-              <p>Warga Banjar</p>
-            </div>
-          </article>
-
-          <article class="people-card">
-            <figure class="people-image">
-              <img src="img/people/user.png" alt="Putu Mahendra" />
-            </figure>
-
-            <div class="people-content">
-              <h3>Putu Mahendra</h3>
-              <p>Warga Banjar</p>
-            </div>
-          </article>
-        </div>
-
-        <div class="load-more">
-          <button class="btn-load">
-            Lihat Lebih Banyak
-
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
+          </div>
         </div>
       </section>
     </main>
