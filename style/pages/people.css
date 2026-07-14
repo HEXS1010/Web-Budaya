@@ -120,7 +120,7 @@
   background: var(--emas-100);
   border: 2px solid var(--netral-900);
   border-radius: var(--radius-lg);
-  padding: 24px 16px;
+  padding: 15px 15px;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -162,37 +162,6 @@
   font-family: var(--fonts-paragraf);
   font-size: 13px;
   color: var(--netral-900);
-}
-
-/*====================================*/
-
-/* @media (max-width: 992px) {
-  .committee-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-} */
-
-@media (max-width: 768px) {
-  .committee {
-    padding-block: 90px;
-  }
-
-  .section-header {
-    margin-bottom: 50px;
-  }
-
-  .committee-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-  }
-
-  .people-card {
-    padding: 18px;
-  }
-
-  .people-content h3 {
-    font-size: 1.4rem;
-  }
 }
 
 /* ============ citizen / warga banjar ============= */
@@ -373,14 +342,11 @@
   transform: translateY(2px);
 }
 
-/* ============ citizen / warga banjar ============= */
+/* ======== responsifnya warga dan pengurus ======= */
 @media (max-width: 1024px) {
+  /* ======= ini punya warga ======= */
   .citizen {
     padding-block: 4rem;
-  }
-
-  .section-title {
-    font-size: var(--text-size-2xl);
   }
 
   .citizen-layout {
@@ -392,6 +358,24 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
   }
+/* ======================= */
+
+/* -========== ini punyanya pengurus ========== */
+  .committee-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+/* =============== */
+
+/* ==== ini miliknya warga dan pengurus ======= */
+  .section-title {
+    font-size: var(--text-size-2xl);
+  }
+
+  .people-card {
+    padding: 15px 15px;
+  }
+  /* ============= */
 }
 
 @media (max-width: 768px) {
@@ -435,13 +419,19 @@
   }
 
   .people-card {
-    padding: 18px 12px;
+    gap: 16px;
+    padding: 15px 15px;
   }
 }
 
 @media (max-width: 480px) {
   .citizen {
     padding-block: 2.5rem;
+  }
+
+  .committee-grid {
+    grid-template-columns: 1fr;
+    gap:24px;
   }
 
   .section-header {
@@ -495,16 +485,17 @@
     gap: 12px;
   }
 
+/* ================ */
   .people-card {
     flex-direction: column;
     text-align: center;
     align-items: center;
     /* gap: 12px; */
-    padding: 12px 0;
+    padding: 15px 15px;
   }
 
   .people-image {
-    width: 200px;
+    width: 300px;
     height: 300px;
     aspect-ratio: 1 / 1;
     margin-bottom: 0;
