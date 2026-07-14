@@ -1,0 +1,418 @@
+:root {
+  --indigo: #2e2b5f;
+  --indigo-deep: #201e45;
+  --cream: #f6f1e7;
+  --paper: #ffffff;
+  --gold: #c89b3c;
+  --gold-soft: #efe1be;
+  --ink: #221f3d;
+  --muted: #79758c;
+  --line: #e4decd;
+  --danger: #b8483f;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: var(--cream);
+  font-family: "Inter", sans-serif;
+  color: var(--ink);
+  min-height: 100vh;
+  padding: 48px 24px;
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(46, 43, 95, 0.06) 1px,
+    transparent 0
+  );
+  background-size: 22px 22px;
+}
+.wrap {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+/* ---- Step track (outside the card) ---- */
+.steptrack {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 40px;
+  position: relative;
+}
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  flex: 1;
+  max-width: 180px;
+}
+.step .dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 2px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--muted);
+  z-index: 2;
+  transition: all 0.35s ease;
+}
+.step .label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  transition: color 0.35s ease;
+}
+.step.active .dot {
+  background: var(--indigo);
+  border-color: var(--indigo);
+  color: #fff;
+}
+.step.active .label {
+  color: var(--indigo);
+}
+.step.done .dot {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #fff;
+}
+.step.done .label {
+  color: var(--ink);
+}
+
+/* stitch connector — signature detail referencing thread/sewing */
+.stitch {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+.stitch-line {
+  width: 100%;
+  height: 0;
+  border-top: 2px dashed var(--line);
+}
+.stitch-line.filled {
+  border-top: 2px dashed var(--gold);
+}
+
+/* ---- Layout ---- */
+.grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+@media (max-width: 760px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: var(--paper);
+  border-radius: 18px;
+  padding: 36px;
+  box-shadow:
+    0 1px 2px rgba(34, 31, 61, 0.04),
+    0 12px 32px -16px rgba(34, 31, 61, 0.18);
+}
+.card h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+.card .sub {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+.field {
+  margin-bottom: 18px;
+}
+.field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 7px;
+  color: var(--ink);
+}
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid var(--line);
+  border-radius: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: var(--ink);
+  background: #fdfcfa;
+  transition: border-color 0.2s ease;
+}
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--indigo);
+}
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+/* Qty stepper */
+.qty-box {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border: 1.5px solid var(--line);
+  border-radius: 10px;
+  width: fit-content;
+  overflow: hidden;
+}
+.qty-box button {
+  width: 40px;
+  height: 42px;
+  background: var(--gold-soft);
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--indigo);
+  font-weight: 600;
+}
+.qty-box button:hover {
+  background: var(--gold);
+  color: #fff;
+}
+.qty-box span {
+  width: 48px;
+  text-align: center;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/* Payment method cards */
+.pay-option {
+  border: 1.5px solid var(--line);
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+.pay-option:hover {
+  border-color: var(--gold);
+}
+.pay-option.selected {
+  border-color: var(--indigo);
+  background: #f8f6ff;
+}
+.pay-option .radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--line);
+  flex-shrink: 0;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pay-option.selected .radio {
+  border-color: var(--indigo);
+}
+.pay-option.selected .radio::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--indigo);
+}
+.pay-option .info strong {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+.pay-option .info span {
+  font-size: 13px;
+  color: var(--muted);
+}
+.pay-detail {
+  margin-top: 14px;
+  padding: 16px;
+  background: var(--cream);
+  border-radius: 10px;
+  font-size: 13.5px;
+  color: var(--ink);
+  line-height: 1.7;
+  display: none;
+}
+.pay-detail.show {
+  display: block;
+}
+.pay-detail b {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+/* Buttons */
+.btn-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+  gap: 12px;
+}
+.btn {
+  padding: 13px 26px;
+  border-radius: 10px;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 14.5px;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    opacity 0.15s ease;
+}
+.btn:active {
+  transform: scale(0.97);
+}
+.btn-primary {
+  background: var(--indigo);
+  color: #fff;
+}
+.btn-primary:hover {
+  background: var(--indigo-deep);
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--muted);
+}
+.btn-ghost:hover {
+  color: var(--ink);
+}
+.btn-primary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Order summary (right) */
+.summary h2 {
+  font-family: "Fraunces", serif;
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.sum-block {
+  background: var(--cream);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+.sum-block .k {
+  font-size: 12.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--indigo);
+  margin-bottom: 4px;
+}
+.sum-block .v {
+  font-size: 13.5px;
+  color: var(--muted);
+}
+.sum-block .v.filled {
+  color: var(--ink);
+}
+.sum-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--line);
+  font-size: 14px;
+}
+.sum-item:last-of-type {
+  border-bottom: none;
+}
+.sum-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 2px solid var(--ink);
+}
+.sum-total .k {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--ink);
+  text-transform: none;
+}
+.sum-total .amt {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-size: 19px;
+  color: var(--indigo);
+}
+
+.page {
+  display: none;
+  animation: fade 0.3s ease;
+}
+.page.active {
+  display: block;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.success {
+  text-align: center;
+  padding: 20px 0;
+}
+.success .icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--gold-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 28px;
+  color: var(--gold);
+}

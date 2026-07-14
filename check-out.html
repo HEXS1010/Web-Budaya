@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check out</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style/base.css" />
+    <link rel="stylesheet" href="style/layout.css" />
+    <link rel="stylesheet" href="style/pages/check-out.css" />
+    <link rel="stylesheet" href="style/responsif.css" />
+
+    <!-- konek ke google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- fonts -->
+
+    <!-- Cormorant Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- plus jakarta -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- aksara -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Balinese:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icon -->
+    <!-- icon awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- flag icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flag-icons@7.3.2/css/flag-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- STEP TRACK — outside card -->
+      <div class="steptrack">
+        <div class="stitch">
+          <div class="stitch-line" id="stitchLine"></div>
+        </div>
+        <div class="step active" data-step="1">
+          <div class="dot">1</div>
+          <div class="label">Pesanan</div>
+        </div>
+        <div class="step" data-step="2">
+          <div class="dot">2</div>
+          <div class="label">Pembayaran</div>
+        </div>
+        <div class="step" data-step="3">
+          <div class="dot">3</div>
+          <div class="label">Review</div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <!-- LEFT: form pages -->
+        <div class="card">
+          <!-- PAGE 1: Detail Pesanan -->
+          <div class="page active" id="page1">
+            <h1>Detail Pesanan</h1>
+            <div class="sub">Isi data kamu dan pilihan produk</div>
+
+            <div class="field">
+              <label>Nama Pemesan</label>
+              <input
+                type="text"
+                id="buyerName"
+                placeholder="cth. Ni Made Ayu"
+              />
+            </div>
+
+            <div class="row2">
+              <div class="field">
+                <label>No. WhatsApp</label>
+                <input
+                  type="tel"
+                  id="buyerPhone"
+                  placeholder="08xx-xxxx-xxxx"
+                />
+              </div>
+              <div class="field">
+                <label>Gender</label>
+                <select id="buyerGender">
+                  <option value="">Pilih</option>
+                  <option>Laki-laki</option>
+                  <option>Perempuan</option>
+                  <option>Lainnya</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row2">
+              <div class="field">
+                <label>Ukuran Baju</label>
+                <select id="itemSize">
+                  <option value="">Pilih ukuran</option>
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                  <option>XL</option>
+                  <option>XXL</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Warna</label>
+                <input type="text" id="itemColor" placeholder="cth. Hitam" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Jumlah</label>
+              <div class="qty-box">
+                <button type="button" onclick="changeQty(-1)">–</button>
+                <span id="qtyVal">1</span>
+                <button type="button" onclick="changeQty(1)">+</button>
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Alamat Pengiriman / Pengambilan</label>
+              <textarea
+                id="buyerAddress"
+                rows="2"
+                placeholder="Alamat lengkap, atau tulis 'ambil sendiri' kalau COD"
+              ></textarea>
+            </div>
+
+            <div class="field">
+              <label>Catatan (opsional)</label>
+              <input
+                type="text"
+                id="buyerNote"
+                placeholder="cth. Warna boleh beda dikit gapapa"
+              />
+            </div>
+
+            <div class="btn-row">
+              <span></span>
+              <button class="btn btn-primary" onclick="goTo(2)">
+                Lanjut ke Pembayaran
+              </button>
+            </div>
+          </div>
+
+          <!-- PAGE 2: Pembayaran -->
+          <div class="page" id="page2">
+            <h1>Metode Pembayaran</h1>
+            <div class="sub">Pilih cara kamu mau bayar</div>
+
+            <div
+              class="pay-option"
+              id="payTransfer"
+              onclick="selectPay('transfer')"
+            >
+              <div class="radio"></div>
+              <div class="info">
+                <strong>Transfer Bank</strong>
+                <span>Transfer ke rekening, lalu upload bukti bayar</span>
+              </div>
+            </div>
+            <div class="pay-detail" id="detailTransfer">
+              <div class="field" style="margin-top: 0">
+                <label>Pilih Bank</label>
+                <select id="bankSelect" onchange="updateBankInfo()">
+                  <option value="">Pilih bank tujuan</option>
+                  <option
+                    value="bca"
+                    data-num="1234567890"
+                    data-name="Toko Baju"
+                  >
+                    BCA
+                  </option>
+                  <option
+                    value="bni"
+                    data-num="0987654321"
+                    data-name="Toko Baju"
+                  >
+                    BNI
+                  </option>
+                  <option
+                    value="mandiri"
+                    data-num="1122334455"
+                    data-name="Toko Baju"
+                  >
+                    Mandiri
+                  </option>
+                  <option
+                    value="bri"
+                    data-num="5566778899"
+                    data-name="Toko Baju"
+                  >
+                    BRI
+                  </option>
+                </select>
+              </div>
+              <div id="bankInfo" style="margin-top: 12px">
+                Setelah transfer, konfirmasi ke admin via WhatsApp.
+              </div>
+            </div>
+
+            <div class="pay-option" id="payCash" onclick="selectPay('cash')">
+              <div class="radio"></div>
+              <div class="info">
+                <strong>Cash / Bayar Tunai</strong>
+                <span>Bayar langsung saat barang diterima atau diambil</span>
+              </div>
+            </div>
+            <div class="pay-detail" id="detailCash">
+              Kamu bayar tunai saat barang sampai (COD) atau saat ambil langsung
+              di lokasi. Admin akan konfirmasi via WhatsApp untuk atur waktu
+              serah terima.
+            </div>
+
+            <div class="btn-row">
+              <button class="btn btn-ghost" onclick="goTo(1)">Kembali</button>
+              <button
+                class="btn btn-primary"
+                id="toReviewBtn"
+                onclick="goTo(3)"
+                disabled
+              >
+                Lanjut ke Review
+              </button>
+            </div>
+          </div>
+
+          <!-- PAGE 3: Review -->
+          <div class="page" id="page3">
+            <h1>Review Pesanan</h1>
+            <div class="sub">Cek lagi sebelum kirim pesanan</div>
+
+            <div class="field">
+              <label>Nama</label>
+              <div class="v filled" id="rvName">-</div>
+            </div>
+            <div class="field">
+              <label>No. WhatsApp</label>
+              <div class="v filled" id="rvPhone">-</div>
+            </div>
+            <div class="field">
+              <label>Produk</label>
+              <div class="v filled" id="rvProduct">-</div>
+            </div>
+            <div class="field">
+              <label>Alamat</label>
+              <div class="v filled" id="rvAddress">-</div>
+            </div>
+            <div class="field">
+              <label>Metode Bayar</label>
+              <div class="v filled" id="rvPay">-</div>
+            </div>
+
+            <div class="btn-row">
+              <button class="btn btn-ghost" onclick="goTo(2)">Kembali</button>
+              <button class="btn btn-primary" onclick="submitOrder()">
+                Kirim Pesanan
+              </button>
+            </div>
+          </div>
+
+          <!-- PAGE 4: Success -->
+          <div class="page" id="page4">
+            <div class="success">
+              <div class="icon">✓</div>
+              <h1 style="text-align: center">Pesanan Terkirim</h1>
+              <p
+                class="sub"
+                style="text-align: center; max-width: 340px; margin: 8px auto 0"
+              >
+                Terima kasih! Admin akan menghubungi kamu via WhatsApp untuk
+                konfirmasi.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: order summary -->
+        <div class="card summary">
+          <h2>Ringkasan Pesanan</h2>
+
+          <div class="sum-item">
+            <span id="sumProductName">Baju — belum dipilih</span>
+            <span id="sumQty">x1</span>
+          </div>
+
+          <div class="sum-block">
+            <div class="k">Detail Produk</div>
+            <div class="v" id="sumProductDetail">
+              Ukuran & warna belum diisi
+            </div>
+          </div>
+
+          <div class="sum-block">
+            <div class="k">Pengiriman</div>
+            <div class="v" id="sumAddress">Alamat belum diisi</div>
+          </div>
+
+          <div class="sum-block">
+            <div class="k">Pembayaran</div>
+            <div class="v" id="sumPay">Belum dipilih</div>
+          </div>
+
+          <div class="sum-total">
+            <span class="k">Total</span>
+            <span class="amt" id="sumTotal">Rp 150.000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
