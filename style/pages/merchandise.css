@@ -1,0 +1,47 @@
+/* ===== merchandise page ======== */
+.merchandise-page {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 350px;
+  background: url("../../img/merchandise/merchandise-page.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.merchandise-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../../img/merchandise/merchandise-page.jpg");
+  background-size: 220px;
+  background-repeat: repeat;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.merchandise-page-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px
+}
+
+.merchandise-page-header > h1 {
+    font-family: var(--fonts-heading);
+    font-weight: 700;
+    font-size: 4rem;
+    color: var(--netral-100)
+}
+
+.merchandise-page-header > p {
+    font-family: var(--fonts-paragraf);
+    font-weight: 400;
+    font-size: var(--text-size-base);
+    color: var(--netral-400);
+}
+
+
+
