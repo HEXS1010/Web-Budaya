@@ -1430,7 +1430,7 @@
     font-size: 2.5rem;
   }
   /* ============= */
-  
+
   /* ======= ini punya warga ======= */
   .citizen {
     padding-block: 4rem;
@@ -1466,10 +1466,18 @@
 }
 
 @media (max-width: 768px) {
+
+  /* ==== ini punya judul bannernya ======= */
   .people-page-header > h1 {
     margin-top: 20px;
-    font-size: 1rem;
+    font-size: 2rem;
   }
+
+  .people-page-header > p {
+    font-size: .8rem;
+  }
+  /* =================== */
+  
   /* ===== ini punya warga =========== */
   .citizen {
     padding-block: 3rem;
