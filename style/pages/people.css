@@ -166,11 +166,11 @@
 
 /*====================================*/
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .committee-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-}
+} */
 
 @media (max-width: 768px) {
   .committee {
@@ -182,7 +182,7 @@
   }
 
   .committee-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
 
@@ -380,7 +380,7 @@
   }
 
   .section-title {
-    font-size: 2.4rem;
+    font-size: var(--text-size-2xl);
   }
 
   .citizen-layout {
@@ -400,15 +400,15 @@
   }
 
   .section-title {
-    font-size: 2rem;
+    font-size: var(--text-size-2xl);
   }
 
   .section-subtitle {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .section-description {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   /* sidebar pindah ke atas, jadi full width */
@@ -418,7 +418,7 @@
   }
 
   .citizen-sidebar {
-    position: static; /* matikan sticky, gak relevan lagi kalau udah di atas */
+    position: static; 
     flex-direction: row;
     flex-wrap: wrap;
     gap: 14px;
@@ -450,14 +450,15 @@
   }
 
   .section-title {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
   }
 
   .section-subtitle {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .section-description {
+    padding-inline: 5px;
     font-size: 13px;
   }
 
@@ -471,7 +472,7 @@
   }
 
   .sidebar-card h3 {
-    font-size: var(--text-size-md);
+    font-size: var(--text-size-lg);
     margin-bottom: 10px;
   }
 
