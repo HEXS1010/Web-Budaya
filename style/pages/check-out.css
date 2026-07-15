@@ -41,6 +41,7 @@ body {
   gap: 0;
   margin-bottom: 40px;
   position: relative;
+  list-style: none;
 }
 .step {
   display: flex;
@@ -145,6 +146,15 @@ body {
   margin-bottom: 28px;
 }
 
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+legend {
+  padding: 0;
+}
+
 .field {
   margin-bottom: 18px;
 }
@@ -204,12 +214,13 @@ body {
   background: var(--gold);
   color: #fff;
 }
-.qty-box span {
+.qty-box output {
   width: 48px;
   text-align: center;
   font-family: "IBM Plex Mono", monospace;
   font-weight: 500;
   font-size: 15px;
+  display: inline-block;
 }
 
 /* Payment method cards */
@@ -229,30 +240,16 @@ body {
 .pay-option:hover {
   border-color: var(--gold);
 }
-.pay-option.selected {
+.pay-option:has(input:checked) {
   border-color: var(--indigo);
   background: #f8f6ff;
 }
-.pay-option .radio {
+.pay-option .radio-input {
   width: 20px;
   height: 20px;
-  border-radius: 50%;
-  border: 2px solid var(--line);
+  accent-color: var(--indigo);
   flex-shrink: 0;
   margin-top: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pay-option.selected .radio {
-  border-color: var(--indigo);
-}
-.pay-option.selected .radio::after {
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--indigo);
 }
 .pay-option .info strong {
   display: block;
@@ -356,9 +353,13 @@ body {
   padding: 10px 0;
   border-bottom: 1px dashed var(--line);
   font-size: 14px;
+  list-style: none;
 }
 .sum-item:last-of-type {
   border-bottom: none;
+}
+.sum-list {
+  list-style: none;
 }
 .sum-total {
   display: flex;
@@ -415,4 +416,16 @@ body {
   margin: 0 auto 20px;
   font-size: 28px;
   color: var(--gold);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
