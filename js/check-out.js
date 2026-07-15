@@ -37,12 +37,6 @@ function updateSummary() {
 function selectPay(method) {
   payMethod = method;
   document
-    .getElementById("payTransfer")
-    .classList.toggle("selected", method === "transfer");
-  document
-    .getElementById("payCash")
-    .classList.toggle("selected", method === "cash");
-  document
     .getElementById("detailTransfer")
     .classList.toggle("show", method === "transfer");
   document
@@ -84,11 +78,14 @@ function goTo(step) {
   document.querySelectorAll(".step").forEach((s) => {
     const n = parseInt(s.dataset.step);
     s.classList.remove("active", "done");
+    s.removeAttribute("aria-current");
     if (n < step) s.classList.add("done");
-    if (n === step && step <= 3) s.classList.add("active");
+    if (n === step && step <= 3) {
+      s.classList.add("active");
+      s.setAttribute("aria-current", "step");
+    }
   });
 
-  const fillPct = step === 1 ? 0 : step === 2 ? 50 : 100;
   document.getElementById("stitchLine").style.borderTopColor =
     step > 1 ? "var(--gold)" : "var(--line)";
 
@@ -115,7 +112,8 @@ function goTo(step) {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-function submitOrder() {
+function submitOrder(e) {
+  if (e) e.preventDefault();
   document.querySelectorAll(".step").forEach((s) => s.classList.add("done"));
   document
     .querySelectorAll(".page")
