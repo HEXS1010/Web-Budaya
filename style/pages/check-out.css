@@ -1,15 +1,3 @@
-:root {
-  --indigo: #2e2b5f;
-  --indigo-deep: #201e45;
-  --cream: #f6f1e7;
-  --paper: #ffffff;
-  --gold: #c89b3c;
-  --gold-soft: #efe1be;
-  --ink: #221f3d;
-  --muted: #79758c;
-  --line: #e4decd;
-  --danger: #b8483f;
-}
 
 body {
   font-family: "Inter", sans-serif;
@@ -221,7 +209,7 @@ legend {
 
 /* Payment method cards */
 .pay-option {
-  border: 1.5px solid var(--netral-100);
+  border: 1.5px solid var(--netral-900);
   border-radius: 12px;
   padding: 18px;
   margin-bottom: 14px;
@@ -239,14 +227,14 @@ legend {
 }
 
 .pay-option:has(input:checked) {
-  border-color: var(--ungu-500);
-  background: var(--ungu-800);
+  border-color: var(--netral-500);
+  background: var(--ungu-50);
 }
 
 .pay-option .radio-input {
   width: 20px;
   height: 20px;
-  accent-color: var(--netral-100);
+  accent-color: var(--netral-900);
   flex-shrink: 0;
   margin-top: 2px;
 }
@@ -307,7 +295,7 @@ legend {
 }
 
 .btn-primary {
-  background: var(--ungu-500);
+  background: var(--ungu-700);
   color: var(--netral-100);
 }
 
@@ -316,9 +304,8 @@ legend {
 }
 
 .btn-ghost {
-  border: 1px solid var(--netral-500);
   background: transparent;
-  color: var(--netral-500);
+  color: var(--netral-600);
 }
 
 .btn-ghost:hover {
@@ -333,17 +320,18 @@ legend {
 /* Order summary (right) */
 .summary h2 {
   font-family: var(--fonts-heading);
-  font-size: 19px;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 900;
   margin-bottom: 20px;
 }
 
 .sum-block {
-  background: var(--cream);
+  background: var(--netral-100);
   border-radius: 12px;
   padding: 16px;
   margin-bottom: 12px;
 }
+
 .sum-block .k {
   font-size: 12.5px;
   font-weight: 700;
@@ -352,13 +340,16 @@ legend {
   color: var(--indigo);
   margin-bottom: 4px;
 }
+
 .sum-block .v {
   font-size: 13.5px;
   color: var(--muted);
 }
+
 .sum-block .v.filled {
   color: var(--ink);
 }
+
 .sum-item {
   display: flex;
   justify-content: space-between;
@@ -368,30 +359,35 @@ legend {
   font-size: 14px;
   list-style: none;
 }
+
 .sum-item:last-of-type {
   border-bottom: none;
 }
+
 .sum-list {
   list-style: none;
 }
+
 .sum-total {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 16px;
   padding-top: 16px;
-  border-top: 2px solid var(--ink);
+  border-top: 2px solid var(--netral-900);
 }
+
 .sum-total .k {
-  font-family: "Fraunces", serif;
-  font-weight: 600;
-  font-size: 17px;
-  color: var(--ink);
+  font-family: var(--fonts-heading);
+  font-weight: 900;
+  font-size: 25px;
+  color: var(--netral-900);
   text-transform: none;
 }
+
 .sum-total .amt {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 500;
+  font-family: var(--fonts-paragraf);
+  font-weight: 600;
   font-size: 19px;
   color: var(--indigo);
 }
@@ -400,9 +396,11 @@ legend {
   display: none;
   animation: fade 0.3s ease;
 }
+
 .page.active {
   display: block;
 }
+
 @keyframes fade {
   from {
     opacity: 0;
@@ -422,13 +420,13 @@ legend {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: var(--gold-soft);
+  background: var(--ungu-700);
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 20px;
   font-size: 28px;
-  color: var(--gold);
+  color: var(--netral-100);
 }
 
 .visually-hidden {
