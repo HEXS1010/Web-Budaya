@@ -10,30 +10,20 @@
   --line: #e4decd;
   --danger: #b8483f;
 }
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+
 body {
-  background: var(--cream);
   font-family: "Inter", sans-serif;
   color: var(--ink);
   min-height: 100vh;
   padding: 48px 24px;
-  background-image: radial-gradient(
-    circle at 1px 1px,
-    rgba(46, 43, 95, 0.06) 1px,
-    transparent 0
-  );
-  background-size: 22px 22px;
 }
+
 .wrap {
   max-width: 920px;
   margin: 0 auto;
 }
 
-/* ---- Step track (outside the card) ---- */
+/* ====== step top ======= */
 .steptrack {
   display: flex;
   align-items: flex-start;
@@ -43,6 +33,7 @@ body {
   position: relative;
   list-style: none;
 }
+
 .step {
   display: flex;
   flex-direction: column;
@@ -52,45 +43,46 @@ body {
   flex: 1;
   max-width: 180px;
 }
+
 .step .dot {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: var(--paper);
+  background: var(--emas-400);
   border: 2px solid var(--line);
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "IBM Plex Mono", monospace;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
-  color: var(--muted);
+  color: var(--netral-950);
   z-index: 2;
   transition: all 0.35s ease;
 }
 .step .label {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
-  color: var(--muted);
+  color: var(--netral-900);
   letter-spacing: 0.02em;
   text-transform: uppercase;
   transition: color 0.35s ease;
 }
 .step.active .dot {
-  background: var(--indigo);
-  border-color: var(--indigo);
-  color: #fff;
+  background: var(--ungu-700);
+  border-color: var(--ungu-700);
+  color: var(--netral-100);
 }
 .step.active .label {
-  color: var(--indigo);
+  color: var(--ungu-900);
 }
 .step.done .dot {
-  background: var(--gold);
-  border-color: var(--gold);
-  color: #fff;
+  background: var(--ungu-700);
+  border-color: var(--ungu-700);
+  color: var(--netral-100);
 }
 .step.done .label {
-  color: var(--ink);
+  color: var(--ungu-700);
 }
 
 /* stitch connector — signature detail referencing thread/sewing */
@@ -107,13 +99,13 @@ body {
 .stitch-line {
   width: 100%;
   height: 0;
-  border-top: 2px dashed var(--line);
+  border-top: 2px dashed var(--ungu-500);
 }
 .stitch-line.filled {
-  border-top: 2px dashed var(--gold);
+  border-top: 2px dashed var(--ungu-500);
 }
 
-/* ---- Layout ---- */
+/* ====== Layout ==== */
 .grid {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
@@ -127,7 +119,8 @@ body {
 }
 
 .card {
-  background: var(--paper);
+  background: var(--emas-400);
+  border: 2px solid var(--netral-950);
   border-radius: 18px;
   padding: 36px;
   box-shadow:
@@ -135,8 +128,8 @@ body {
     0 12px 32px -16px rgba(34, 31, 61, 0.18);
 }
 .card h1 {
-  font-family: "Fraunces", serif;
-  font-weight: 600;
+  font-family: var(--fonts-heading);
+  font-weight: 700;
   font-size: 26px;
   margin-bottom: 6px;
 }
