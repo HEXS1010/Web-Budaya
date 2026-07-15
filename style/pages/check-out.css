@@ -134,7 +134,7 @@ body {
   margin-bottom: 6px;
 }
 .card .sub {
-  color: var(--muted);
+  color: var(--netral-800);
   font-size: 14px;
   margin-bottom: 28px;
 }
@@ -144,6 +144,7 @@ fieldset {
   padding: 0;
   margin: 0;
 }
+
 legend {
   padding: 0;
 }
@@ -151,12 +152,13 @@ legend {
 .field {
   margin-bottom: 18px;
 }
+
 .field label {
   display: block;
   font-size: 13px;
   font-weight: 600;
   margin-bottom: 7px;
-  color: var(--ink);
+  color: var(--netral-950);
 }
 .field input,
 .field select,
@@ -168,14 +170,14 @@ legend {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   color: var(--ink);
-  background: #fdfcfa;
+  background: var(--netral-100);
   transition: border-color 0.2s ease;
 }
 .field input:focus,
 .field select:focus,
 .field textarea:focus {
   outline: none;
-  border-color: var(--indigo);
+  border-color: var(--ungu-500);
 }
 .row2 {
   display: grid;
@@ -196,21 +198,22 @@ legend {
 .qty-box button {
   width: 40px;
   height: 42px;
-  background: var(--gold-soft);
+  background: var(--ungu-500);
   border: none;
   font-size: 18px;
   cursor: pointer;
-  color: var(--indigo);
+  color: var(--netral-900);
   font-weight: 600;
 }
 .qty-box button:hover {
-  background: var(--gold);
-  color: #fff;
+  background: var(--ungu-800);
+  color: var(--netral-100);
 }
+
 .qty-box output {
   width: 48px;
   text-align: center;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--fonts-paragraf);
   font-weight: 500;
   font-size: 15px;
   display: inline-block;
@@ -218,7 +221,7 @@ legend {
 
 /* Payment method cards */
 .pay-option {
-  border: 1.5px solid var(--line);
+  border: 1.5px solid var(--netral-100);
   border-radius: 12px;
   padding: 18px;
   margin-bottom: 14px;
@@ -230,42 +233,50 @@ legend {
   gap: 14px;
   align-items: flex-start;
 }
+
 .pay-option:hover {
-  border-color: var(--gold);
+  border-color: var(--netral-900);
 }
+
 .pay-option:has(input:checked) {
-  border-color: var(--indigo);
-  background: #f8f6ff;
+  border-color: var(--ungu-500);
+  background: var(--ungu-800);
 }
+
 .pay-option .radio-input {
   width: 20px;
   height: 20px;
-  accent-color: var(--indigo);
+  accent-color: var(--netral-100);
   flex-shrink: 0;
   margin-top: 2px;
 }
+
 .pay-option .info strong {
   display: block;
   font-size: 15px;
   margin-bottom: 3px;
 }
+
 .pay-option .info span {
   font-size: 13px;
-  color: var(--muted);
+  color: var(--netral-700);
 }
+
 .pay-detail {
   margin-top: 14px;
   padding: 16px;
-  background: var(--cream);
+  background: var(--emas-50);
   border-radius: 10px;
   font-size: 13.5px;
-  color: var(--ink);
+  color: var(--netral-900);
   line-height: 1.7;
   display: none;
 }
+
 .pay-detail.show {
   display: block;
 }
+
 .pay-detail b {
   font-family: "IBM Plex Mono", monospace;
 }
@@ -277,11 +288,12 @@ legend {
   margin-top: 28px;
   gap: 12px;
 }
+
 .btn {
   padding: 13px 26px;
   border-radius: 10px;
   border: none;
-  font-family: "Inter", sans-serif;
+  font-family: var(--fonts-paragraf);
   font-weight: 600;
   font-size: 14.5px;
   cursor: pointer;
@@ -289,23 +301,30 @@ legend {
     transform 0.15s ease,
     opacity 0.15s ease;
 }
+
 .btn:active {
   transform: scale(0.97);
 }
+
 .btn-primary {
-  background: var(--indigo);
-  color: #fff;
+  background: var(--ungu-500);
+  color: var(--netral-100);
 }
+
 .btn-primary:hover {
-  background: var(--indigo-deep);
+  background: var(--ungu-600);
 }
+
 .btn-ghost {
+  border: 1px solid var(--netral-500);
   background: transparent;
-  color: var(--muted);
+  color: var(--netral-500);
 }
+
 .btn-ghost:hover {
-  color: var(--ink);
+  color: var(--netral-900);
 }
+
 .btn-primary:disabled {
   opacity: 0.4;
   cursor: not-allowed;
@@ -313,11 +332,12 @@ legend {
 
 /* Order summary (right) */
 .summary h2 {
-  font-family: "Fraunces", serif;
+  font-family: var(--fonts-heading);
   font-size: 19px;
   font-weight: 600;
   margin-bottom: 20px;
 }
+
 .sum-block {
   background: var(--cream);
   border-radius: 12px;
