@@ -21,3 +21,45 @@
   pointer-events: none;
 }
 
+.awig-awig-page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.awig-awig-page-header > h1 {
+  font-family: var(--fonts-heading);
+  font-weight: 700;
+  font-size: 4rem;
+  color: var(--netral-100);
+}
+.awig-awig-page-header > p {
+  font-family: var(--fonts-paragraf);
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--netral-400);
+}
+
+.awig-awig {
+  position: relative;
+  margin-top: -170px;
+  z-index: 70;
+  padding-inline: 16px;
+}
+
+.pages {
+  max-width: 800px;
+  margin-inline: auto;
+  padding: 60px;
+  background-image:
+    linear-gradient(rgba(195, 180, 145, 0.434), rgba(216, 202, 168, 0.484)),
+    url("../../img/historis/paper-old.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  border: 2px solid #000000;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
