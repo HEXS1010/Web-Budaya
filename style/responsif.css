@@ -1716,5 +1716,16 @@
     font-size: var(--text-size-sm);
   }
 
-  
+  /* ====== bagian di dalam page ========== */
+  .phil-header > h2 {
+    text-align: center;
+    padding: 0 11px;
+    font-size: 1.7rem;
+  }
+
+  .phil-header > img {
+    width: 350px;
+  }
+
+  /* === atur yang dl, dt, dd =========  */
 }
