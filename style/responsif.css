@@ -1704,6 +1704,40 @@
 
 
 /* ====== philosophy responsif ok ========== */
+@media (max-width: 768px) {
+    /* ==== bagian header bannernya ==== */
+    .philosophy-page-header > h1 {
+      font-size: 3rem;
+    }
+
+    .philosophy-page-header > p {
+      font-size: .9rem;
+    }
+    /* ====== bagian di dalam page ========== */
+    .phil-header > h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      padding: 0 10px;
+    }
+    
+    /* === atur yang dl, dt, dd =========  */
+    .phil-content-list {
+      padding-inline: 2rem;
+    }
+
+    .phil-content-list > dt {
+      font-size: 2rem;
+    }
+
+    .phil-content-list > dd {
+      font-size: 1.2rem;
+    }
+
+    .sub-desc {
+      padding-left: 2rem;
+    }
+  }
+
 @media (max-width: 480px) {
 
   /* ===== bagian di bannernya ====== */
