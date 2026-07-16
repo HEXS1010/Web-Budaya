@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filosofi Logo</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style/base.css" />
+    <link rel="stylesheet" href="style/layout.css" />
+    <link rel="stylesheet" href="style/pages/philosophy.css" />
+    <link rel="stylesheet" href="style/responsif.css" />
+
+    <!-- konek ke google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- fonts -->
+
+    <!-- Cormorant Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- plus jakarta -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- aksara -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Balinese:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icon -->
+    <!-- icon awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- flag icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flag-icons@7.3.2/css/flag-icons.min.css"
+    />
+  </head>
+  <body>
+     <header>
+      <section class="top-bar">
+        <header class="content-top">
+          <p class="delete">Banjar Kaliungu Kaja</p>
+          <span class="line">|</span>
+          <a href=""
+            ><i class="fa-solid fa-phone"></i> Telepon: +62 867-3904-9090</a
+          >
+          <span class="line">|</span>
+          <a class="delete" href=""
+            ><i class="fa-regular fa-envelope"></i> Email:
+            banjarkaliungukaja@gmail.com</a
+          >
+        </header>
+
+        <div class="language-switcher">
+          <button class="lang-btn active" data-lang="id">
+            <span class="fi fi-id"></span>
+          </button>
+
+          <span class="line">|</span>
+
+          <button class="lang-btn" data-lang="en">
+            <span class="fi fi-gb"></span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ============ Navbar ============= -->
+      <nav class="navbar navbar-hero">
+        <a href="index.html">
+          <img src="img/logo-banjar-kaliungu.webp" alt="Logo Kaliungu" />
+        </a>
+
+        <ul class="nav-link">
+          <li class="nav-items">
+            <a href="index.html"
+              ><span data-i18n="navbar.home">Beranda</span></a
+            >
+          </li>
+          <li class="nav-items dropdown">
+            <a href="">
+              <span data-i18n="navbar.profile">Profil</span>
+              <i class="fa-solid fa-angle-down icon-roll"></i
+            ></a>
+
+            <ul class="dropdown-menu dropdown-menu is-split">
+              <li><a href="historis.html">Sejarah</a></li>
+              <li><a href="#">Visi & Misi</a></li>
+              <li><a href="#">Struktur Organisasi</a></li>
+              <li><a href="people.html">Pengurus & Warga Banjar</a></li>
+              <li><a href="#">Awig-awig</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-items dropdown">
+            <a href=""
+              ><span data-i18n="navbar.information">Informasi</span>
+              <i class="fa-solid fa-angle-down icon-roll"></i
+            ></a>
+
+            <ul class="dropdown-menu">
+              <li><a href="">Program Kerja</a></li>
+              <li><a href="agenda.html">Agenda</a></li>
+              <li><a href="news.html">Berita & Pengumuman</a></li>
+              <li><a href="galery.html">Galery</a></li>
+            </ul>
+          </li>
+          <li class="nav-items"><a href="complaint.html">Pengaduan</a></li>
+          <li class="nav-items"><a href="">Kontak</a></li>
+        </ul>
+
+        <ul class="nav-action">
+          <a href="merchandise.html" class="tooltip" id="white">
+            <i class="fa-solid fa-bag-shopping"></i>
+              <span class="tooltip-text">Merchandise</span>
+            </i>
+          </a>
+
+          <a href="" class="tooltip" id="white">
+            <i class="fa-regular fa-bell">
+              <span class="tooltip-text">Notifikasi</span>
+            </i>
+          </a>
+
+          <i class="fa-solid fa-magnifying-glass tooltip">
+            <span class="tooltip-text">Pencarian</span>
+          </i>
+        </ul>
+
+        <button
+          type="button"
+          class="hamburger-btn"
+          aria-label="Buka menu"
+          aria-expanded="false"
+          aria-controls="mobileSidebar"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- ============ Navbar kedua ============= -->
+    <nav class="navbar navbar-scroll">
+      <span class="scroll-line"></span>
+      <a href="index.html">
+        <img src="img/logo-banjar-kaliungu.webp" alt="Logo Kaliungu" />
+      </a>
+
+      <ul class="nav-link">
+        <li class="nav-items">
+          <a href="index.html"><span data-i18n="navbar.home">Beranda</span></a>
+        </li>
+        <li class="nav-items dropdown">
+          <a href="">
+            <span data-i18n="navbar.profile">Profil</span>
+            <i class="fa-solid fa-angle-down icon-roll"></i
+          ></a>
+
+          <ul class="dropdown-menu dropdown-menu is-split">
+            <li><a href="historis.html">Sejarah</a></li>
+            <li><a href="">Visi & Misi</a></li>
+            <li><a href="#">Struktur Organisasi</a></li>
+            <li><a href="people.html">Pengurus & Warga Banjar</a></li>
+            <li><a href="#">Awig-awig</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-items dropdown">
+          <a href=""
+            ><span data-i18n="navbar.information">Informasi</span>
+            <i class="fa-solid fa-angle-down icon-roll"></i
+          ></a>
+
+          <ul class="dropdown-menu">
+            <li><a href="">Program Kerja</a></li>
+            <li><a href="agenda.html">Agenda</a></li>
+            <li><a href="news.html">Berita & Pengumuman</a></li>
+            <li><a href="galery.html">Galery</a></li>
+            <li></li>
+          </ul>
+        </li>
+        <li class="nav-items"><a href="complaint.html">Pengaduan</a></li>
+        <li class="nav-items"><a href="">Kontak</a></li>
+      </ul>
+
+      <ul class="nav-action">
+        <a href="merchandise.html" class="tooltip">
+          <i class="fa-solid fa-bag-shopping"></i>
+            <span class="tooltip-text">Merchandise</span>
+          </i>
+        </a>
+
+        <a href="" class="tooltip">
+          <i class="fa-regular fa-bell">
+            <span class="tooltip-text">Notifikasi</span>
+          </i>
+        </a>
+
+        <a href="" class="tooltip">
+          <i class="fa-solid fa-magnifying-glass">
+            <span class="tooltip-text">Pencarian</span>
+          </i>
+        </a>
+      </ul>
+
+      <button
+        type="button"
+        class="hamburger-btn"
+        aria-label="Buka menu"
+        aria-expanded="false"
+        aria-controls="mobileSidebar"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <!-- ======= sidebar ========= -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <aside class="mobile-sidebar" id="mobileSidebar" aria-hidden="true">
+      <div class="mobile-sidebar-head">
+        <a href="index.html" class="mobile-sidebar-logo">
+          <img src="img/logo-banjar-kaliungu.webp" alt="Logo Kaliungu" />
+          <span>Kaliungu Kaja</span>
+        </a>
+        <button
+          type="button"
+          class="mobile-sidebar-close"
+          aria-label="Tutup menu"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+          <a href="index.html">
+            <span class="mobile-nav-toggle-label">
+              <i class="fa-solid fa-home"></i> Beranda
+            </span>
+          </a>
+        </li>
+
+        <li class="mobile-nav-item has-submenu">
+          <button type="button" class="mobile-nav-toggle">
+            <span class="mobile-nav-toggle-label">
+              <i class="fa-solid fa-landmark"></i> Profil
+            </span>
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+          <ul class="mobile-submenu">
+            <li><a href="historis.html">Sejarah</a></li>
+            <li><a href="#">Visi & Misi</a></li>
+            <li><a href="#">Filosofi Logo</a></li>
+            <li><a href="#">Struktur Organisasi</a></li>
+            <li><a href="people.html">Pengurus & Warga Banjar</a></li>
+            <li><a href="#">Awig-awig</a></li>
+          </ul>
+        </li>
+
+        <li class="mobile-nav-item has-submenu">
+          <button type="button" class="mobile-nav-toggle">
+            <span class="mobile-nav-toggle-label">
+              <i class="fa-solid fa-circle-info"></i> Informasi
+            </span>
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+          <ul class="mobile-submenu">
+            <li><a href="">Program Kerja</a></li>
+            <li><a href="agenda.html">Agenda</a></li>
+            <li><a href="news.html">Berita & Pengumuman</a></li>
+            <li><a href="galery.html">Galery</a></li>
+          </ul>
+        </li>
+
+        <li class="mobile-nav-item">
+          <a href="complaint.html">
+            <span class="mobile-nav-toggle-label">
+              <i class="fa-solid fa-bullhorn"></i> Pengaduan
+            </span>
+          </a>
+        </li>
+
+        <li class="mobile-nav-item">
+          <a href="">
+            <span class="mobile-nav-toggle-label">
+              <i class="fa-solid fa-envelope"></i> Kontak
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="mobile-sidebar-actions">
+        <a href="">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+    </aside>
+
+    <main>
+        <section class="philosophy-page">
+            <header class="philosophy-page-header">
+                <h1>Filosofi Logo</h1>
+                <p>Beranda > Filosofi Logo</p>
+            </header>
+        </section>
+    </main>
+  </body>
+</html>

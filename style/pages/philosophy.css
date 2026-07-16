@@ -1,0 +1,46 @@
+/* ===== philosophy page ======== */
+.philosophy-page {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 350px;
+  background: url("../../img/filosofi/filosofi-page.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.philosophy-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../../img/filosofi/filosofi-page.png");
+  background-size: 220px;
+  background-repeat: repeat;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.philosophy-page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.philosophy-page-header > h1 {
+    font-family: var(--fonts-heading);
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: var(--netral-100);
+}
+
+.philosophy-page-header > p {
+    font-family: var(--fonts-paragraf);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--netral-400);
+}
+
+
