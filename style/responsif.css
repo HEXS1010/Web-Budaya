@@ -1728,4 +1728,22 @@
   }
 
   /* === atur yang dl, dt, dd =========  */
+  .phil-content-list {
+    padding-inline: 1rem;
+  }
+
+  .phil-content-list > dt {
+    font-size: var(--text-size-lg);
+  }
+
+  .phil-content-list > dd {
+    font-size: var(--text-size-sm);
+    padding-right: .5rem;
+  }
+
+  .sub-desc {
+    padding-left: 0;
+  }
+
+
 }
