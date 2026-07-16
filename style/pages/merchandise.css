@@ -116,7 +116,7 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 14px;
-  border-top: 1px dashed var(--netral-200);
+  border-top: 1px solid var(--netral-900);
 }
 
 .merch-card-price {
