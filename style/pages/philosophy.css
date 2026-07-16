@@ -30,17 +30,60 @@
 }
 
 .philosophy-page-header > h1 {
-    font-family: var(--fonts-heading);
-    font-weight: 700;
-    font-size: 3.5rem;
-    color: var(--netral-100);
+  font-family: var(--fonts-heading);
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: var(--netral-100);
 }
 
 .philosophy-page-header > p {
-    font-family: var(--fonts-paragraf);
-    font-weight: 400;
-    font-size: 1rem;
-    color: var(--netral-400);
+  font-family: var(--fonts-paragraf);
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--netral-400);
 }
 
+/* ========== Philosophy =========== */
+.philosophy {
+  position: relative;
+  margin-top: -170px;
+  z-index: 70;
+  padding-inline: 16px;
+}
 
+.page {
+  max-width: 800px;
+  margin-inline: auto;
+  padding: 60px 10px;
+  background-image:
+    linear-gradient(rgba(195, 180, 145, 0.434), rgba(216, 202, 168, 0.484)),
+    url("../../img/historis/paper-old.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  border: 2px solid #000000;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.phil-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.phil-header > h2 {
+  font-family: var(--fonts-heading);
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--emas-950);
+}
+
+.phil-header > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
