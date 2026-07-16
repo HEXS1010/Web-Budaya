@@ -90,5 +90,26 @@
 
 /* ====== content list phil ====== */
 .phil-content-list {
-    
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 1rem;
+    padding-inline: 5rem;
 }
+
+.phil-content-list > dt {
+    font-family: var(--fonts-heading);
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--emas-950);
+}
+
+.phil-content-list > dd {
+    padding-inline: 1rem;
+    font-family: var(--fonts-paragraf);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--netral-800);
+}
+
