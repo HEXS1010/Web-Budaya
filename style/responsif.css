@@ -1704,6 +1704,9 @@
 
 /* ====== philosophy responsif ok ========== */
 @media (max-width: 768px) {
+  .page {
+    background-attachment: scroll;
+  }
   /* ==== bagian header bannernya ==== */
   .philosophy-page-header > h1 {
     font-size: 3rem;
@@ -1738,6 +1741,9 @@
 }
 
 @media (max-width: 480px) {
+  .page {
+    background-attachment: scroll;
+  }
   /* ===== bagian di bannernya ====== */
   .philosophy-page-header > h1 {
     margin-top: 40px;
