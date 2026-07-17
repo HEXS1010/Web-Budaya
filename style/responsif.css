@@ -1778,6 +1778,40 @@
   .sub-desc {
     padding-left: 0;
   }
+}
 
+/* ======= responsifnya awig awig ========= */
+@media (max-width: 768px) {
+  .pages-header > h2 {
+    font-size: 1.3rem;
+    padding-inline: 1.7rem;
+  }
+  
+  .pages-header > p {
+    font-size: .9rem;
+    padding-inline: .5rem;
+    text-align: center;
+    line-height: 1.5;
+  }
 
+  .doc-intro {
+    font-size: .9rem;
+    padding-inline: 0;
+  }
+
+  .doc-pawon {
+    padding-inline: 0;
+  }
+
+  .doc-pawon > h3 {
+    font-size: 1.3rem;
+  }
+
+  .doc-pawon > p {
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  
 }
