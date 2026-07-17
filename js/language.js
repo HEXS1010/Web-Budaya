@@ -1,13 +1,3 @@
-// const languageButtons = document.querySelectorAll(".lang-btn");
-
-// languageButtons.forEach((button) => {
-//   button.addEventListener("click", () => {
-//     console.log(button.dataset.lang);
-//   });
-// });
-
-// console.log("language.js berhasil dibaca");
-
 const languageButtons = document.querySelectorAll(".lang-btn");
 
 // Menyimpan teks Indonesia asli

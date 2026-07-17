@@ -1,20 +1,165 @@
 {
+  "topbar": {
+    "phoneLabel": "Phone",
+    "emailLabel": "Email"
+  },
+
   "navbar": {
     "home": "Home",
     "profile": "Profile",
-    "program": "Programs & Activities",
     "information": "Information",
-    "citizen": "Community",
-    "contact": "Contact"
+    "complaint": "Complaint",
+    "contact": "Contact",
+    "profileMenu": {
+      "history": "History",
+      "visionMission": "Vision & Mission",
+      "logoPhilosophy": "Logo Philosophy",
+      "orgStructure": "Organizational Structure",
+      "people": "Officials & Residents",
+      "customaryLaw": "Customary Law (Awig-awig)"
+    },
+    "informationMenu": {
+      "workProgram": "Work Program",
+      "agenda": "Agenda",
+      "news": "News & Announcements",
+      "gallery": "Gallery"
+    },
+    "action": {
+      "merchandise": "Merchandise",
+      "notification": "Notification",
+      "search": "Search"
+    }
+  },
+
+  "mobileSidebar": {
+    "brandName": "Kaliungu Kaja"
   },
 
   "hero": {
     "title": "Center of Traditional, Social and Community Life of Banjar Kaliungu Kaja",
-
     "description": "Preserving Balinese culture, strengthening community ties, and providing the best service for the Banjar community.",
-
     "button1": "Explore Banjar",
-
     "button2": "About Us"
+  },
+
+  "statistics": {
+    "families": "Households",
+    "residents": "Residents",
+    "customaryEvents": "Customary Activities",
+    "officials": "Banjar Officials"
+  },
+
+  "welcome": {
+    "chiefName": "I Made Jhon Doe",
+    "chiefRole": "Head of Banjar Kaliungu Kaja",
+    "heading": "Banjar Kaliungu Kaja",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nesciunt numquam eos a. Itaque aliquid deleniti fugit nostrum, in sint. Quae perspiciatis ullam, eligendi in expedita ipsam? Quisquam provident quam, aliquid voluptatum, laboriosam tempora magni numquam harum sed voluptate iusto.",
+    "button": "View Profile"
+  },
+
+  "historis": {
+    "heading": "History of Banjar Kaliungu Kaja",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit quasi quia voluptatem placeat officiis? Repudiandae necessitatibus fuga beatae laboriosam corporis nobis id aliquam nihil inventore quidem, consectetur, omnis eligendi totam praesentium, veniam error voluptas quisquam atque. Dicta vero optio unde rem, tempora, impedit repellendus saepe necessitatibus, excepturi quisquam odio delectus!",
+    "button": "Read More"
+  },
+
+  "visionMission": {
+    "visionTitle": "Vision",
+    "visionText": "\"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae error, voluptatum dolore nam iusto at maiores nobis nihil laudantium officiis amet voluptatibus nesciunt totam repudiandae officia corporis animi inventore perferendis!\"",
+    "missionTitle": "Mission",
+    "missionItems": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, molestiae.",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, facilis!",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, facilis.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, nihil."
+    ]
+  },
+
+  "agenda": {
+    "title": "Event Schedule",
+    "subtitle": "Banjar Kaliungu's activity schedule",
+    "prevLabel": "View previous agenda",
+    "nextLabel": "View next agenda",
+    "status": {
+      "ongoing": "Ongoing",
+      "done": "Done"
+    },
+    "meta": {
+      "time": "Time",
+      "location": "Location"
+    },
+    "items": {
+      "item1": {
+        "title": "Independence Ceremony & Resident Competitions",
+        "location": "Balai Banjar Kaliungu"
+      },
+      "item2": {
+        "title": "Odalan Preparation at the Village Temple",
+        "location": "Pura Desa Kaliungu"
+      },
+      "item3": {
+        "title": "HUT RI Committee Coordination Meeting",
+        "location": "Balai Banjar Kaliungu"
+      },
+      "item4": {
+        "title": "Health Check-up Schedule for Toddlers, Pregnant Women, and the Elderly",
+        "location": "Banjar Neighborhood"
+      }
+    },
+    "moreButton": "View more agenda"
+  },
+
+  "news": {
+    "heading": "News & Articles",
+    "description": "Latest news on Banjar Kaliungu's activities",
+    "category": "News",
+    "viewsLabel": "views",
+    "readMore": "Read More",
+    "moreButton": "View more news",
+    "items": {
+      "item1": {
+        "title": "Community Work for Odalan Preparation 2026",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sapiente cum dolorum maiores pariatur ea asperiores minus! Nemo, distinctio dolorem."
+      },
+      "item2": {
+        "title": "Odalan Ceremony at Banjar Kaliungu 2026",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam repudiandae dignissimos aliquid reiciendis dolore culpa placeat ad deserunt vitae ullam."
+      },
+      "item3": {
+        "title": "Posyandu Activities in Kaliungu",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati laudantium aperiam beatae praesentium ab saepe odio mollitia incidunt, itaque earum."
+      }
+    }
+  },
+
+  "aspiration": {
+    "title": "Let's Build Banjar Together",
+    "description": "Your opinions, suggestions, and complaints matter greatly to the progress of Banjar Kaliungu Kaja. If you find any issues or have constructive input, please share it with us through the aspiration form.",
+    "button": "Send Aspiration"
+  },
+
+  "footer": {
+    "brandName": "Banjar Kaliungu Kaja",
+    "brandSubtitle": "Traditional Village of Denpasar",
+    "description": "Preserving culture, strengthening community ties, and providing the best service for all residents of Banjar Kaliungu Kaja.",
+    "profileTitle": "Profile",
+    "profileMenu": {
+      "history": "History",
+      "visionMission": "Vision & Mission",
+      "logoPhilosophy": "Logo Philosophy",
+      "people": "Officials & Residents",
+      "customaryLaw": "Customary Law (Awig-awig)"
+    },
+    "informationTitle": "Information",
+    "informationMenu": {
+      "workProgram": "Work Program",
+      "news": "News & Announcements",
+      "agenda": "Agenda",
+      "gallery": "Gallery"
+    },
+    "contactTitle": "Contact",
+    "address": "Denpasar, Bali",
+    "copyright": "© 2026 Banjar Kaliungu Kaja. All Rights Reserved.",
+    "developedBy": "Designed & Developed by"
   }
 }
