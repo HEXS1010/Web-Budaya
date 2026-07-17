@@ -89,11 +89,12 @@
 }
 
 .doc-intro {
+  padding: 5rem 0 2rem 0;
   font-family: var(--fonts-paragraf);
   font-weight: 400;
   font-size: 1.1rem;
   line-height: 1.5;
-  padding-inline: 2.5rem;
+  padding-inline: 1rem;
 }
 
 .doc-pawon {
@@ -101,7 +102,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding-inline: 2.5rem;
+  padding-inline: 1rem;
   line-height: 1.5;
 }
 
