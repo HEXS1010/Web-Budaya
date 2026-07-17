@@ -63,3 +63,36 @@
   border: 2px solid #000000;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
+
+
+.pages-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.pages-header > h2 {
+  font-family: var(--fonts-heading);
+  font-weight: 800;
+  font-size: 1.6rem;
+  text-align: center;
+  padding-inline: 2rem;
+  line-height: 1.5;
+}
+
+.pages-header > p {
+  font-family: var(--fonts-paragraf);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.doc-intro {
+  font-family: var(--fonts-paragraf);
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  padding-inline: 2.5rem;
+}
+
