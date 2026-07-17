@@ -1692,8 +1692,8 @@
     font-size: 2.7rem;
   }
 
-  .galery-page-header > p  {
-    font-size: .8rem;
+  .galery-page-header > p {
+    font-size: 0.8rem;
   }
 
   /* ==== punya content galery ===== */
@@ -1702,48 +1702,46 @@
   }
 }
 
-
 /* ====== philosophy responsif ok ========== */
 @media (max-width: 768px) {
-    /* ==== bagian header bannernya ==== */
-    .philosophy-page-header > h1 {
-      font-size: 3rem;
-    }
-
-    .philosophy-page-header > p {
-      font-size: .9rem;
-    }
-    /* ====== bagian di dalam page ========== */
-    .phil-header > h2 {
-      text-align: center;
-      font-size: 2.5rem;
-      padding: 0 10px;
-    }
-    
-    /* === atur yang dl, dt, dd =========  */
-    .phil-content-list {
-      padding-inline: 2rem;
-    }
-
-    .phil-content-list > dt {
-      font-size: 2rem;
-    }
-
-    .phil-content-list > dd {
-      font-size: 1.2rem;
-    }
-
-    .sub-desc {
-      padding-left: 2rem;
-    }
+  /* ==== bagian header bannernya ==== */
+  .philosophy-page-header > h1 {
+    font-size: 3rem;
   }
 
-@media (max-width: 480px) {
+  .philosophy-page-header > p {
+    font-size: 0.9rem;
+  }
+  /* ====== bagian di dalam page ========== */
+  .phil-header > h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0 10px;
+  }
 
+  /* === atur yang dl, dt, dd =========  */
+  .phil-content-list {
+    padding-inline: 2rem;
+  }
+
+  .phil-content-list > dt {
+    font-size: 2rem;
+  }
+
+  .phil-content-list > dd {
+    font-size: 1.2rem;
+  }
+
+  .sub-desc {
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
   /* ===== bagian di bannernya ====== */
   .philosophy-page-header > h1 {
     margin-top: 40px;
-    font-size:  var(--text-size-xl);
+    font-size: var(--text-size-xl);
   }
 
   .philosophy-page-header > p {
@@ -1772,7 +1770,7 @@
 
   .phil-content-list > dd {
     font-size: var(--text-size-sm);
-    padding-right: .5rem;
+    padding-right: 0.5rem;
   }
 
   .sub-desc {
@@ -1782,20 +1780,29 @@
 
 /* ======= responsifnya awig awig ========= */
 @media (max-width: 768px) {
+  .awig-awig-page-header > h1 {
+    font-size: 2.8rem;
+    margin-top: 30px;
+  }
+
+  .awig-awig-page-header > p {
+    font-size: 0.9rem;
+  }
+
   .pages-header > h2 {
     font-size: 1.3rem;
     padding-inline: 1.7rem;
   }
-  
+
   .pages-header > p {
-    font-size: .9rem;
-    padding-inline: .5rem;
+    font-size: 0.9rem;
+    padding-inline: 0.5rem;
     text-align: center;
     line-height: 1.5;
   }
 
   .doc-intro {
-    font-size: .9rem;
+    font-size: 0.9rem;
     padding-inline: 0;
   }
 
@@ -1808,10 +1815,45 @@
   }
 
   .doc-pawon > p {
-    font-size: .9rem;
+    font-size: 0.85rem;
+  }
+
+  .pages {
+    background-attachment: scroll;
   }
 }
 
 @media (max-width: 480px) {
-  
+  .awig-awig-page-header > h1 {
+    font-size: 2.7rem;
+    margin-top: 40px;
+  }
+
+  .awig-awig-page-header > p {
+    font-size: 0.9rem;
+  }
+
+  .pages-header > h2 {
+    font-size: 1.15rem;
+    padding-inline: 0;
+  }
+
+  .pages-header > p {
+    font-size: 0.8rem;
+    padding-inline: 0;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .doc-intro {
+    padding: 3rem 0 2rem 0;
+  }
+
+  .margin {
+    margin-top: 3rem;
+  }
+
+  .pages {
+    background-attachment: scroll;
+  }
 }
