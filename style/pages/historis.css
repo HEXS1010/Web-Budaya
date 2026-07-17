@@ -61,7 +61,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   border: 2px solid #000000;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
