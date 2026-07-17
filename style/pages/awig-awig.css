@@ -42,6 +42,7 @@
   color: var(--netral-400);
 }
 
+/* ====== content awig awig ============ */
 .awig-awig {
   position: relative;
   margin-top: -170px;
@@ -63,7 +64,6 @@
   border: 2px solid #000000;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
-
 
 .pages-header {
   display: flex;
@@ -96,3 +96,35 @@
   padding-inline: 2.5rem;
 }
 
+.doc-pawon {
+  padding-block: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-inline: 2.5rem;
+  line-height: 1.5;
+}
+
+.doc-pawon > h3 {
+  font-family: var(--fonts-heading);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.doc-pawon > p {
+  font-family: var(--fonts-paragraf);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.margin {
+  margin-top: 50px;
+}
+
+.italic-fonts {
+  font-style: italic;
+}
+
+.doc-menu {
+  padding-left: 2rem;
+}
