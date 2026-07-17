@@ -59,7 +59,7 @@
     url("../../img/historis/paper-old.png");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-repeat: no-repeat;
   border: 2px solid #000000;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
@@ -80,6 +80,7 @@
   text-align: center;
   padding-inline: 2rem;
   line-height: 1.5;
+  margin-top: 20px;
 }
 
 .pages-header > p {

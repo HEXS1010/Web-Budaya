@@ -904,6 +904,10 @@
 
 /* ============= historis html ========== */
 @media (max-width: 768px) {
+  .paper {
+    background-attachment: scroll;
+  }
+
   .hero-historis {
     height: 300px;
   }
@@ -918,6 +922,10 @@
 }
 
 @media (max-width: 480px) {
+  .paper {
+    background-attachment: scroll;
+  }
+
   .hero-historis {
     height: 300px;
   }
@@ -1824,9 +1832,9 @@
     font-size: 0.85rem;
   }
 
-  .pages {
+  /* .pages {
     background-attachment: scroll;
-  }
+  } */
 }
 
 @media (max-width: 480px) {
@@ -1859,7 +1867,7 @@
     margin-top: 3rem;
   }
 
-  .pages {
+  /* .pages {
     background-attachment: scroll;
-  }
+  } */
 }
