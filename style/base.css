@@ -141,7 +141,7 @@ body::before {
   position: fixed;
   inset: 0;
 
-  background-image: url("../img/hiasan/body-batik-hiasan.png");
+  background-image: url("../img/hiasan/body-batik-hiasan.webp");
   background-repeat: repeat;
 
   background-size: 250px;

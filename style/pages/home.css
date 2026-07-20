@@ -1263,7 +1263,7 @@
   min-height: 420px;
   padding: 4rem 2rem;
   border-radius: var(--radius-xl);
-  background: url("../../img/pengaduan/cta.png");
+  background: url("../../img/pengaduan/cta.webp");
 
   background-size: cover;
   background-position: center;
@@ -1277,7 +1277,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../../img/pengaduan/cta.png");
+  background-image: url("../../img/pengaduan/cta.webp");
   background-size: 220px;
   background-repeat: repeat;
   opacity: 0.08;

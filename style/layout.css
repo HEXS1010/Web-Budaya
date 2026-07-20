@@ -504,14 +504,14 @@ body.sidebar-open {
   overflow: hidden;
   padding-top: 5rem;
   color: var(--netral-100);
-  background: #1b0037 url("../../img/footer.png") center/cover no-repeat;
+  background: #1b0037 url("../../img/footer.webp") center/cover no-repeat;
 }
 
 .footer::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../../img/footer.png");
+  background-image: url("../../img/footer.webp");
   background-size: 220px;
   background-repeat: repeat;
   opacity: 0.08;
