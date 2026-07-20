@@ -213,7 +213,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 6rem;
 }
 
 .wel-img {
@@ -230,20 +230,7 @@
   opacity: 0.6;
 }
 
-/* Posisi masing-masing */
-.top {
-  top: 10px;
-  left: -50px;
-  transform: rotate(-12deg);
-}
-
-.bottom {
-  bottom: -21px;
-  right: -50px;
-  transform: rotate(12deg);
-}
-
-/* Gambar utama */
+/* ========== Gambar utama ========= */
 .wel-person {
   position: relative;
   z-index: 4;
@@ -264,7 +251,7 @@
 
 .wel-person {
   display: block;
-  width: 450px;
+  width: 430px;
   height: auto;
 }
 
@@ -277,7 +264,7 @@
   transform: translateX(-50%);
   z-index: 5;
   background: linear-gradient(135deg, var(--emas-500), var(--emas-400));
-  padding: 1rem 4rem;
+  padding: 1rem 1.5rem;
   border-radius: 8px;
   text-align: center;
   white-space: nowrap;
@@ -286,9 +273,8 @@
 }
 
 .icon {
-  font-size: 35px;
+  font-size: 30px;
   padding: 10px 10px;
-  /* background: var(--emas-600); */
   border-radius: 50%;
   color: var(--ungu-700);
 }
@@ -299,12 +285,12 @@
   align-items: start;
 }
 
-.wel-caption > h2 {
+.wel-title-label {
   font-family: var(--fonts-heading);
-  color: var(--ungun-950);
-  font-weight: 900;
-  font-size: 1.7rem;
-  margin-bottom: 0.25rem;
+  font-weight: 700;
+  color: var(--ungu-950);
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
 }
 
 .wel-caption p {
