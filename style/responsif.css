@@ -1849,3 +1849,87 @@
     margin-top: 3rem;
   }
 }
+
+/* ======= Responsif Lightbox ======= */
+@media (max-width: 991px) {
+  .lightbox-img-wrapper {
+    max-width: 92%;
+    max-height: 80vh;
+  }
+
+  .lightbox-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .lightbox-prev {
+    left: 12px;
+  }
+  .lightbox-next {
+    right: 12px;
+  }
+
+  .lightbox-close {
+    top: 16px;
+    right: 16px;
+    font-size: 24px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .lightbox-img-wrapper {
+    max-width: 95%;
+    max-height: 70vh;
+  }
+
+  /* panah geser dipindah ke bawah biar gak nutup foto */
+  .lightbox-nav {
+    top: auto;
+    bottom: 16px;
+    transform: none;
+    width: 44px;
+    height: 44px;
+  }
+
+  .lightbox-prev {
+    left: 20px;
+  }
+
+  .lightbox-next {
+    right: 20px;
+  }
+
+  .lightbox-close {
+    top: 12px;
+    right: 12px;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+  }
+
+  .lightbox-zoom-controls {
+    bottom: 76px; /* biar gak numpuk sama tombol nav */
+    padding: 6px;
+    gap: 6px;
+  }
+
+  .lightbox-zoom-controls button {
+    width: 38px;
+    height: 38px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  .lightbox-img-wrapper {
+    max-height: 60vh;
+  }
+
+  .lightbox-zoom-controls {
+    bottom: 70px;
+  }
+}
