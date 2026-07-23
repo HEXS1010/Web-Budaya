@@ -1884,7 +1884,7 @@
     max-height: 70vh;
   }
 
-  /* panah geser dipindah ke bawah biar gak nutup foto */
+  
   .lightbox-nav {
     top: auto;
     bottom: 16px;
@@ -1912,7 +1912,7 @@
   }
 
   .lightbox-zoom-controls {
-    bottom: 76px; /* biar gak numpuk sama tombol nav */
+    bottom: 76px; 
     padding: 6px;
     gap: 6px;
   }
