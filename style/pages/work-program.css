@@ -22,22 +22,46 @@
 }
 
 .program-header {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 20px;
 }
 
 .program-header > h1 {
-    font-family: var(--fonts-heading);
-    font-weight: 700;
-    font-size: var(--text-size-3xl);
+  font-family: var(--fonts-heading);
+  font-weight: 700;
+  font-size: var(--text-size-3xl);
+  color: var(--netral-100);
 }
 
 .program-header > p {
-    font-family: var(--fonts-paragraf);
-    font-weight: 400;
-    font-size: 1rem;
+  font-family: var(--fonts-paragraf);
+  font-weight: 400;
+  font-size: var(--text-size-base);
+  color: var(--netral-100);
 }
 
+.work-program {
+  position: relative;
+  margin-top: -170px;
+  z-index: 70;
+  padding-inline: 16px;
+}
 
-
+.bg {
+  max-width: 800px;
+  margin-inline: auto;
+  padding: 40px;
+  background-image:
+    linear-gradient(rgba(195, 180, 145, 0.434), rgba(216, 202, 168, 0.484)),
+    url("../../img/historis/paper-old.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: repeat;
+  border: 2px solid #000000;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
