@@ -477,14 +477,133 @@
           </header>
       </section>
 
-      <section class="work-program">
+      <!-- <section class="work-program">
         <article class="bg">
           <header class="work-program-header">
             <h2></h2>
           </header>
         </article>
 
-      </section>
+      </section> -->
+
+      <section class="proker-hero section-wrapper" aria-labelledby="proker-heading">
+  <p class="proker-label">
+    <span class="label-dot" aria-hidden="true"></span> ᬧ᭄ᬭᭀᬕ᭄ᬭᬫ᭄ ᬓᭂᬭ᭄ᬚ
+  </p>
+  <h1 id="proker-heading" data-i18n="workProgram.title">Program Kerja Sekaa Banjar</h1>
+</section>
+ 
+<!-- ========= Grid Sekaa ========= -->
+<section class="section-wrapper" aria-label="Daftar sekaa dan program kerja">
+  <div class="proker-grid" id="prokerGrid">
+ 
+    <!-- ===== Template 1 card sekaa (duplikat blok <article> ini untuk tiap sekaa) ===== -->
+    <article class="proker-card">
+      <h2 class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">
+        <!-- heading pembungkus level 2, biar urutan h1 > h2 > h3 gak loncat -->
+        Sekaa
+      </h2>
+ 
+      <button
+        type="button"
+        class="proker-card-head"
+        aria-expanded="false"
+        aria-controls="proker-body-1"
+        id="proker-head-1"
+      >
+        <span class="proker-icon" aria-hidden="true"><i class="fa-solid fa-users"></i></span>
+        <span class="proker-card-head-text">
+          <h3>Pecalang</h3>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </span>
+        <i class="fa-solid fa-chevron-down proker-chevron" aria-hidden="true"></i>
+      </button>
+ 
+      <div
+        class="proker-card-body"
+        id="proker-body-1"
+        role="region"
+        aria-labelledby="proker-head-1"
+        hidden
+      >
+        <ul class="proker-list">
+          <li><i class="fa-solid fa-check" aria-hidden="true"></i> isi program kerja</li>
+        </ul>
+        <p class="proker-empty-note"><!-- catatan opsional --></p>
+      </div>
+    </article> 
+
+    <article class="proker-card">
+      <h2 class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">
+        <!-- heading pembungkus level 2, biar urutan h1 > h2 > h3 gak loncat -->
+        Sekaa
+      </h2>
+ 
+      <button
+        type="button"
+        class="proker-card-head"
+        aria-expanded="false"
+        aria-controls="proker-body-1"
+        id="proker-head-1"
+      >
+        <span class="proker-icon" aria-hidden="true"><i class="fa-solid fa-users"></i></span>
+        <span class="proker-card-head-text">
+          <h3></h3>
+          <p></p>
+        </span>
+        <i class="fa-solid fa-chevron-down proker-chevron" aria-hidden="true"></i>
+      </button>
+ 
+      <div
+        class="proker-card-body"
+        id="proker-body-1"
+        role="region"
+        aria-labelledby="proker-head-1"
+        hidden
+      >
+        <ul class="proker-list">
+          <li><i class="fa-solid fa-check" aria-hidden="true"></i> isi program kerja</li>
+        </ul>
+        <p class="proker-empty-note"><!-- catatan opsional --></p>
+      </div>
+    </article> 
+
+    <article class="proker-card">
+      <h2 class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">
+        <!-- heading pembungkus level 2, biar urutan h1 > h2 > h3 gak loncat -->
+        Sekaa
+      </h2>
+ 
+      <button
+        type="button"
+        class="proker-card-head"
+        aria-expanded="false"
+        aria-controls="proker-body-1"
+        id="proker-head-1"
+      >
+        <span class="proker-icon" aria-hidden="true"><i class="fa-solid fa-users"></i></span>
+        <span class="proker-card-head-text">
+          <h3></h3>
+          <p></p>
+        </span>
+        <i class="fa-solid fa-chevron-down proker-chevron" aria-hidden="true"></i>
+      </button>
+ 
+      <div
+        class="proker-card-body"
+        id="proker-body-1"
+        role="region"
+        aria-labelledby="proker-head-1"
+        hidden
+      >
+        <ul class="proker-list">
+          <li><i class="fa-solid fa-check" aria-hidden="true"></i> isi program kerja</li>
+        </ul>
+        <p class="proker-empty-note"><!-- catatan opsional --></p>
+      </div>
+    </article> 
+  </div>
+</section>
     </main>
 
      <!-- ============= footer ==============  -->
@@ -578,6 +697,7 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/work-program.js"></script>
     <script src="js/language.js"></script>
   </body>
 </html>
