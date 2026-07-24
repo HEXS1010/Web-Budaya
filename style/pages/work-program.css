@@ -44,14 +44,7 @@
   color: var(--netral-100);
 }
 
-.work-program {
-  position: relative;
-  margin-top: -170px;
-  z-index: 70;
-  padding-inline: 16px;
-}
-
-.bg {
+/* .bg {
   max-width: 800px;
   margin-inline: auto;
   padding: 40px;
@@ -68,8 +61,9 @@
 
 .proker-hero {
   padding: 140px 0 60px;
+  padding-block: 0;
+  margin-top: 5rem;
   text-align: center;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.03), transparent);
 }
 
 .proker-label {
@@ -92,31 +86,40 @@
 }
 
 .proker-hero h1 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--fonts-heading);
   font-size: clamp(28px, 4vw, 42px);
   margin-bottom: 12px;
+  color: var(--emas-950);
 }
 
 .proker-hero p {
   max-width: 620px;
   margin: 0 auto;
-  color: #666;
+  color: var(--emas-950);
   line-height: 1.6;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: var(--fonts-paragraf);
+} */
+
+.wrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 24px;
 }
 
 .proker-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 24px;
-  padding: 40px 0 100px;
+  /* padding: 40px 0 100px; */
+  align-items: start;
 }
 
 .proker-card {
   border: 1px solid #eadfc9;
   border-radius: 16px;
   overflow: hidden;
-  background: #fff;
+  background: var(--netral-100);
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
   transition: box-shadow 0.25s ease;
 }
@@ -132,7 +135,7 @@
   width: 100%;
   padding: 20px 22px;
   cursor: pointer;
-  background: #fdfaf3;
+  background: var(--ungu-600);
   border: none;
   text-align: left;
   font: inherit;
@@ -149,31 +152,35 @@
   height: 46px;
   min-width: 46px;
   border-radius: 12px;
-  background: #a8813f;
-  color: #fff;
+  background: var(--netral-200);
+  color: var(--netral-700);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 18px;
+  border: 1px solid black;
 }
 
 .proker-card-head-text h3 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--fonts-heading);
+  font-weight: 700;
   font-size: 19px;
   margin: 0 0 3px;
+  color: var(--netral-100);
 }
 
 .proker-card-head-text p {
   font-size: 13px;
-  color: #777;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  color: var(--netral-300);
+  font-family: var(--fonts-paragraf);
   margin: 0;
+  font-weight: 400;
 }
 
 .proker-chevron {
   margin-left: auto;
   transition: transform 0.25s ease;
-  color: #a8813f;
+  color: var(--emas-200);
 }
 
 .proker-card.is-open .proker-chevron {
@@ -181,29 +188,38 @@
 }
 
 .proker-card-body {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
 }
 
 .proker-card.is-open .proker-card-body {
-  max-height: 600px;
+  grid-template-rows: 1fr;
+}
+
+.proker-card-body > * {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.proker-card-inner {
+  overflow: hidden;
 }
 
 .proker-list {
   list-style: none;
   margin: 0;
   padding: 18px 22px 22px;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: var(--fonts-paragraf);
   font-size: 14px;
-  color: #444;
+  color: var(--netral-500);
 }
 
 .proker-list li {
   display: flex;
   gap: 10px;
-  padding: 8px 0;
-  border-bottom: 1px dashed #eee;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--netral-400);
 }
 
 .proker-list li:last-child {
@@ -211,14 +227,14 @@
 }
 
 .proker-list li i {
-  color: #a8813f;
+  color: #22c55e;
   margin-top: 3px;
 }
 
 .proker-empty-note {
   font-size: 12px;
-  color: #999;
+  color: var(--netral-500);
   padding: 0 22px 20px;
   font-style: italic;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: var(--fonts-paragraf);
 }
